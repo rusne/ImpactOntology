@@ -42,6 +42,7 @@ def shape2patch(sh):
 
     return ptch
 
+
 with ontology:
 
     class Impact(Thing):
@@ -93,7 +94,9 @@ with ontology:
     class ImpactZone(Thing):
 
         def draw(self):
-            pass
+            for prop in self.get_properties():
+                for value in prop[self]:
+                    print(prop.python_name, value)
 
     class BufferFootprint(ontology.Footprint):
 
@@ -143,8 +146,3 @@ with ontology:
             for prop in self.get_properties():
                 for value in prop[self]:
                     print(prop.python_name, value)
-
-
-def find_effect_zones(onto):
-
-    pass
