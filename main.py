@@ -1,7 +1,7 @@
 from owlready2 import *
 
 
-onto_path.append('/Users/rusnesileryte/Google Drive/PhD/Ontology/ImpactOntology/')
+onto_path.append('ontologies/')
 # onto_asmfa = get_ontology('http://www.semanticweb.org/AS-MFA').load()
 # onto = get_ontology('http://www.semanticweb.org/spatial').load()
 ontoImp = get_ontology('http://www.semanticweb.org/impact').load()

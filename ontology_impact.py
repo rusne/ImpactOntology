@@ -93,7 +93,7 @@ with ontology:
 
     class ImpactZone(Thing):
 
-        def draw(self):
+        def draw_impact(self):
             for prop in self.get_properties():
                 for value in prop[self]:
                     print(prop.python_name, value)
@@ -143,6 +143,10 @@ with ontology:
                     self.contains.append(element)
 
         def draw(self):
-            for prop in self.get_properties():
-                for value in prop[self]:
-                    print(prop.python_name, value)
+            info = dict()
+            info["comment"] = self.bears[0].comment
+            info["effect"] = self.bears[0]
+            info["source"] = self.bears[0].hasSource[0]
+            info["magnitude"] = self.bears[0].Magnitude[0]
+            info["geom"] = wkt2list(self.Geometry[0])
+            return info

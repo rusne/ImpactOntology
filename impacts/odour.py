@@ -31,7 +31,8 @@ with o:
 
         def __init__(self, *args, **kwargs):
             super(SulfurEmission, self).__init__(*args, **kwargs)
-            self.hasFootprint[0].SpreadingDistance = [10000]
+            self.hasFootprint[0].SpreadingDistance = [1000]
+            self.comment = ['Emission of sulfur compounds']
 
             effectzone = o.EffectZone(self.name + '_EZ',
                                       hasFootprint=[self.hasFootprint[0]],
@@ -45,7 +46,8 @@ with o:
 
         def __init__(self, *args, **kwargs):
             super(FattyAcidEmission, self).__init__(*args, **kwargs)
-            self.hasFootprint[0].SpreadingDistance = [5000]
+            self.hasFootprint[0].SpreadingDistance = [300]
+            self.comment = ['Emission of acidic compounds']
 
             effectzone = o.EffectZone(self.name + '_EZ',
                                       hasFootprint=[self.hasFootprint[0]],

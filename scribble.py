@@ -1,9 +1,10 @@
 from owlready2 import *
+from functions import *
 
 
-onto = get_ontology("http://test.org/onto.owl")
+# onto = get_ontology("http://test.org/onto.owl")
 
-onto_path.append('/Users/rusnesileryte/Google Drive/PhD/Ontology/ImpactOntology/')
+onto_path.append('ontologies/')
 ontoImp = get_ontology('http://www.semanticweb.org/impact').load()
 # ontoSpa = get_ontology('http://www.semanticweb.org/spatial').load()
 
@@ -61,7 +62,7 @@ with ontoImp:
     #     equivalent_to = [ontoImp.EffectZone]
 
 
-sync_reasoner()
+# sync_reasoner()
 
 # print(list(ontoImp.ContextElement.instances()))
 # for receiver in ontoImp.ImpactReceiver.instances():
@@ -70,9 +71,12 @@ sync_reasoner()
 # for element in ontoImp.ContextElement.instances():
 #     print(element, element.isWithin)
 
+zones = []
 for effectzone in ontoImp.EffectZone.instances():
     print(effectzone)
-    effectzone.draw()
+    zones.append(effectzone.draw())
+write_shp('output/effectzones', 5, zones)
+
     # print(effectzone.bears[0].hasSource[0].isAt)
     # print(effectzone.hasRoot)
 # for actor in ontoImp.Actor.instances():

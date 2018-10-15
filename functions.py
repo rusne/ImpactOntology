@@ -32,9 +32,24 @@ def read_shp(filepath, filename):
 
 def write_shp(filepathname, shtype, objects):
     # POINT = 1; POLYLINE = 3; POLYGON = 5; MULTIPOINT = 8
-    w = shapefile.Writer(filepathname, shapeType=shtype)
-    
-    w.close()
+    w = shapefile.Writer(shtype)
+    for i in range(len(objects)):
+        obj = objects[i]
+        rec = []
+        for key in sorted(obj.keys()):
+            if i == 0:
+            #create fields
+                w.field(key, 'C')
+            if key == 'geom':
+                if shtype == 1:
+                    w.point(obj[key])
+                elif shtype == 3:
+                    w.line(obj[key])
+                elif shtype == 5:
+                    w.poly(obj[key])
+            rec.append(obj[key])
+        w.record(*rec)
+    w.save(filepathname)
 
 def make_point(shpoint):
     # turn shapefile point into WKT point
@@ -67,3 +82,13 @@ def geom2wkt(geom):
     from shapely.wkt import dumps
     wkt_geom = dumps(geom)
     return wkt_geom
+
+
+def wkt2list(geom):
+    # turn WKT geometry into a generic list of coordinates
+    ext = list(wkt2geom(geom).exterior.coords)
+    int = list(wkt2geom(geom).interiors)
+    if int:
+        return [ext, int]
+    else:
+        return [ext]
