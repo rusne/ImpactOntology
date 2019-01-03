@@ -30,26 +30,28 @@ def read_shp(filepath, filename):
     return header, attribute_table
 
 
-def write_shp(filepathname, shtype, objects):
+def write_shp(filepathname, shtype, fields, objects):
     # POINT = 1; POLYLINE = 3; POLYGON = 5; MULTIPOINT = 8
     w = shapefile.Writer(shtype)
+    attributes = []
+    for field in fields:
+        #create fields
+        w.field(**field)
+        attributes.append(field["name"])
     for i in range(len(objects)):
         obj = objects[i]
         rec = []
-        for key in sorted(obj.keys()):
-            if i == 0:
-            #create fields
-                w.field(key, 'C')
-            if key == 'geom':
-                if shtype == 1:
-                    w.point(obj[key])
-                elif shtype == 3:
-                    w.line(obj[key])
-                elif shtype == 5:
-                    w.poly(obj[key])
-            rec.append(obj[key])
+        for att in attributes:
+            rec.append(obj[att])
         w.record(*rec)
+        if shtype == 1:
+            w.point(obj["geom"])
+        elif shtype == 3:
+            w.line(obj["geom"])
+        elif shtype == 5:
+            w.poly(obj["geom"])
     w.save(filepathname)
+    print('\n {0} has been written \n'.format(filepathname))
 
 def make_point(shpoint):
     # turn shapefile point into WKT point
@@ -92,3 +94,25 @@ def wkt2list(geom):
         return [ext, int]
     else:
         return [ext]
+
+def plot_patches(patches):
+    fig, ax = plt.subplots()
+    colors = 100*np.random.rand(len(patches))
+    p = PatchCollection(patches, alpha=0.4)
+    p.set_array(np.array(colors))
+    ax.add_collection(p)
+    fig.colorbar(p, ax=ax)
+
+    plt.show()
+
+
+def shape2patch(sh):
+    # type: 'c' - circle,
+    print(sh)
+    t, param = eval(sh)
+
+    if t == 'c':
+        R, (x, y) = param
+        ptch = Circle((x, y), R)
+
+    return ptch

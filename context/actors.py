@@ -9,8 +9,6 @@ def load_as_context(o):
     filepath = "./context/actors/"
     filename = "actors_RD.shp"
 
-    localities = []
-    actors = []
     head, attr = read_shp(filepath, filename)
     i_name = head.index('name')
     i_geom = head.index('geom')
@@ -33,22 +31,18 @@ def load_as_context(o):
                         )
 
         if sulfur_int != 0:
-            emission = o.SulfurEmission("SulfurEmission" + str(i),
+            sulf_emission = o.SulfurEmission("SulfurEmission" + str(i),
                                         Magnitude=[sulfur_int],
                                         hasSource=[actor]
                                         )
             # emissions.append(emission)
 
         if acid_int != 0:
-            emission = o.FattyAcidEmission("FattyAcidEmission" + str(i),
+            ac_emission = o.FattyAcidEmission("FattyAcidEmission" + str(i),
                                            Magnitude=[acid_int],
                                            hasSource=[actor]
                                            )
             # emissions.append(emission)
-
-
-        localities.append(loc)
-        actors.append(actor)
         i += 1
 
 

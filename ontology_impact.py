@@ -1,6 +1,7 @@
 from owlready2 import *
 from functions import *
-ontology = get_ontology('http://www.semanticweb.org/impact').load()
+onto_path.append('ontologies/')
+ontology = get_ontology('http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact').load()
 
 import numpy as np
 from matplotlib.patches import Circle, Polygon
@@ -130,6 +131,11 @@ with ontology:
 
     class EffectZone(Thing):
 
+        shp_fields = [{'name': "comment", 'fieldType': 'C'},
+                      {'name': "effect", 'fieldType': 'C'},
+                      {'name': "source", 'fieldType': 'C'},
+                      {'name': "magnitude", 'fieldType': 'F', 'decimal': 6}]
+
         def __init__(self, *args, **kwargs):
             super(ontology.EffectZone, self).__init__(*args, **kwargs)
             root = self.hasRoot[0].Geometry[0]
@@ -142,11 +148,11 @@ with ontology:
                 if wkt2geom(zone).intersects(wkt2geom(loc)):
                     self.contains.append(element)
 
-        def draw(self):
+        def draw_effect(self):
             info = dict()
-            info["comment"] = self.bears[0].comment
-            info["effect"] = self.bears[0]
-            info["source"] = self.bears[0].hasSource[0]
+            info["comment"] = self.bears[0].comment[0]
+            info["effect"] = self.bears[0].is_a[0].name
+            info["source"] = self.bears[0].hasSource[0].name
             info["magnitude"] = self.bears[0].Magnitude[0]
             info["geom"] = wkt2list(self.Geometry[0])
             return info

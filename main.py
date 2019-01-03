@@ -1,5 +1,5 @@
 from owlready2 import *
-
+from functions import *
 
 onto_path.append('ontologies/')
 # onto_asmfa = get_ontology('http://www.semanticweb.org/AS-MFA').load()
@@ -14,62 +14,32 @@ ontoSpa = get_ontology('http://www.semanticweb.org/spatial').load()
 # onto.imported_ontologies.append(onto_impact)
 # print(onto.imported_ontologies)
 
-def plot_patches(patches):
-    fig, ax = plt.subplots()
-    colors = 100*np.random.rand(len(patches))
-    p = PatchCollection(patches, alpha=0.4)
-    p.set_array(np.array(colors))
-    ax.add_collection(p)
-    fig.colorbar(p, ax=ax)
+def where_is(what, onto):
 
-    plt.show()
-
-
-def shape2patch(sh):
-    # type: 'c' - circle,
-    print(sh)
-    t, param = eval(sh)
-
-    if t == 'c':
-        R, (x, y) = param
-        ptch = Circle((x, y), R)
-
-    return ptch
-
-def where_is(entity):
-
-    pass
+    locs = []
+    for item in onto.search(is_a=what):
+        for loc in item.hasLocation.indirect():
+            locs.append(loc.draw())
+    write_shp('output/{0}'.format(what.name),
+              shtype=5,
+              fields=what.shp_fields,
+              objects=locs)
 
 
 with ontoImp:
 
     import ontology_impact
-    ontology_impact.load(ontoImp)
 
     """---------IMPACTS---------"""
 
     from impacts import odour
-    odour.addTo(ontoImp)
-
     # from impacts import accessibility
-    # accessibility.add(onto)
 
     """---------CONTEXT---------"""
 
     from context import actors, population
     actors.load_as_context(ontoImp)
     population.load_as_context(ontoImp)
-    # emissions.load_as_context(ontoImp)
-
-    """-------SPATIALISING-------"""
-
-    # for effectzone in ontoImp.EffectZone.instances():
-    #     print(effectzone.bears[0].hasSource[0].isAt)
-    #     effectzone.hasRoot = []
-    #     for effect in effectzone.bears:
-    #         for source in effect.hasSource:
-    #             for loc in source.isAt:
-    #                 effectzone.hasRoot.append(loc)
 
     """---------MATCHING---------"""
 
@@ -84,21 +54,12 @@ with ontoSpa:
                          ontoImp.Population
                          ]
 
-    class hasAnchor(ObjectProperty):
-        equivalent_to = [ontoImp.hasSource]
+    # class hasAnchor(ObjectProperty):
+    #     equivalent_to = [ontoImp.hasSource]
+    #
+    # class hasRelation(ObjectProperty):
+    #     equivalent_to = [ontoImp.hasFootprint]
 
-    class hasRelation(ObjectProperty):
-        equivalent_to = [ontoImp.hasFootprint]
-
-    # class CoreConcept(Thing):
-    #     equivalent_to = [ontoImp.EffectZone]
-
-
-    # PropertyChain([ontoImp.receivesImpact, ontoImp.hasSource])
-
-    # class geometry(DataProperty):
-    #     pass
-        # NEEDS A PROPERTY CHAIN
 
 
 # ####### Accessibility ####### #
@@ -117,20 +78,4 @@ with ontoSpa:
 
 sync_reasoner()
 
-
-# print(odour_impact.find_sources())
-# print(list(actor_source.causes.indirect()))
-
-for effect in ontoImp.Effect.instances():
-    effectzone = effect.occursAt
-    print(effect, effectzone)
-
-for zone in ontoImp.EffectZone.instances():
-    print(zone)
-
-    # ontoImp.Odour("Odour1").find_sources()
-# print(odour_impact.find_effects())
-# onto.Odour("Odour1").draw_impact()
-# print(ontoImp.Actor("Incinerator").causes)
-# for i in ontoImp.ImpactReceiver.instances():
-#     print(i)
+where_is(ontoImp.SulfurEmission, ontoImp)

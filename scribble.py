@@ -2,18 +2,33 @@ from owlready2 import *
 from functions import *
 
 
-# onto = get_ontology("http://test.org/onto.owl")
+# ontoImp = get_ontology("http://test.org/onto.owl")
 
 onto_path.append('ontologies/')
-ontoImp = get_ontology('http://www.semanticweb.org/impact').load()
-# ontoSpa = get_ontology('http://www.semanticweb.org/spatial').load()
+ontoImp = get_ontology('http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact').load()
+ontoSpa = get_ontology('http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial').load()
+
+# o = get_ontology("http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact")
+
+def where_is(what, onto):
+
+    locs = []
+    for item in onto.search(is_a=what):
+        for loc in set(item.hasLocation.indirect()):
+            print(loc.is_a)
+            # locs.append(loc.draw())
+    # write_shp('output/{0}'.format(what.name),
+    #           shtype=5,
+    #           fields=onto.Location.shp_fields,
+    #           objects=locs)
 
 
 # def nothin():
+
 with ontoImp:
 
     import ontology_impact
-    # ontology_impact.load(ontoImp)
+
 
     """---------IMPACTS---------"""
 
@@ -30,6 +45,7 @@ with ontoImp:
     actors.load_as_context(ontoImp)
 
 
+
     """-------SPATIALISING-------"""
 
     # for effectzone in ontoImp.EffectZone.instances():
@@ -40,29 +56,36 @@ with ontoImp:
     #             for loc in source.isAt:
     #                 effectzone.hasRoot.append(loc)
 
-"""---------MATCHING---------"""
+    """---------MATCHING---------"""
+with ontoSpa:
 
-# with ontoSpa:
-#
-#     import ontology_spatial
-#     ontology_spatial.load(ontoSpa)
-#
-#     class Entity(Thing):
-#         equivalent_to = [ontoImp.Actor |
-#                          ontoImp.Emission |
-#                          ontoImp.Population]
-#
-#     class hasAnchor(ObjectProperty):
-#         equivalent_to = [ontoImp.hasSource]
-#
-#     class hasRelation(ObjectProperty):
-#         equivalent_to = [ontoImp.hasFootprint]
+    import ontology_spatial
 
-    # class CoreConcept(Thing):
-    #     equivalent_to = [ontoImp.EffectZone]
+    class Entity(Thing):
+        equivalent_to = [ontoImp.ContextElement |
+                         ontoImp.Effect]
+
+    class hasAnchor(ObjectProperty):
+        equivalent_to = [ontoImp.hasRoot]
+
+    class hasRelation(ObjectProperty):
+        equivalent_to = [ontoImp.hasFootprint]
+
+    class hasLocation(ObjectProperty):
+        equivalent_to = [ontoImp.isAt,
+                         ontoImp.occursAt]
+
+    class SpatialRelation(ontoSpa.Relation):
+        equivalent_to = [ontoImp.Footprint]
 
 
-# sync_reasoner()
+
+sync_reasoner()
+
+print(list(ontoSpa.hasAnchor.get_relations()))
+# where_is(ontoImp.SulfurEmission, ontoImp)
+# where_is(ontoImp.EffectZone, ontoImp)
+
 
 # print(list(ontoImp.ContextElement.instances()))
 # for receiver in ontoImp.ImpactReceiver.instances():
@@ -71,28 +94,10 @@ with ontoImp:
 # for element in ontoImp.ContextElement.instances():
 #     print(element, element.isWithin)
 
-zones = []
-for effectzone in ontoImp.EffectZone.instances():
-    print(effectzone)
-    zones.append(effectzone.draw())
-write_shp('output/effectzones', 5, zones)
 
-    # print(effectzone.bears[0].hasSource[0].isAt)
-    # print(effectzone.hasRoot)
-# for actor in ontoImp.Actor.instances():
-#     for em in actor.causes:
-#         print(em.hasFootprint)
 
-# for inst in ontoImp.Emission.instances():
-#     print(inst, inst.Magnitude)
 
-# for inst in ontoImp.Emission.instances():
-#     for fp in inst.hasFootprint:
-#         print(fp.SpreadingDistance)
 
-# for inst in ontoSpa.Entity.instances():
-#     print(inst.is_a)
-    # inst.draw()
 
 
 # hasFootprint some (BufferFootprint and SpreadingDistance value 10000 and Unit value "m")

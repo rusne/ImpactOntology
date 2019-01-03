@@ -1,10 +1,10 @@
 from owlready2 import *
 #
-# onto_path.append('/Users/rusnesileryte/Google Drive/PhD/Ontology/ImpactOntology/')
-# onto = get_ontology('http://www.semanticweb.org/Spatial').load()
+onto_path.append('ontologies/')
+onto = get_ontology('http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial').load()
 
-# with onto:
-def load(onto):
+with onto:
+# def load(onto):
 
     class Object(onto.CoreConcept):
         # equivalent_to = [onto.identity.some(str)]
@@ -14,10 +14,20 @@ def load(onto):
             print(self.identity, self.point)
 
     class Location(onto.CoreConcept):
-        pass
+        shp_fields = [{'name': "comment", 'fieldType': 'C'},
+                      {'name': "anchor", 'fieldType': 'C'},
+                      {'name': "relation", 'fieldType': 'C'},
+                      ]
 
         def draw(self):
-            print(self.hasAnchor, self.hasRelation)
+            print('I am drawing', self.name)
+            print(list(self.get_properties()))
+            info = dict()
+            info["comment"] = self.bears[0].comment[0]
+            info["anchor"] = self.hasAnchor[0].name
+            info["relation"] = self.hasRelation[0].name
+            info["geom"] = wkt2list(self.Geometry[0])
+            return info
 
     class Field(onto.CoreConcept):
         pass

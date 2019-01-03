@@ -30,7 +30,8 @@ def load_as_context(o):
         popul = o.Population(name,
                              numericValue=[pop],
                              unit=['People'],
-                             isAt=[o.Locality(name + '_poly')])
+                             isAt=[loc]
+                             )
         localities.append(loc)
         populations.append(popul)
 

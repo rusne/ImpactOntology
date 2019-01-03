@@ -1,6 +1,6 @@
 from owlready2 import *
 # onto_path.append('/Users/rusnesileryte/Google Drive/PhD/Ontology/ImpactOntology/')
-o = get_ontology('http://www.semanticweb.org/impact').load()
+o = get_ontology('http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact').load()
 
 """Impact Passport"""
 
@@ -39,7 +39,7 @@ with o:
                                       hasRoot=self.hasSource[0].isAt
                                       )
             self.occursAt.append(effectzone)
-            # self.affects = list(o.Population.instances())
+
 
 
     class FattyAcidEmission(o.Emission):

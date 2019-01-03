@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact">
         <owl:imports rdf:resource="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl"/>
-        <owlready_ontology:python_module>main</owlready_ontology:python_module>
+        <owlready_ontology:python_module>ontology_impact</owlready_ontology:python_module>
     </owl:Ontology>
     
 
