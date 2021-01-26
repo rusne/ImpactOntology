@@ -90,6 +90,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#hasState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#hasState">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#isAt -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#isAt"/>
@@ -184,6 +192,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#AlternativeState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#AlternativeState">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#BaselineState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#BaselineState">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#State"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#BufferFootprint -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#BufferFootprint">
@@ -201,6 +225,12 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#ContextElement -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#ContextElement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#hasState"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#isAt"/>
@@ -395,6 +425,39 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#Footprint"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#NeutralState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#NeutralState">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#State"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#AlternativeState"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#BaselineState"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/5/impact#NeutralState"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 

@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#"
+     xml:base="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial"
+     xmlns:mini-spatial="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial">
+        <python_module>ontology_spatial</python_module>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#python_module -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#python_module"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#hasAnchor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#hasAnchor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#isAnchorOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#hasRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#hasRelation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#isAnchorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#isAnchorOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#relates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#relates"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#Anchor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#Anchor">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#isAnchorOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#CoreConcept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#CoreConcept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#Entity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#Location">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#hasAnchor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#Anchor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#hasRelation"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#SpatialRelation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#CoreConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#NetworkRelation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#NetworkRelation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#relates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#Entity"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#Relation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#Relation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#SpatialRelation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#SpatialRelation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/mini-spatial#Relation"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
