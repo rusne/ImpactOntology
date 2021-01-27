@@ -6,32 +6,25 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism">
-    <Prefix name="" IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Declaration>
-        <Class IRI="#BiophysicalProperty"/>
-    </Declaration>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">A socio-economic metabolism ontology as described in ﻿
+Pauliuk S, Majeau-Bettez G, Müller DB, Hertwich EG (2016) 
+Toward a Practical Ontology for Socioeconomic Metabolism. 
+J Ind Ecol 20:1260–1272 . 
+doi: 10.1111/jiec.12386</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="#Event"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ExtensiveProperty"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ExtrinsicProperty"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Flow"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#IntensiveProperty"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#IntrinsicProperty"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Object"/>
@@ -40,57 +33,488 @@
         <Class IRI="#Process"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Property"/>
+        <Class IRI="#Service"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Set"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SocialEconomicProperty"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Stock"/>
     </Declaration>
-    <SubClassOf>
-        <Class IRI="#BiophysicalProperty"/>
-        <Class IRI="#Property"/>
-    </SubClassOf>
+    <Declaration>
+        <ObjectProperty IRI="#belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#changesProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#providesServiceTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#BiophysicalProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CharacterizationFactor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ChemicalStructure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EcosystemImpact"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ElementalComposition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ExtensiveProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ExtrinsicProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#HeatCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IntensiveProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IntrinsicProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#KineticEnergy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Mass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MolarHeatCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MolarMass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Ownership"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SocialEconomicProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SpatialLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SpecificWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Speed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Temperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TemporalLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Utility"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Weight"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Object"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#belongsTo"/>
+                <Class IRI="#Stock"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#involvedIn"/>
+                <Class IRI="#Event"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#providesServiceTo"/>
+            <Class IRI="#Process"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#Event"/>
         <Class IRI="#Set"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ExtensiveProperty"/>
-        <Class IRI="#Property"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ExtrinsicProperty"/>
-        <Class IRI="#Property"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Flow"/>
         <Class IRI="#Event"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#IntensiveProperty"/>
-        <Class IRI="#Property"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#IntrinsicProperty"/>
-        <Class IRI="#Property"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Process"/>
         <Class IRI="#Event"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SocialEconomicProperty"/>
-        <Class IRI="#Property"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Stock"/>
         <Class IRI="#Set"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Event"/>
+        <Class IRI="#Stock"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Flow"/>
+        <Class IRI="#Process"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Flow"/>
+        <Class IRI="#Process"/>
+        <Class IRI="#Service"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#belongsTo"/>
+        <ObjectProperty IRI="#contains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#involvedIn"/>
+        <ObjectProperty IRI="#involves"/>
+    </InverseObjectProperties>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#belongsTo"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#changesProperty"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#contains"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasProperty"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#involvedIn"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#involves"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsTo"/>
+        <Class IRI="#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#changesProperty"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvedIn"/>
+        <Class IRI="#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involves"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#providesServiceTo"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvedIn"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involves"/>
+        <Class IRI="#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#providesServiceTo"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CharacterizationFactor"/>
+        <DataProperty IRI="#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CharacterizationFactor"/>
+        <DataProperty IRI="#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CharacterizationFactor"/>
+        <DataProperty IRI="#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ChemicalStructure"/>
+        <DataProperty IRI="#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ChemicalStructure"/>
+        <DataProperty IRI="#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ChemicalStructure"/>
+        <DataProperty IRI="#IntrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EcosystemImpact"/>
+        <DataProperty IRI="#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EcosystemImpact"/>
+        <DataProperty IRI="#ExtensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EcosystemImpact"/>
+        <DataProperty IRI="#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ElementalComposition"/>
+        <DataProperty IRI="#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ElementalComposition"/>
+        <DataProperty IRI="#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ElementalComposition"/>
+        <DataProperty IRI="#IntrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#HeatCapacity"/>
+        <DataProperty IRI="#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#HeatCapacity"/>
+        <DataProperty IRI="#ExtensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#HeatCapacity"/>
+        <DataProperty IRI="#IntrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#KineticEnergy"/>
+        <DataProperty IRI="#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#KineticEnergy"/>
+        <DataProperty IRI="#ExtensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#KineticEnergy"/>
+        <DataProperty IRI="#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Location"/>
+        <DataProperty IRI="#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Location"/>
+        <DataProperty IRI="#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Location"/>
+        <DataProperty IRI="#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Mass"/>
+        <DataProperty IRI="#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Mass"/>
+        <DataProperty IRI="#ExtensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Mass"/>
+        <DataProperty IRI="#IntrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MolarHeatCapacity"/>
+        <DataProperty IRI="#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MolarHeatCapacity"/>
+        <DataProperty IRI="#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MolarHeatCapacity"/>
+        <DataProperty IRI="#IntrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MolarMass"/>
+        <DataProperty IRI="#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MolarMass"/>
+        <DataProperty IRI="#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MolarMass"/>
+        <DataProperty IRI="#IntrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Ownership"/>
+        <DataProperty IRI="#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Ownership"/>
+        <DataProperty IRI="#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Ownership"/>
+        <DataProperty IRI="#SocialEconomicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Price"/>
+        <DataProperty IRI="#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Price"/>
+        <DataProperty IRI="#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Price"/>
+        <DataProperty IRI="#SocialEconomicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SpatialLocation"/>
+        <DataProperty IRI="#Location"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SpecificWeight"/>
+        <DataProperty IRI="#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SpecificWeight"/>
+        <DataProperty IRI="#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SpecificWeight"/>
+        <DataProperty IRI="#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Speed"/>
+        <DataProperty IRI="#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Speed"/>
+        <DataProperty IRI="#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Speed"/>
+        <DataProperty IRI="#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Temperature"/>
+        <DataProperty IRI="#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Temperature"/>
+        <DataProperty IRI="#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Temperature"/>
+        <DataProperty IRI="#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TemporalLocation"/>
+        <DataProperty IRI="#Location"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Utility"/>
+        <DataProperty IRI="#ExtensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Utility"/>
+        <DataProperty IRI="#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Utility"/>
+        <DataProperty IRI="#SocialEconomicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Value"/>
+        <DataProperty IRI="#ExtensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Value"/>
+        <DataProperty IRI="#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Value"/>
+        <DataProperty IRI="#SocialEconomicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Weight"/>
+        <DataProperty IRI="#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Weight"/>
+        <DataProperty IRI="#ExtensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Weight"/>
+        <DataProperty IRI="#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#BiophysicalProperty"/>
+        <Class IRI="#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ExtensiveProperty"/>
+        <Class IRI="#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ExtrinsicProperty"/>
+        <Class IRI="#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IntensiveProperty"/>
+        <Class IRI="#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IntrinsicProperty"/>
+        <Class IRI="#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SocialEconomicProperty"/>
+        <Class IRI="#Object"/>
+    </DataPropertyDomain>
+    <DisjointDataProperties>
+        <DataProperty IRI="#BiophysicalProperty"/>
+        <DataProperty IRI="#SocialEconomicProperty"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="#ExtensiveProperty"/>
+        <DataProperty IRI="#IntensiveProperty"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="#ExtrinsicProperty"/>
+        <DataProperty IRI="#IntrinsicProperty"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="#IntrinsicProperty"/>
+        <DataProperty IRI="#SocialEconomicProperty"/>
+    </DisjointDataProperties>
 </Ontology>
 
 
