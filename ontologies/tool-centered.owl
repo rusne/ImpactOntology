@@ -21,22 +21,52 @@
         <Class IRI="#Area"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CaseStudyArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Destination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#District"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Flow"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ImpactTarget"/>
+        <Class IRI="#FlowChange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FocusArea"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Location"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MaterialFraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Municipality"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Origin"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Stakeholder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StatusQuo"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Stock"/>
@@ -78,13 +108,7 @@
         <Class IRI="/AdministrativeLocation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/AffectedFlow"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Aim"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/AreaOfProtection"/>
     </Declaration>
     <Declaration>
         <Class IRI="/CaseStudy"/>
@@ -102,9 +126,6 @@
         <Class IRI="/FlowIndicator"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/FlowReference"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/FlowTarget"/>
     </Declaration>
     <Declaration>
@@ -114,16 +135,13 @@
         <Class IRI="/GroupStock"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/ImpactCategory"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/ImplementationArea"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/ImplementationQuantity"/>
+        <Class IRI="/ImplementationQuestion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/ImplementationQuestion"/>
+        <Class IRI="/ImplementationRatio"/>
     </Declaration>
     <Declaration>
         <Class IRI="/KeyFlow"/>
@@ -165,10 +183,37 @@
         <Class IRI="/StrategyFlowFraction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/TargetSpatialReference"/>
+        <Class IRI="/Waste"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Waste"/>
+        <ObjectProperty IRI="#affectsFlow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMaterialFraction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSolutionPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDestinationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOriginOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#receivesFlowFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#representsStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sendsFlowTo"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/asmfa_activity#contains"/>
@@ -177,325 +222,58 @@
         <ObjectProperty IRI="/asmfa_activity2activity#hasComposition"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/asmfa_activity2activity#ref-keyflow_id"/>
+        <ObjectProperty IRI="/asmfa_activity2activity#hasProcess"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/asmfa_activity2activity#ref-origin_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_activity2activity#ref-process_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_activity2activity#ref-publication_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_activitygroup#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_activitystock#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_activitystock#ref-origin_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_activitystock#ref-publication_id"/>
+        <ObjectProperty IRI="/asmfa_activity2activity#publishedIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/asmfa_actor#ref-reason_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_actor2actor#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_actor2actor#ref-origin_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_actor2actor#ref-process_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_actor2actor#ref-publication_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_actorstock#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_actorstock#ref-origin_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_actorstock#ref-publication_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_composition#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_fractionflow#ref-flow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_fractionflow#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_fractionflow#ref-material_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_fractionflow#ref-origin_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_fractionflow#ref-process_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_fractionflow#ref-publication_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_fractionflow#ref-stock_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_fractionflow#ref-strategy_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_group2group#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_group2group#ref-origin_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_group2group#ref-process_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_group2group#ref-publication_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_groupstock#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_groupstock#ref-origin_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_groupstock#ref-publication_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_keyflowincasestudy#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_material#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_material#ref-parent_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_productfraction#ref-material_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_productfraction#ref-publication_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_strategyfractionflow#ref-fractionflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_strategyfractionflow#ref-material_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_strategyfractionflow#ref-process_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_strategyfractionflow#ref-strategy_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/auth_group_permissions#ref-group_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/auth_group_permissions#ref-permission_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/auth_user_groups#ref-group_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/auth_user_groups#ref-user_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/auth_user_user_permissions#ref-permission_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/auth_user_user_permissions#ref-user_id"/>
+        <ObjectProperty IRI="/asmfa_strategyfractionflow#affectsMaterial"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/changes_affectedflow#hasDestination"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/changes_affectedflow#ref-material_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/changes_affectedflow#ref-origin_activity_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/changes_affectedflow#ref-process_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/changes_affectedflow#ref-solution_part_id"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/changes_flowreference#hasOrigin"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/changes_flowreference#ref-material_id"/>
+        <ObjectProperty IRI="/changes_implementationarea#affectsImplementationArea"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/changes_flowreference#ref-origin_activity_id"/>
+        <ObjectProperty IRI="/changes_implementationquantity#hasImplementationQuestion"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/changes_flowreference#ref-origin_area_id"/>
+        <ObjectProperty IRI="/changes_implementationquantity#hasImplementationRatio"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/changes_flowreference#ref-process_id"/>
+        <ObjectProperty IRI="/changes_solutionpart#causesFlowChange"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/changes_implementationarea#ref-implementation_id"/>
+        <ObjectProperty IRI="/changes_strategy#createdByUser"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/changes_implementationarea#ref-possible_implementation_area_id"/>
+        <ObjectProperty IRI="/statusquo_aim#hasAim"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/changes_implementationquantity#ref-implementation_id"/>
+        <ObjectProperty IRI="/statusquo_flowindicator#hasFlowA"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/changes_implementationquantity#ref-question_id"/>
+        <ObjectProperty IRI="/statusquo_flowindicator#hasFlowB"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/changes_implementationquestion#ref-solution_id"/>
+        <ObjectProperty IRI="/statusquo_flowtarget#measuredByIndicator"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/changes_possibleimplementationarea#ref-solution_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/changes_solution#ref-solution_category_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/changes_solutioncategory#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/changes_solutioninstrategy#ref-solution_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/changes_solutioninstrategy#ref-strategy_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/changes_solutioninstrategy_participants#ref-solutioninstrategy_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/changes_solutioninstrategy_participants#ref-stakeholder_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/changes_solutionpart#ref-flow_changes_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/changes_solutionpart#ref-flow_reference_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/changes_solutionpart#ref-question_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/changes_solutionpart#ref-solution_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/changes_strategy#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/changes_strategy#ref-user_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/conclusions_conclusion#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/conclusions_conclusion#ref-section_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/django_admin_log#ref-user_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/layer#ref-topology_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/login_profile#ref-user_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/login_userincasestudy#ref-user_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/publications_bootstrap_catalog_publications#ref-publication_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/publications_bootstrap_publication#ref-type_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/publications_bootstrap_publicationfile#ref-publication_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/publications_bootstrap_publicationlink#ref-publication_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/publications_publicationincasestudy#ref-publication_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/reversion_revision#ref-user_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/reversion_version#ref-revision_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/statusquo_aim#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/statusquo_areaofprotection#ref-sustainability_field_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/statusquo_challenge#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/statusquo_flowfilter#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/statusquo_flowfilter#ref-material_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/statusquo_flowfilter_areas#ref-flowfilter_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/statusquo_flowindicator#ref-flow_a_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/statusquo_flowindicator#ref-flow_b_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/statusquo_flowindicator#ref-keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/statusquo_flowtarget#ref-indicator_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/statusquo_flowtarget#ref-target_value_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/statusquo_flowtarget#ref-userobjective_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/statusquo_impactcategoryinsustainability#ref-impact_category_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/statusquo_indicatorflow_materials#ref-indicatorflow_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/statusquo_indicatorflow_materials#ref-material_id"/>
+        <ObjectProperty IRI="/statusquo_indicatorflow_materials#includesMaterial"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/statusquo_userobjective#hasAim"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/statusquo_userobjective#ref-user_id"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/statusquo_userobjective_target_areas#ref-userobjective_id"/>
+        <ObjectProperty IRI="/statusquo_userobjective_target_areas#includesArea"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
@@ -504,3160 +282,133 @@
         <ObjectProperty IRI="/studyarea_area#hasAdminLevel"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/studyarea_area#ref-parent_area_id"/>
+        <DataProperty IRI="/actor_complete#hasAddress"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/studyarea_layer#ref-style_id"/>
+        <DataProperty IRI="/actor_complete#hasDescription"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/studyarea_layer#ref-wms_layer_id"/>
+        <DataProperty IRI="/actor_complete#hasGeom"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/studyarea_stakeholder#ref-stakeholder_category_id"/>
+        <DataProperty IRI="/actor_complete#hasNACEcode"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/wms_client_layerstyle#ref-wmslayer_id"/>
+        <DataProperty IRI="/area_casestudy#hasName"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/wms_client_wmslayer#ref-wmsresource_id"/>
+        <DataProperty IRI="/asmfa_activity2activity#hasAmount"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/wmsresources_wmsresourceincasestudy#ref-wmsresource_id"/>
+        <DataProperty IRI="/asmfa_activity2activity#hasYear"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/actor_complete#BvDid"/>
+        <DataProperty IRI="/asmfa_fractionflow#isAvoidable"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/actor_complete#BvDii"/>
+        <DataProperty IRI="/asmfa_fractionflow#isHazardous"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/actor_complete#activity_id"/>
+        <DataProperty IRI="/asmfa_productfraction#hasFraction"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/actor_complete#address"/>
+        <DataProperty IRI="/changes_implementationquantity#hasRatio"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/actor_complete#city"/>
+        <DataProperty IRI="/changes_implementationquestion#hasMaxValue"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/actor_complete#consCode"/>
+        <DataProperty IRI="/changes_implementationquestion#hasMinValue"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/actor_complete#country"/>
+        <DataProperty IRI="/changes_implementationquestion#hasQuestion"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/actor_complete#description"/>
+        <DataProperty IRI="/login_casestudy#hasTargetYear"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/actor_complete#description_eng"/>
+        <DataProperty IRI="/publications#hasCitekey"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/actor_complete#employees"/>
+        <DataProperty IRI="/publications_bootstrap_publication#hasAuthors"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/actor_complete#geom"/>
+        <DataProperty IRI="/publications_bootstrap_publication#hasDOI"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/actor_complete#id"/>
+        <DataProperty IRI="/publications_bootstrap_publication#hasTargetValue"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/actor_complete#keyflow_id"/>
+        <DataProperty IRI="/publications_bootstrap_publication#hasTitle"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/actor_complete#nace"/>
+        <DataProperty IRI="/statusquo_targetvalue#hasFactor"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/actor_complete#name"/>
+        <DataProperty IRI="/studyarea_area#hasInhabitants"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/actor_complete#postcode"/>
+        <Datatype IRI="http://www.opengis.net/ont/geosparql#wktLiteral"/>
     </Declaration>
-    <Declaration>
-        <DataProperty IRI="/actor_complete#turnover"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/actor_complete#website"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/actor_complete#year"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addr#arid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addr#fromarmid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addr#fromhn"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addr#fromtyp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addr#gid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addr#mtfcc"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addr#plus4"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addr#side"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addr#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addr#tlid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addr#toarmid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addr#tohn"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addr#totyp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addr#zip"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#aridl"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#aridr"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#edge_mtfcc"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#fullname"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#gid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#lfromhn"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#lfromtyp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#linearid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#ltohn"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#ltotyp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#offsetl"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#offsetr"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#parityl"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#parityr"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#plus4l"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#plus4r"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#rfromhn"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#rfromtyp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#rtohn"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#rtotyp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#the_geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#tlid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#zipl"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/addrfeat#zipr"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/area_casestudy#adminlevel_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/area_casestudy#area_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/area_casestudy#area_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/area_casestudy#casestudy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/area_casestudy#geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/area_casestudy#level"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/area_casestudy#level_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activity#activitygroup_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activity#done"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activity#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activity#nace"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activity#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activity2activity#amount"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activity2activity#composition_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activity2activity#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activity2activity#destination_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activity2activity#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activity2activity#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activity2activity#origin_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activity2activity#process_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activity2activity#publication_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activity2activity#waste"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activity2activity#year"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activitygroup#code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activitygroup#done"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activitygroup#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activitygroup#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activitygroup#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activitystock#amount"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activitystock#composition_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activitystock#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activitystock#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activitystock#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activitystock#origin_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activitystock#publication_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activitystock#waste"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activitystock#year"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activityview#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activityview#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_activityview#nace"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor#BvDid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor#BvDii"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor#activity_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor#consCode"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor#description_eng"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor#done"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor#employees"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor#included"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor#reason_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor#turnover"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor#turnover_currency"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor#website"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor#year"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor2actor#amount"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor2actor#composition_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor2actor#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor2actor#destination_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor2actor#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor2actor#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor2actor#origin_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor2actor#process_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor2actor#publication_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor2actor#waste"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actor2actor#year"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actorstock#amount"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actorstock#composition_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actorstock#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actorstock#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actorstock#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actorstock#origin_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actorstock#publication_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actorstock#waste"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actorstock#year"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actorview#BvDid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actorview#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_actorview#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_administrativelocation#actor_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_administrativelocation#address"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_administrativelocation#area_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_administrativelocation#city"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_administrativelocation#country"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_administrativelocation#geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_administrativelocation#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_administrativelocation#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_administrativelocation#postcode"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_composition#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_composition#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_composition#nace"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_composition#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#amount"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#avoidable"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#composition_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#destination_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#flow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#hazardous"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#material_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#nace"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#origin_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#process_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#publication_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#stock_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#strategy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#to_stock"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#waste"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_fractionflow#year"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_group2group#amount"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_group2group#composition_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_group2group#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_group2group#destination_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_group2group#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_group2group#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_group2group#origin_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_group2group#process_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_group2group#publication_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_group2group#waste"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_group2group#year"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_groupstock#amount"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_groupstock#composition_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_groupstock#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_groupstock#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_groupstock#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_groupstock#origin_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_groupstock#publication_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_groupstock#waste"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_groupstock#year"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_keyflow#code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_keyflow#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_keyflow#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_keyflowincasestudy#casestudy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_keyflowincasestudy#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_keyflowincasestudy#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_keyflowincasestudy#note"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_material#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_material#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_material#level"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_material#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_material#parent_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_operationallocation#actor_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_operationallocation#address"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_operationallocation#area_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_operationallocation#city"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_operationallocation#country"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_operationallocation#geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_operationallocation#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_operationallocation#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_operationallocation#postcode"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_process#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_process#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_product#composition_ptr_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_product#cpa"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_productfraction#avoidable"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_productfraction#composition_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_productfraction#fraction"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_productfraction#hazardous"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_productfraction#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_productfraction#material_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_productfraction#publication_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_reason#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_reason#reason"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_strategyfractionflow#amount"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_strategyfractionflow#fractionflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_strategyfractionflow#hazardous"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_strategyfractionflow#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_strategyfractionflow#material_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_strategyfractionflow#process_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_strategyfractionflow#strategy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_strategyfractionflow#waste"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_waste#composition_ptr_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_waste#ewc"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_waste#hazardous"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/asmfa_waste#wastetype"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_group#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_group#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_group_permissions#group_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_group_permissions#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_group_permissions#permission_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_permission#codename"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_permission#content_type_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_permission#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_permission#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user#date_joined"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user#email"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user#first_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user#is_active"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user#is_staff"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user#is_superuser"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user#last_login"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user#last_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user#password"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user#username"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user_groups#group_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user_groups#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user_groups#user_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user_user_permissions#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user_user_permissions#permission_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/auth_user_user_permissions#user_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/bg#aland"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/bg#awater"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/bg#bg_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/bg#blkgrpce"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/bg#countyfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/bg#funcstat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/bg#gid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/bg#intptlat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/bg#intptlon"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/bg#mtfcc"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/bg#namelsad"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/bg#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/bg#the_geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/bg#tractce"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_affectedflow#destination_activity_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_affectedflow#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_affectedflow#material_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_affectedflow#origin_activity_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_affectedflow#process_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_affectedflow#solution_part_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_flowreference#destination_activity_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_flowreference#destination_area_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_flowreference#hazardous"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_flowreference#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_flowreference#include_child_materials"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_flowreference#material_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_flowreference#origin_activity_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_flowreference#origin_area_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_flowreference#process_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_flowreference#waste"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationarea#geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationarea#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationarea#implementation_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationarea#possible_implementation_area_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationquantity#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationquantity#implementation_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationquantity#question_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationquantity#value"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationquestion#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationquestion#is_absolute"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationquestion#max_value"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationquestion#min_value"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationquestion#question"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationquestion#select_values"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationquestion#solution_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationquestion#step"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_implementationquestion#unit"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_possibleimplementationarea#geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_possibleimplementationarea#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_possibleimplementationarea#question"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_possibleimplementationarea#solution_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solution#activities_image"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solution#currentstate_image"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solution#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solution#documentation"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solution#effect_image"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solution#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solution#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solution#solution_category_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutioncategory#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutioncategory#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutioncategory#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutioninstrategy#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutioninstrategy#note"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutioninstrategy#priority"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutioninstrategy#solution_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutioninstrategy#strategy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutioninstrategy_participants#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutioninstrategy_participants#solutioninstrategy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutioninstrategy_participants#stakeholder_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutionpart#a"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutionpart#b"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutionpart#documentation"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutionpart#flow_changes_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutionpart#flow_reference_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutionpart#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutionpart#is_absolute"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutionpart#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutionpart#priority"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutionpart#question_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutionpart#scheme"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_solutionpart#solution_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_strategy#coordinating_stakeholder_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_strategy#date"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_strategy#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_strategy#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_strategy#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_strategy#status"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/changes_strategy#user_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_conclusion#consensus_level_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_conclusion#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_conclusion#image"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_conclusion#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_conclusion#link"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_conclusion#section_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_conclusion#step"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_conclusion#text"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_conclusionreport#casestudy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_conclusionreport#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_conclusionreport#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_conclusionreport#report"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_conclusionreport#thumbnail"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_consensuslevel#casestudy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_consensuslevel#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_consensuslevel#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_consensuslevel#priority"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_section#casestudy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_section#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_section#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/conclusions_section#priority"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#aland"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#awater"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#cbsafp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#classfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#cntyidfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#countyfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#countyns"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#csafp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#funcstat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#gid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#intptlat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#intptlon"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#lsad"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#metdivfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#mtfcc"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#namelsad"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county#the_geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county_lookup#co_code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county_lookup#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county_lookup#st_code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/county_lookup#state"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/countysub_lookup#co_code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/countysub_lookup#county"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/countysub_lookup#cs_code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/countysub_lookup#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/countysub_lookup#st_code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/countysub_lookup#state"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#aland"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#awater"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#classfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#cnectafp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#cosbidfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#countyfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#cousubfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#cousubns"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#funcstat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#gid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#intptlat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#intptlon"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#lsad"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#mtfcc"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#namelsad"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#nctadvfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#nectafp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/cousub#the_geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/direction_lookup#abbrev"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/direction_lookup#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_admin_log#action_flag"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_admin_log#action_time"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_admin_log#change_message"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_admin_log#content_type_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_admin_log#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_admin_log#object_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_admin_log#object_repr"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_admin_log#user_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_content_type#app_label"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_content_type#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_content_type#model"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_migrations#app"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_migrations#applied"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_migrations#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_migrations#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_session#expire_date"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_session#session_data"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/django_session#session_key"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#artpath"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#countyfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#deckedroad"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#divroad"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#exttyp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#featcat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#fullname"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#gcseflg"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#gid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#hydroflg"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#lfromadd"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#ltoadd"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#mtfcc"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#offsetl"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#offsetr"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#olfflg"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#passflg"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#persist"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#railflg"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#rfromadd"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#roadflg"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#rtoadd"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#smid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#tfidl"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#tfidr"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#the_geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#tlid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#tnidf"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#tnidt"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#ttyp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#zipl"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/edges#zipr"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#aiannhce"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#aiannhce00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#aiannhfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#aiannhfp00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#anrcfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#anrcfp00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#atotal"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#blkgrpce"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#blkgrpce00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#blockce"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#blockce00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#cbsafp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#cd108fp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#cd111fp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#cnectafp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#comptyp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#comptyp00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#conctyfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#conctyfp00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#countyfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#countyfp00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#cousubfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#cousubfp00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#csafp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#elsdlea"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#elsdlea00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#gid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#intptlat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#intptlon"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#lwflag"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#metdivfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#nctadvfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#nectafp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#offset"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#placefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#placefp00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#puma5ce"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#puma5ce00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#scsdlea"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#scsdlea00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#sldlst"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#sldlst00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#sldust"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#sldust00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#statefp00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#submcdfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#submcdfp00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#tazce"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#tazce00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#tblkgpce"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#tfid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#the_geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#tractce"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#tractce00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#trsubce"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#trsubce00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#trsubfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#trsubfp00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#ttractce"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#uace"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#uace00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#ugace"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#ugace00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#unsdlea"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#unsdlea00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#vtdst"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#vtdst00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#zcta5ce"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/faces#zcta5ce00"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#fullname"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#gid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#linearid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#mtfcc"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#paflag"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#predir"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#predirabrv"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#prequal"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#prequalabr"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#pretyp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#pretypabrv"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#sufdir"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#sufdirabrv"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#sufqual"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#sufqualabr"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#suftyp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#suftypabrv"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/featnames#tlid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geocode_settings#category"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geocode_settings#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geocode_settings#setting"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geocode_settings#short_desc"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geocode_settings#unit"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geocode_settings_default#category"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geocode_settings_default#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geocode_settings_default#setting"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geocode_settings_default#short_desc"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geocode_settings_default#unit"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geography_columns#coord_dimension"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geography_columns#f_geography_column"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geography_columns#f_table_catalog"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geography_columns#f_table_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geography_columns#f_table_schema"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geography_columns#srid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geography_columns#type"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geometry_columns#coord_dimension"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geometry_columns#f_geometry_column"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geometry_columns#f_table_catalog"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geometry_columns#f_table_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geometry_columns#f_table_schema"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geometry_columns#srid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/geometry_columns#type"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/layer#child_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/layer#feature_column"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/layer#feature_type"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/layer#layer_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/layer#level"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/layer#schema_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/layer#table_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/layer#topology_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_lookuptables#columns_exclude"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_lookuptables#insert_mode"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_lookuptables#level_county"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_lookuptables#level_nation"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_lookuptables#level_state"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_lookuptables#load"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_lookuptables#lookup_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_lookuptables#post_load_process"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_lookuptables#pre_load_process"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_lookuptables#process_order"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_lookuptables#single_geom_mode"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_lookuptables#single_mode"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_lookuptables#table_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_lookuptables#website_root_override"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_platform#county_process_command"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_platform#declare_sect"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_platform#environ_set_command"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_platform#loader"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_platform#os"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_platform#path_sep"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_platform#pgbin"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_platform#psql"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_platform#unzip_command"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_platform#wget"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_variables#data_schema"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_variables#staging_fold"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_variables#staging_schema"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_variables#tiger_year"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/loader_variables#website_root"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_casestudy#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_casestudy#focusarea"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_casestudy#geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_casestudy#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_casestudy#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_casestudy#show_on_welcome_map"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_casestudy#target_year"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_profile#can_change_password"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_profile#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_profile#organization"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_profile#session"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_profile#user_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_userincasestudy#alias"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_userincasestudy#casestudy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_userincasestudy#gets_evaluated"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_userincasestudy#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_userincasestudy#role"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/login_userincasestudy#user_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/pagc_gaz#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/pagc_gaz#is_custom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/pagc_gaz#seq"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/pagc_gaz#stdword"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/pagc_gaz#token"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/pagc_gaz#word"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/pagc_lex#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/pagc_lex#is_custom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/pagc_lex#seq"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/pagc_lex#stdword"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/pagc_lex#token"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/pagc_lex#word"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/pagc_rules#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/pagc_rules#is_custom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/pagc_rules#rule"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#aland"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#awater"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#classfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#cpi"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#funcstat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#gid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#intptlat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#intptlon"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#lsad"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#mtfcc"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#namelsad"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#pcicbsa"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#pcinecta"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#placefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#placens"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#plcidfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place#the_geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place_lookup#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place_lookup#pl_code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place_lookup#st_code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/place_lookup#state"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications#casestudy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications#citekey"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_catalog#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_catalog#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_catalog#title"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_catalog_publications#catalog_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_catalog_publications#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_catalog_publications#publication_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#abstract"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#authors"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#book_title"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#chapter"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#citekey"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#country"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#doi"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#edition"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#editor"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#external"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#image"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#institution"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#isbn"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#journal"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#location"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#month"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#note"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#number"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#organization"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#pages"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#pdf"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#publisher"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#school"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#section"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#series"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#status"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#tags"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#thumbnail"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#title"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#type_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#url"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#volume"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publication#year"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publicationfile#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publicationfile#file"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publicationfile#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publicationfile#publication_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publicationlink#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publicationlink#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publicationlink#publication_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_publicationlink#url"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_type#bibtex_types"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_type#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_type#hidden"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_type#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_type#order"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_bootstrap_type#title"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_publicationincasestudy#casestudy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_publicationincasestudy#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/publications_publicationincasestudy#publication_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#blocksize_x"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#blocksize_y"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#extent"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#nodata_values"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#num_bands"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#out_db"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#pixel_types"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#r_raster_column"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#r_table_catalog"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#r_table_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#r_table_schema"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#regular_blocking"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#same_alignment"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#scale_x"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#scale_y"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#spatial_index"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_columns#srid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_overviews#o_raster_column"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_overviews#o_table_catalog"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_overviews#o_table_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_overviews#o_table_schema"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_overviews#overview_factor"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_overviews#r_raster_column"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_overviews#r_table_catalog"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_overviews#r_table_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/raster_overviews#r_table_schema"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/reversion_revision#comment"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/reversion_revision#date_created"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/reversion_revision#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/reversion_revision#user_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/reversion_version#content_type_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/reversion_version#db"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/reversion_version#format"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/reversion_version#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/reversion_version#object_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/reversion_version#object_repr"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/reversion_version#revision_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/reversion_version#serialized_data"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/secondary_unit_lookup#abbrev"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/secondary_unit_lookup#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/spatial_ref_sys#auth_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/spatial_ref_sys#auth_srid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/spatial_ref_sys#proj4text"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/spatial_ref_sys#srid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/spatial_ref_sys#srtext"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state#aland"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state#awater"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state#division"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state#funcstat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state#gid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state#intptlat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state#intptlon"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state#lsad"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state#mtfcc"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state#region"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state#statens"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state#stusps"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state#the_geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state_lookup#abbrev"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state_lookup#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state_lookup#st_code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/state_lookup#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_aim#casestudy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_aim#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_aim#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_aim#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_aim#priority"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_aim#text"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_areaofprotection#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_areaofprotection#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_areaofprotection#sustainability_field_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_challenge#casestudy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_challenge#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_challenge#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_challenge#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_challenge#priority"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_challenge#text"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter#aggregate_materials"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter#anonymize"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter#area_level_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter#avoidable"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter#direction"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter#filter_level"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter#flow_type"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter#hazardous"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter#included"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter#material_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter#node_ids"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter#process_ids"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter_areas#area_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter_areas#flowfilter_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowfilter_areas#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowindicator#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowindicator#flow_a_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowindicator#flow_b_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowindicator#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowindicator#included"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowindicator#indicator_type"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowindicator#keyflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowindicator#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowindicator#spatial_reference"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowindicator#unit"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowtarget#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowtarget#indicator_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowtarget#notes"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowtarget#target_value_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_flowtarget#userobjective_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_impactcategory#area_of_protection_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_impactcategory#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_impactcategory#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_impactcategory#spatial_differentiation"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_impactcategoryinsustainability#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_impactcategoryinsustainability#impact_category_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_indicatorcharacterisation#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_indicatorcharacterisation#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_indicatorflow#avoidable"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_indicatorflow#destination_node_ids"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_indicatorflow#destination_node_level"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_indicatorflow#flow_type"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_indicatorflow#hazardous"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_indicatorflow#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_indicatorflow#origin_node_ids"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_indicatorflow#origin_node_level"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_indicatorflow#process_ids"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_indicatorflow#spatial_application"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_indicatorflow_materials#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_indicatorflow_materials#indicatorflow_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_indicatorflow_materials#material_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_statusquoreport#casestudy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_statusquoreport#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_statusquoreport#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_statusquoreport#report"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_statusquoreport#thumbnail"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_sustainabilityfield#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_sustainabilityfield#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_targetspatialreference#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_targetspatialreference#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_targetspatialreference#text"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_targetvalue#factor"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_targetvalue#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_targetvalue#number"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_targetvalue#text"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_userobjective#aim_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_userobjective#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_userobjective#priority"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_userobjective#user_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_userobjective_target_areas#areaofprotection_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_userobjective_target_areas#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/statusquo_userobjective_target_areas#userobjective_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/street_type_lookup#abbrev"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/street_type_lookup#is_hw"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/street_type_lookup#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_adminlevels#casestudy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_adminlevels#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_adminlevels#level"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_adminlevels#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_area#adminlevel_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_area#code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_area#geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_area#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_area#inhabitants"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_area#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_area#parent_area_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_chart#chart_category_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_chart#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_chart#image"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_chart#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_chartcategory#casestudy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_chartcategory#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_chartcategory#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_layer#category_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_layer#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_layer#included"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_layer#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_layer#order"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_layer#style_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_layer#wms_layer_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_layercategory#casestudy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_layercategory#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_layercategory#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_layercategory#order"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_layercategory#tag"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_stakeholder#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_stakeholder#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_stakeholder#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_stakeholder#stakeholder_category_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_stakeholdercategory#casestudy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_stakeholdercategory#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/studyarea_stakeholdercategory#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tabblock#aland"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tabblock#awater"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tabblock#blockce"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tabblock#countyfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tabblock#funcstat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tabblock#gid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tabblock#intptlat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tabblock#intptlon"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tabblock#mtfcc"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tabblock#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tabblock#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tabblock#tabblock_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tabblock#the_geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tabblock#tractce"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tabblock#uace"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tabblock#ur"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/topology#hasz"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/topology#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/topology#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/topology#precision"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/topology#srid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tract#aland"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tract#awater"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tract#countyfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tract#funcstat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tract#gid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tract#intptlat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tract#intptlon"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tract#mtfcc"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tract#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tract#namelsad"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tract#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tract#the_geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tract#tract_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/tract#tractce"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_layerstyle#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_layerstyle#legend_uri"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_layerstyle#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_layerstyle#title"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_layerstyle#wmslayer_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmslayer#abstract"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmslayer#bbox"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmslayer#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmslayer#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmslayer#title"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmslayer#wmsresource_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmsresource#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmsresource#east"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmsresource#max_zoom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmsresource#min_zoom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmsresource#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmsresource#north"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmsresource#password"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmsresource#preview"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmsresource#slug"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmsresource#south"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmsresource#uri"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmsresource#username"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmsresource#west"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wms_client_wmsresource#zoom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wmsresources_wmsresourceincasestudy#casestudy_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wmsresources_wmsresourceincasestudy#id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/wmsresources_wmsresourceincasestudy#wmsresource_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zcta5#aland"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zcta5#awater"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zcta5#classfp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zcta5#funcstat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zcta5#gid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zcta5#intptlat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zcta5#intptlon"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zcta5#mtfcc"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zcta5#partflg"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zcta5#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zcta5#the_geom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zcta5#zcta5ce"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup#cnt"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup#co_code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup#county"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup#cousub"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup#cs_code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup#pl_code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup#place"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup#st_code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup#state"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup#zip"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup_all#cnt"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup_all#co_code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup_all#county"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup_all#cousub"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup_all#cs_code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup_all#pl_code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup_all#place"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup_all#st_code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup_all#state"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup_all#zip"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup_base#city"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup_base#county"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup_base#state"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup_base#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_lookup_base#zip"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_state#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_state#stusps"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_state#zip"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_state_loc#place"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_state_loc#statefp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_state_loc#stusps"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/zip_state_loc#zip"/>
-    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Destination"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDestinationOf"/>
+            <Class IRI="#Flow"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Origin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isOriginOf"/>
+            <Class IRI="#Flow"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#Area"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
             <Class IRI="/CaseStudy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/actor_complete#hasGeom"/>
+            <Datatype IRI="http://www.opengis.net/ont/geosparql#wktLiteral"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/area_casestudy#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaseStudyArea"/>
+        <Class IRI="#Area"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="/AdministrativeArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <Class IRI="#Province"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#District"/>
+        <Class IRI="/AdministrativeArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#representsStatus"/>
+            <Class IRI="#Status"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3670,15 +421,22 @@
     <SubClassOf>
         <Class IRI="#Flow"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/changes_affectedflow#hasDestination"/>
-            <Class IRI="#Destination"/>
+            <ObjectProperty IRI="/asmfa_activity2activity#hasProcess"/>
+            <Class IRI="/Process"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Flow"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/changes_flowreference#hasOrigin"/>
-            <Class IRI="#Origin"/>
+            <ObjectProperty IRI="/asmfa_activity2activity#publishedIn"/>
+            <Class IRI="/Publication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
+            <Class IRI="/KeyFlow"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3689,21 +447,131 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ImpactTarget"/>
-        <Class IRI="#Target"/>
+        <Class IRI="#Flow"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/changes_affectedflow#hasDestination"/>
+            <Class IRI="#Destination"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ImpactTarget"/>
+        <Class IRI="#Flow"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/changes_flowreference#hasOrigin"/>
+            <Class IRI="#Origin"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flow"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/asmfa_activity2activity#hasAmount"/>
+            <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flow"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/asmfa_activity2activity#hasYear"/>
+            <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlowChange"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
-            <Class IRI="/ImpactCategory"/>
+            <ObjectProperty IRI="#affectsFlow"/>
+            <Class IRI="#Flow"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlowChange"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_strategyfractionflow#affectsMaterial"/>
+            <Class IRI="/Material"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FocusArea"/>
+        <Class IRI="#Area"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Location"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
             <Class IRI="/AdministrativeArea"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="/actor_complete#hasAddress"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/actor_complete#hasGeom"/>
+            <Datatype IRI="http://www.opengis.net/ont/geosparql#wktLiteral"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialFraction"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasMaterial"/>
+            <Class IRI="/Material"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialFraction"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/asmfa_fractionflow#isAvoidable"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialFraction"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/asmfa_fractionflow#isHazardous"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialFraction"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/asmfa_productfraction#hasFraction"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Municipality"/>
+        <Class IRI="/AdministrativeArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Municipality"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <Class IRI="#District"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Province"/>
+        <Class IRI="/AdministrativeArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Province"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <Class IRI="#Region"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Region"/>
+        <Class IRI="/AdministrativeArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Region"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <Class IRI="#Municipality"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3714,10 +582,42 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Stakeholder"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/area_casestudy#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StatusQuo"/>
+        <Class IRI="#Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stock"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#representsStatus"/>
+            <Class IRI="#Status"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Stock"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/asmfa_activity2activity#hasComposition"/>
             <Class IRI="/Composition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stock"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_activity2activity#publishedIn"/>
+            <Class IRI="/Publication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stock"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
+            <Class IRI="/KeyFlow"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3735,11 +635,39 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Stock"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/asmfa_activity2activity#hasAmount"/>
+            <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stock"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/asmfa_activity2activity#hasYear"/>
+            <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Target"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
             <Class IRI="#User"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Target"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/login_casestudy#hasTargetYear"/>
+            <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Target"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/publications_bootstrap_publication#hasTargetValue"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#User"/>
@@ -3756,6 +684,20 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#User"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/area_casestudy#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/publications_bootstrap_publication#hasTargetValue"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Activity"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/asmfa_activity#contains"/>
@@ -3764,10 +706,17 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Activity"/>
-        <ObjectExactCardinality cardinality="1">
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
             <Class IRI="/ActivityGroup"/>
-        </ObjectExactCardinality>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Activity"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/area_casestudy#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Activity2activityFlow"/>
@@ -3783,6 +732,13 @@
     <SubClassOf>
         <Class IRI="/Activity2activityFlow"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
+            <Class IRI="/Group2groupFlow"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Activity2activityFlow"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/changes_affectedflow#hasDestination"/>
             <Class IRI="/Activity"/>
         </ObjectSomeValuesFrom>
@@ -3793,13 +749,6 @@
             <ObjectProperty IRI="/changes_flowreference#hasOrigin"/>
             <Class IRI="/Activity"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Activity2activityFlow"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
-            <Class IRI="/Group2groupFlow"/>
-        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/ActivityGroup"/>
@@ -3816,19 +765,40 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/ActivityGroup"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/area_casestudy#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/ActivityStock"/>
         <Class IRI="#Stock"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Actor"/>
-        <ObjectExactCardinality cardinality="1">
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
             <Class IRI="/Activity"/>
-        </ObjectExactCardinality>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Actor"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/area_casestudy#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Actor2actorFlow"/>
         <Class IRI="#Flow"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Actor2actorFlow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
+            <Class IRI="/Activity2activityFlow"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Actor2actorFlow"/>
@@ -3843,13 +813,6 @@
             <ObjectProperty IRI="/changes_flowreference#hasOrigin"/>
             <Class IRI="/Actor"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Actor2actorFlow"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
-            <Class IRI="/Activity2activityFlow"/>
-        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/ActorStock"/>
@@ -3867,6 +830,13 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/AdministrativeArea"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/area_casestudy#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/AdministrativeLevel"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
@@ -3878,14 +848,24 @@
         <Class IRI="#Location"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AffectedFlow"/>
-        <Class IRI="#Flow"/>
+        <Class IRI="/Aim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
+            <Class IRI="#User"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AreaOfProtection"/>
+        <Class IRI="/CaseStudy"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/asmfa_activity#contains"/>
-            <Class IRI="/ImpactCategory"/>
+            <Class IRI="/KeyFlow"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CaseStudy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <Class IRI="/Strategy"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3896,12 +876,89 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Composition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_activity2activity#publishedIn"/>
+            <Class IRI="/Publication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Composition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
+            <Class IRI="/KeyFlow"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Composition"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasMaterialFraction"/>
+            <Class IRI="#MaterialFraction"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Composition"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/area_casestudy#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/FlowFraction"/>
         <Class IRI="/Actor2actorFlow"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/FlowIndicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#representsStatus"/>
+            <Class IRI="#Status"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FlowIndicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
+            <Class IRI="/KeyFlow"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FlowIndicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/statusquo_indicatorflow_materials#includesMaterial"/>
+            <Class IRI="/Material"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FlowIndicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/statusquo_userobjective_target_areas#includesArea"/>
+            <Class IRI="#Area"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FlowIndicator"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/statusquo_flowindicator#hasFlowA"/>
+            <Class IRI="#Flow"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FlowIndicator"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/statusquo_flowindicator#hasFlowB"/>
+            <Class IRI="#Flow"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/FlowTarget"/>
         <Class IRI="#Target"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FlowTarget"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/statusquo_flowtarget#measuredByIndicator"/>
+            <Class IRI="/FlowIndicator"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Group2groupFlow"/>
@@ -3933,15 +990,71 @@
         <Class IRI="#Stock"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/ImpactCategory"/>
+        <Class IRI="/ImplementationArea"/>
+        <Class IRI="/PossibleImplementationArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ImplementationQuestion"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
-            <Class IRI="/AreaOfProtection"/>
+            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
+            <Class IRI="/ImplementationRatio"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/ImplementationArea"/>
-        <Class IRI="#Area"/>
+        <Class IRI="/ImplementationQuestion"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/changes_implementationquestion#hasQuestion"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ImplementationRatio"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
+            <Class IRI="/ImplementationQuestion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ImplementationRatio"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/changes_implementationquantity#hasRatio"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/KeyFlow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <Class IRI="#Flow"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/KeyFlow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <Class IRI="#Stock"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/KeyFlow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/statusquo_aim#hasAim"/>
+            <Class IRI="/Aim"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Material"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <Class IRI="/Material"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Material"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
+            <Class IRI="/KeyFlow"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Material"/>
@@ -3951,12 +1064,37 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Material"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/area_casestudy#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/OperationalLocation"/>
         <Class IRI="#Location"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/PossibleImplementationArea"/>
+        <Class IRI="#Area"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Process"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/area_casestudy#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Product"/>
         <Class IRI="/Composition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Product"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <Class IRI="/Material"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/ProductFraction"/>
@@ -3970,8 +1108,39 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Publication"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="/publications_bootstrap_publication#hasAuthors"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Publication"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/asmfa_activity2activity#hasYear"/>
+            <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Publication"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/publications#hasCitekey"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Publication"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/publications_bootstrap_publication#hasTitle"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Solution"/>
-        <Class IRI="/Strategy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
+            <Class IRI="#Stakeholder"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Solution"/>
@@ -3981,6 +1150,20 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Solution"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasSolutionPart"/>
+            <Class IRI="/SolutionPart"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Solution"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/area_casestudy#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/SolutionCategory"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/asmfa_activity#contains"/>
@@ -3988,8 +1171,57 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/SolutionCategory"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
+            <Class IRI="/KeyFlow"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/SolutionPart"/>
-        <Class IRI="/Solution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/changes_implementationquantity#hasImplementationQuestion"/>
+            <Class IRI="/ImplementationQuestion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SolutionPart"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/changes_implementationarea#affectsImplementationArea"/>
+            <Class IRI="#Area"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SolutionPart"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/changes_implementationquantity#hasImplementationRatio"/>
+            <Class IRI="/ImplementationRatio"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SolutionPart"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/changes_solutionpart#causesFlowChange"/>
+            <Class IRI="#FlowChange"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SolutionPart"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/area_casestudy#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Strategy"/>
+        <Class IRI="#Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Strategy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/changes_strategy#createdByUser"/>
+            <Class IRI="#User"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Strategy"/>
@@ -4006,20 +1238,31 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/StrategyFlowFraction"/>
-        <Class IRI="/FlowFraction"/>
+        <Class IRI="/Strategy"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasSolution"/>
+            <Class IRI="/Solution"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/TargetSpatialReference"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
-            <Class IRI="#Target"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="/StrategyFlowFraction"/>
+        <Class IRI="/FlowFraction"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Waste"/>
         <Class IRI="/Composition"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Waste"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <Class IRI="/Material"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#StatusQuo"/>
+        <Class IRI="/Strategy"/>
+    </DisjointClasses>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/asmfa_activity#contains"/>
         <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
@@ -4029,9 +1272,23 @@
         <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#isDestinationOf"/>
+        <ObjectProperty IRI="/changes_affectedflow#hasDestination"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isOriginOf"/>
+        <ObjectProperty IRI="/changes_flowreference#hasOrigin"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="/asmfa_activity#contains"/>
         <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
     </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#affectsFlow"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/changes_implementationarea#affectsImplementationArea"/>
+    </InverseFunctionalObjectProperty>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
     </SymmetricObjectProperty>
@@ -4047,6 +1304,28 @@
     <ReflexiveObjectProperty>
         <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
     </ReflexiveObjectProperty>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#isDestinationOf"/>
+            <ObjectProperty IRI="/changes_flowreference#hasOrigin"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#receivesFlowFrom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#isOriginOf"/>
+            <ObjectProperty IRI="/changes_affectedflow#hasDestination"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#sendsFlowTo"/>
+    </SubObjectPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="/publications_bootstrap_publication#hasDOI"/>
+        <Class IRI="/Publication"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="/actor_complete#hasGeom"/>
+        <Datatype IRI="http://www.opengis.net/ont/geosparql#wktLiteral"/>
+    </DataPropertyRange>
 </Ontology>
 
 
