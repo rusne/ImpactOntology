@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#"
+     xml:base="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered">
+        <rdfs:comment>A data-centered ontology based on the national governmental waste reports from the Netherlands and import export data of one of the Dutch harbours</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#hasContentCode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#hasContentCode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#ContentCode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#hasWasteStreamNumber -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#hasWasteStreamNumber"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#isReportedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#isReportedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#Report"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#City"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#ContentCode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#ContentCode">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#EWCcode"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#GNcode"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#EWCcode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#EWCcode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#ContentCode"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#GNcode"/>
+        <rdfs:comment xml:lang="nl">EURALcode</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#EwcDescription -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#EwcDescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#FirstSecondaryBuyer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#FirstSecondaryBuyer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#GNcode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#GNcode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#ContentCode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#HouseNumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#HouseNumber"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#MaterialDeliveryReport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#MaterialDeliveryReport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#Report"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#MaterialDisposalReport"/>
+        <rdfs:comment xml:lang="nl">Afgiftemelding</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#MaterialDisposalReport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#MaterialDisposalReport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#Report"/>
+        <rdfs:comment xml:lang="nl">Ontvangstmelding</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#MixedEnRouteCollection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#MixedEnRouteCollection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#NumberOfLoads -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#NumberOfLoads"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#PermittedEnRouteCollection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#PermittedEnRouteCollection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#Postcode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#Postcode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#PrimaryWasteStream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#PrimaryWasteStream">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#isReportedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#MaterialDisposalReport"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteStream"/>
+        <rdfs:comment xml:lang="nl">Primairafvalstroom</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#Report -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#Report">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#MaterialDeliveryReport"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#MaterialDisposalReport"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#ReportPeriodMonth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#ReportPeriodMonth"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#ReportPeriodYear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#ReportPeriodYear"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#SecondarWasteStream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#SecondarWasteStream">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#isReportedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#MaterialDeliveryReport"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteStream"/>
+        <rdfs:comment xml:lang="nl">Secundairafvalstroom</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#SeparatedEnRouteCollection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#SeparatedEnRouteCollection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#StreetName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#StreetName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteBroker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteBroker"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteCollectingEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteCollectingEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteDescription -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteDescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteDisposalLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteDisposalLocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteDisposingEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteDisposingEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteMediatingEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteMediatingEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteProcessingEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteProcessingEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteProcessingMethodCode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteProcessingMethodCode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteProcessingMethodDescription -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteProcessingMethodDescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteReceivingEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteReceivingEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteShipmentEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteShipmentEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteStream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteStream">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#hasContentCode"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#ContentCode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#hasWasteStreamNumber"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteStreamNumber"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#isReportedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#Report"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="nl">Afvalstroom</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteStreamNumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#WasteStreamNumber"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#Weight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered#Weight"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
