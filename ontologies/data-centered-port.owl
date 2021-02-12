@@ -15,6 +15,244 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#connectsHarbour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#connectsHarbour"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasActivity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasCountry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasCountry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasProfitCenter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasProfitCenter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasShippingAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasShippingAgent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasStevedore -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasStevedore"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasTranshipment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasTranshipment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasVNPcode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasVNPcode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasVessel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasVessel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasVesselClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasVesselClass"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ADNRDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ADNRDescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP01Description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP01Description"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP02Description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP02Description"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HSDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HSDescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NSTRDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NSTRDescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#appearanceDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#appearanceDescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#dangerIndicator -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#dangerIndicator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#declarationEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#declarationEndDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#declarationNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#declarationNumber"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#declarationStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#declarationStartDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#fossilIndicator -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#fossilIndicator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#fuelIndicator -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#fuelIndicator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#harbourName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#harbourName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#harbourVNPCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#harbourVNPCode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#profitCenterCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#profitCenterCode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#profitCenterName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#profitCenterName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#shippingAgentName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#shippingAgentName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#stevedoreName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#stevedoreName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#transhipmentAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#transhipmentAmount"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#transhipmentGrossHarbourCharges -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#transhipmentGrossHarbourCharges"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#transhipmentNetHarbourCharges -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#transhipmentNetHarbourCharges"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#transhipmentUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#transhipmentUnit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#vesselDeadWeightTonnage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#vesselDeadWeightTonnage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#vesselGrossTonnage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#vesselGrossTonnage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#vesselLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#vesselLength"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#vesselName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#vesselName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -23,189 +261,549 @@
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#AdnrCode -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ADNRCode -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#AdnrCode"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ADNRCode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ADNRDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#AdnrDescription -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Activity -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#AdnrDescription"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Activity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Loading"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Unloading"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#AppearanceCode -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#AppearanceCode"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#AppearanceCode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#appearanceDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#AppearanceDescription -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#BulkCarrier -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#AppearanceDescription"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#BulkCarrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselClass"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Country -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#CableLayer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Country"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#CableLayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselClass"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#DangerIndicator -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ChemicalOilProductsTanker -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#DangerIndicator"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ChemicalOilProductsTanker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselClass"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#DeclarationEndDate -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ChemicalTanker -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#DeclarationEndDate"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ChemicalTanker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselClass"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#DeclarationNumber -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContainerShip -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#DeclarationNumber"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContainerShip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselClass"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#DeclarationStartDate -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#DeclarationStartDate"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Esp01Description -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Declaration -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Esp01Description"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Declaration">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ExportDeclaration"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ImportDeclaration"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#connectsHarbour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Harbour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasActivity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasProfitCenter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ProfitCenter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasStevedore"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Stevedore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasTranshipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transhipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasVessel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Vessel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#dangerIndicator"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#declarationEndDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#declarationNumber"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#declarationStartDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#fossilIndicator"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#fuelIndicator"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#shippingAgentName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Esp01TypeOfGoods -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#DestinationHarbour -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Esp01TypeOfGoods"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#DestinationHarbour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Harbour"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Esp02Description -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP01TypeOfGoods -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Esp02Description"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP01TypeOfGoods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP01Description"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Esp02TypeOfGoods -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP02TypeOfGoods -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Esp02TypeOfGoods"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP02TypeOfGoods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP02Description"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#FossilIndicator -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ExportDeclaration -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#FossilIndicator"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ExportDeclaration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Declaration"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#connectsHarbour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#DestinationHarbour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasActivity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Loading"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ImportDeclaration"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#FuelIndicator -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#FishingVessel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#FuelIndicator"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#FishingVessel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#FruitJuiceCarrier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#FruitJuiceCarrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselClass"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#GoodsClassificationRange -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#GoodsClassificationRange"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#GoodsClassificationRange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HarbourName -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HSCode -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HarbourName"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HSCode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HSDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HarbourVnpCode -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Harbour -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HarbourVnpCode"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Harbour">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasCountry"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HarbourCountry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#harbourVNPCode"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HsCode -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HarbourCountry -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HsCode"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HarbourCountry"/>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HsDescription -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HeavyLoadCarrier -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HsDescription"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HeavyLoadCarrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselClass"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NstrCode -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HopperDredger -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NstrCode"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HopperDredger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselClass"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NstrDescription -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ImportDeclaration -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NstrDescription"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ImportDeclaration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Declaration"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#connectsHarbour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#OriginHarbour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasActivity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Unloading"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NstrTypeOfGoods -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#LPGTanker -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NstrTypeOfGoods"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#LPGTanker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselClass"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ProfitCenterCode -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Loading -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ProfitCenterCode"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Loading">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Activity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Unloading"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ProfitCenterName -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#MolassesTanker -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ProfitCenterName"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#MolassesTanker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NSTRCode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NSTRCode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HSDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NSTRTypeOfGoods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NSTRTypeOfGoods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#OriginHarbour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#OriginHarbour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Harbour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ProfitCenter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ProfitCenter">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#profitCenterCode"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#profitCenterName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#RefrigeratedCargoShip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#RefrigeratedCargoShip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Ro-RoCargoShip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Ro-RoCargoShip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#SelfDischargingBulkCarrier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#SelfDischargingBulkCarrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselClass"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ShippingAgent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ShippingAgent"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ShippingAgent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#shippingAgentName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Stevedore -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Stevedore"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Stevedore">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#stevedoreName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#TranshipmentAmount -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transhipment -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#TranshipmentAmount"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transhipment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#transhipmentAmount"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#transhipmentGrossHarbourCharges"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#transhipmentNetHarbourCharges"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#transhipmentUnit"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#TranshipmentGrossHarbourCharges -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Unloading -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#TranshipmentGrossHarbourCharges"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Unloading">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Activity"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#TranshipmentNetHarbourCharges -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VehiclesCarrier -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#TranshipmentNetHarbourCharges"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VehiclesCarrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselClass"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#TranshipmentUnit -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Vessel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#TranshipmentUnit"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Vessel">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasVesselClass"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselClass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#vesselDeadWeightTonnage"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#vesselGrossTonnage"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#vesselLength"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#vesselName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -215,27 +813,34 @@
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselDeadWeightTonnage -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselDeadWeightTonnage"/>
-    
-
-
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselGrossTonnage -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselGrossTonnage"/>
-    
-
-
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselLength -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselLength"/>
-    
-
-
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselName -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VesselName"/>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#BulkCarrier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#CableLayer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ChemicalOilProductsTanker"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ChemicalTanker"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContainerShip"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#FishingVessel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#FruitJuiceCarrier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HeavyLoadCarrier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HopperDredger"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#LPGTanker"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#MolassesTanker"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#RefrigeratedCargoShip"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Ro-RoCargoShip"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#SelfDischargingBulkCarrier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VehiclesCarrier"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
