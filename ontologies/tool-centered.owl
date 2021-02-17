@@ -69,6 +69,9 @@
         <Class IRI="#IdleStock"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ImplementationArea"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ImplementationRatio"/>
     </Declaration>
     <Declaration>
@@ -130,9 +133,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="/ImplementationQuestion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/PossibleImplementationArea"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Product"/>
@@ -198,9 +198,6 @@
         <ObjectProperty IRI="#sendsFlowTo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/asmfa_activity#contains"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/asmfa_activity2activity#hasComposition"/>
     </Declaration>
     <Declaration>
@@ -208,9 +205,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/asmfa_activity2activity#publishedIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/asmfa_strategyfractionflow#affectsMaterial"/>
@@ -252,9 +246,6 @@
         <ObjectProperty IRI="/statusquo_indicatorflow_materials#includesMaterial"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/statusquo_userobjective#hasAim"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/statusquo_userobjective_target_areas#includesArea"/>
     </Declaration>
     <Declaration>
@@ -262,6 +253,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/studyarea_area#hasAdminLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/actor_complete#hasAddress"/>
@@ -329,9 +326,6 @@
     <Declaration>
         <DataProperty IRI="/studyarea_area#hasInhabitants"/>
     </Declaration>
-    <Declaration>
-        <Datatype IRI="http://www.opengis.net/ont/geosparql#wktLiteral"/>
-    </Declaration>
     <EquivalentClasses>
         <Class IRI="#FlowDestination"/>
         <ObjectSomeValuesFrom>
@@ -349,15 +343,15 @@
     <SubClassOf>
         <Class IRI="#ActivityGroup"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_activity#contains"/>
-            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Activity"/>
+            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
+            <Class IRI="#CaseStudy"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ActivityGroup"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
-            <Class IRI="#CaseStudy"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
+            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Activity"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -370,7 +364,7 @@
     <SubClassOf>
         <Class IRI="#Actor"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
             <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Activity"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -416,14 +410,14 @@
     <SubClassOf>
         <Class IRI="#CaseStudy"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
             <Class IRI="#KeyFlow"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CaseStudy"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
             <Class IRI="/Strategy"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -448,7 +442,7 @@
     <SubClassOf>
         <Class IRI="#Composition"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
             <Class IRI="#KeyFlow"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -473,7 +467,7 @@
     <SubClassOf>
         <Class IRI="#Country"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
             <Class IRI="#Province"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -498,13 +492,6 @@
     <SubClassOf>
         <Class IRI="#FlowIndicator"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
-            <Class IRI="#KeyFlow"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FlowIndicator"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/statusquo_indicatorflow_materials#includesMaterial"/>
             <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
         </ObjectSomeValuesFrom>
@@ -514,6 +501,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/statusquo_userobjective_target_areas#includesArea"/>
             <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#GeographicArea"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlowIndicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
+            <Class IRI="#KeyFlow"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -551,13 +545,6 @@
     <SubClassOf>
         <Class IRI="#IdleStock"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
-            <Class IRI="#KeyFlow"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#IdleStock"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/changes_flowreference#hasOrigin"/>
             <Class IRI="#FlowOrigin"/>
         </ObjectSomeValuesFrom>
@@ -567,6 +554,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
             <Class IRI="#CaseStudy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IdleStock"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
+            <Class IRI="#KeyFlow"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -582,6 +576,10 @@
             <DataProperty IRI="/asmfa_activity2activity#hasYear"/>
             <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
         </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImplementationArea"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#GeographicArea"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ImplementationRatio"/>
@@ -600,28 +598,28 @@
     <SubClassOf>
         <Class IRI="#KeyFlow"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <ObjectProperty IRI="/statusquo_aim#hasAim"/>
+            <Class IRI="#Aim"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KeyFlow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
             <Class IRI="#IdleStock"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#KeyFlow"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
             <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Flow"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#KeyFlow"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/statusquo_aim#hasAim"/>
-            <Class IRI="#Aim"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Location"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
             <Class IRI="/AdministrativeArea"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -631,13 +629,6 @@
             <DataProperty IRI="/actor_complete#hasAddress"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Location"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="/actor_complete#hasGeom"/>
-            <Datatype IRI="http://www.opengis.net/ont/geosparql#wktLiteral"/>
-        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MaterialFraction"/>
@@ -678,7 +669,7 @@
     <SubClassOf>
         <Class IRI="#Municipality"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
             <Class IRI="#District"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -693,7 +684,7 @@
     <SubClassOf>
         <Class IRI="#Province"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
             <Class IRI="#Region"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -739,7 +730,7 @@
     <SubClassOf>
         <Class IRI="#Region"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
             <Class IRI="#Municipality"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -774,15 +765,15 @@
     <SubClassOf>
         <Class IRI="#SolutionCategory"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_activity#contains"/>
-            <Class IRI="#Solution"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
+            <Class IRI="#KeyFlow"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SolutionCategory"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
-            <Class IRI="#KeyFlow"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
+            <Class IRI="#Solution"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -823,7 +814,7 @@
     <SubClassOf>
         <Class IRI="#User"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/statusquo_userobjective#hasAim"/>
+            <ObjectProperty IRI="/statusquo_aim#hasAim"/>
             <Class IRI="#Aim"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -887,7 +878,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/ImplementationArea"/>
-        <Class IRI="/PossibleImplementationArea"/>
+        <Class IRI="#ImplementationArea"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/ImplementationQuestion"/>
@@ -904,17 +895,13 @@
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/PossibleImplementationArea"/>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#GeographicArea"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Product"/>
         <Class IRI="#Composition"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Product"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
             <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -996,22 +983,22 @@
     <SubClassOf>
         <Class IRI="/Waste"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_activity#contains"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
             <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Activity"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_activity#contains"/>
-            <Class IRI="#Actor"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
+            <Class IRI="#ActivityGroup"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Activity"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
-            <Class IRI="#ActivityGroup"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
+            <Class IRI="#Actor"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1045,15 +1032,15 @@
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Flow"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
-            <Class IRI="#KeyFlow"/>
+            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
+            <Class IRI="#CaseStudy"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Flow"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
-            <Class IRI="#CaseStudy"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
+            <Class IRI="#KeyFlow"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1094,13 +1081,6 @@
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#GeographicArea"/>
         <DataExactCardinality cardinality="1">
-            <DataProperty IRI="/actor_complete#hasGeom"/>
-            <Datatype IRI="http://www.opengis.net/ont/geosparql#wktLiteral"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#GeographicArea"/>
-        <DataExactCardinality cardinality="1">
             <DataProperty IRI="/area_casestudy#hasName"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataExactCardinality>
@@ -1108,22 +1088,22 @@
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_activity#contains"/>
-            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
+            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
+            <Class IRI="#CaseStudy"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
             <Class IRI="#KeyFlow"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
-            <Class IRI="#CaseStudy"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
+            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1141,11 +1121,11 @@
         </DataExactCardinality>
     </SubClassOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="/asmfa_activity#contains"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
         <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
         <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
@@ -1157,8 +1137,8 @@
         <ObjectProperty IRI="/changes_flowreference#hasOrigin"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="/asmfa_activity#contains"/>
-        <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#affectsFlow"/>
@@ -1170,13 +1150,13 @@
         <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
     </SymmetricObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="/asmfa_activity#contains"/>
-    </TransitiveObjectProperty>
-    <TransitiveObjectProperty>
-        <ObjectProperty IRI="/asmfa_actor#belongsTo"/>
-    </TransitiveObjectProperty>
-    <TransitiveObjectProperty>
         <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
     </TransitiveObjectProperty>
     <ReflexiveObjectProperty>
         <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
@@ -1199,10 +1179,6 @@
         <DataProperty IRI="/publications_bootstrap_publication#hasDOI"/>
         <Class IRI="#Publication"/>
     </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="/actor_complete#hasGeom"/>
-        <Datatype IRI="http://www.opengis.net/ont/geosparql#wktLiteral"/>
-    </DataPropertyRange>
 </Ontology>
 
 

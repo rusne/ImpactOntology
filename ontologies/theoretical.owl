@@ -42,13 +42,7 @@ doi: 10.1111/jiec.12386</Literal>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Process"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#belongsTo"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#changesProperty"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#contains"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasProperty"/>
@@ -61,6 +55,12 @@ doi: 10.1111/jiec.12386</Literal>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#providesServiceTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#BiophysicalProperty"/>
@@ -144,12 +144,12 @@ doi: 10.1111/jiec.12386</Literal>
         <Class IRI="#Object"/>
         <ObjectIntersectionOf>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#belongsTo"/>
-                <Class IRI="#Stock"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#involvedIn"/>
                 <Class IRI="#Event"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
+                <Class IRI="#Stock"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -190,21 +190,15 @@ doi: 10.1111/jiec.12386</Literal>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Process"/>
     </DisjointClasses>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#belongsTo"/>
-        <ObjectProperty IRI="#contains"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="#involvedIn"/>
         <ObjectProperty IRI="#involves"/>
     </InverseObjectProperties>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#belongsTo"/>
-    </IrreflexiveObjectProperty>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
+    </InverseObjectProperties>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#changesProperty"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#contains"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#hasProperty"/>
@@ -215,10 +209,12 @@ doi: 10.1111/jiec.12386</Literal>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#involves"/>
     </IrreflexiveObjectProperty>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#belongsTo"/>
-        <Class IRI="#Object"/>
-    </ObjectPropertyDomain>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
+    </IrreflexiveObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#changesProperty"/>
         <Class IRI="#Event"/>
@@ -235,10 +231,10 @@ doi: 10.1111/jiec.12386</Literal>
         <ObjectProperty IRI="#providesServiceTo"/>
         <Class IRI="#Service"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#contains"/>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
         <Class IRI="#Object"/>
-    </ObjectPropertyRange>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#involvedIn"/>
         <Class IRI="#Event"/>
@@ -250,6 +246,10 @@ doi: 10.1111/jiec.12386</Literal>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#providesServiceTo"/>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Process"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#CharacterizationFactor"/>
