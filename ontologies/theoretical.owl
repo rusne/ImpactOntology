@@ -24,13 +24,7 @@ doi: 10.1111/jiec.12386</Literal>
         <Class IRI="#Event"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Flow"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Object"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Process"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Service"/>
@@ -40,6 +34,12 @@ doi: 10.1111/jiec.12386</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="#Stock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Flow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Process"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#belongsTo"/>
@@ -157,7 +157,7 @@ doi: 10.1111/jiec.12386</Literal>
         <Class IRI="#Service"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#providesServiceTo"/>
-            <Class IRI="#Process"/>
+            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Process"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <SubClassOf>
@@ -165,29 +165,29 @@ doi: 10.1111/jiec.12386</Literal>
         <Class IRI="#Set"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Flow"/>
-        <Class IRI="#Event"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Process"/>
-        <Class IRI="#Event"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Stock"/>
         <Class IRI="#Set"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Flow"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Process"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="#Event"/>
         <Class IRI="#Stock"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Flow"/>
-        <Class IRI="#Process"/>
+        <Class IRI="#Service"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Flow"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Process"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Flow"/>
-        <Class IRI="#Process"/>
-        <Class IRI="#Service"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Flow"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Process"/>
     </DisjointClasses>
     <InverseObjectProperties>
         <ObjectProperty IRI="#belongsTo"/>
@@ -249,7 +249,7 @@ doi: 10.1111/jiec.12386</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#providesServiceTo"/>
-        <Class IRI="#Process"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Process"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#CharacterizationFactor"/>

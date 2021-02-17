@@ -275,21 +275,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Activity -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Activity">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Loading"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Unloading"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#AppearanceCode -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#AppearanceCode">
@@ -370,7 +355,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasActivity"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Activity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HarbourActivity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -557,6 +542,21 @@
     
 
 
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HarbourActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HarbourActivity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Loading"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Unloading"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HarbourCountry -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HarbourCountry"/>
@@ -610,7 +610,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Loading -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Loading">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Activity"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HarbourActivity"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Unloading"/>
     </owl:Class>
     
@@ -757,7 +757,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Unloading -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Unloading">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Activity"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HarbourActivity"/>
     </owl:Class>
     
 

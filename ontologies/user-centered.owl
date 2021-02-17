@@ -169,9 +169,33 @@
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Activity -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Activity -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Activity"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Flow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Flow"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#GeographicArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#GeographicArea"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Process"/>
     
 
 
@@ -215,7 +239,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#BioBasedMaterial -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#BioBasedMaterial">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Material"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
     </owl:Class>
     
 
@@ -223,7 +247,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#BuiltEnvironment -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#BuiltEnvironment">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#GeographicArea"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#GeographicArea"/>
     </owl:Class>
     
 
@@ -269,7 +293,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#City -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#City">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#GeographicArea"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#GeographicArea"/>
     </owl:Class>
     
 
@@ -285,7 +309,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Consumption -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Consumption">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Process"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Process"/>
     </owl:Class>
     
 
@@ -301,14 +325,8 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#DemolitionWaste -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#DemolitionWaste">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Material"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Difference -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Difference"/>
     
 
 
@@ -343,7 +361,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#EndOfLifeMaterial -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#EndOfLifeMaterial">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Material"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
     </owl:Class>
     
 
@@ -356,23 +374,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Flow -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Flow"/>
-    
-
-
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#FoodMaterial -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#FoodMaterial">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Material"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#GeographicArea -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#GeographicArea"/>
     
 
 
@@ -420,16 +426,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Material -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Material"/>
-    
-
-
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#MaterialFlow -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#MaterialFlow">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Flow"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Flow"/>
     </owl:Class>
     
 
@@ -462,16 +462,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Process -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Process"/>
-    
-
-
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Production -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Production">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Process"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Process"/>
     </owl:Class>
     
 
@@ -482,16 +476,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Ratio -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Ratio"/>
-    
-
-
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#RawMaterial -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#RawMaterial">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Material"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
     </owl:Class>
     
 
@@ -499,7 +487,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#RawMaterialExtraction -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#RawMaterialExtraction">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Process"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Process"/>
     </owl:Class>
     
 
@@ -515,7 +503,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Region -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Region">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#GeographicArea"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#GeographicArea"/>
     </owl:Class>
     
 
@@ -551,7 +539,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#SortedMaterial -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#SortedMaterial">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Material"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
     </owl:Class>
     
 
