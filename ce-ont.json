@@ -1,751 +1,1004 @@
 [
   {
     "id": 1,
-    "name": "Thing"
+    "name": "owl#Thing",
+    "parent": "",
+    "colour": 1
   },
   {
     "id": 2,
-    "name": "SpecificConcept",
-    "parent": 1
+    "name": "ce-ont#SpecificConcept",
+    "parent": 1,
+    "colour": 1
   },
   {
     "id": 3,
-    "name": "ObservationalConcept",
-    "parent": 1
+    "name": "ce-ont#ObservationalConcept",
+    "parent": 1,
+    "colour": 2
+  },
+  {
+    "id": 4,
+    "name": "ce-ont#GeographicArea",
+    "parent": 1,
+    "colour": 3
   },
   {
     "id": 5,
-    "name": "DebatableConcept",
-    "parent": 1
+    "name": "ce-ont#DebatableConcept",
+    "parent": 1,
+    "colour": 4
   },
   {
     "id": 6,
-    "name": "CoreConcept",
-    "parent": 1
+    "name": "ce-ont#CoreConcept",
+    "parent": 1,
+    "colour": 1
   },
   {
     "id": 7,
-    "name": "uc#ValueChainInnovation",
-    "parent": 2
+    "name": "user-centered#ValueChainInnovation",
+    "parent": 2,
+    "colour": 2
   },
   {
     "id": 8,
-    "name": "uc#Value",
-    "parent": 2
+    "name": "user-centered#Value",
+    "parent": 2,
+    "colour": 3
   },
   {
     "id": 9,
-    "name": "uc#SufficientProgress",
-    "parent": 2
+    "name": "user-centered#SufficientProgress",
+    "parent": 2,
+    "colour": 4
   },
   {
     "id": 10,
-    "name": "uc#Opportunity",
-    "parent": 2
+    "name": "user-centered#Opportunity",
+    "parent": 2,
+    "colour": 1
   },
   {
     "id": 11,
-    "name": "uc#Goal",
-    "parent": 2
+    "name": "user-centered#Goal",
+    "parent": 2,
+    "colour": 2
   },
   {
     "id": 12,
-    "name": "tc#User",
-    "parent": 2
+    "name": "tool-centered#User",
+    "parent": 2,
+    "colour": 3
   },
   {
     "id": 13,
-    "name": "tc#Target",
-    "parent": 2
+    "name": "tool-centered#Target",
+    "parent": 2,
+    "colour": 4
   },
   {
     "id": 14,
-    "name": "tc#Solution",
-    "parent": 2
+    "name": "tool-centered#Solution",
+    "parent": 2,
+    "colour": 1
   },
   {
     "id": 15,
-    "name": "tc#ImplementationRatio",
-    "parent": 2
+    "name": "tool-centered#ImplementationRatio",
+    "parent": 2,
+    "colour": 2
   },
   {
     "id": 16,
-    "name": "tc#ImplementationArea",
-    "parent": 2
+    "name": "tool-centered#ImplementationArea",
+    "parent": 2,
+    "colour": 3
   },
   {
     "id": 17,
-    "name": "tc#FocusArea",
-    "parent": 2
+    "name": "tool-centered#FocusArea",
+    "parent": 2,
+    "colour": 4
   },
   {
     "id": 18,
-    "name": "tc#FlowIndicator",
-    "parent": 2
+    "name": "tool-centered#FlowIndicator",
+    "parent": 2,
+    "colour": 1
   },
   {
     "id": 19,
-    "name": "tc#Challenge",
-    "parent": 2
+    "name": "tool-centered#Challenge",
+    "parent": 2,
+    "colour": 2
   },
   {
     "id": 20,
-    "name": "tc#Aim",
-    "parent": 2
+    "name": "tool-centered#Aim",
+    "parent": 2,
+    "colour": 3
   },
   {
     "id": 21,
-    "name": "tc/SolutionPart",
-    "parent": 2
+    "name": "tool-centered/SolutionPart",
+    "parent": 2,
+    "colour": 4
   },
   {
     "id": 22,
-    "name": "Observation",
-    "parent": 3
+    "name": "ce-ont#Observation",
+    "parent": 3,
+    "colour": 1
   },
   {
     "id": 23,
-    "name": "Effect",
-    "parent": 3
+    "name": "ce-ont#Effect",
+    "parent": 3,
+    "colour": 2
   },
   {
     "id": 24,
-    "name": "Context",
-    "parent": 3
+    "name": "ce-ont#Context",
+    "parent": 3,
+    "colour": 3
   },
   {
     "id": 25,
-    "name": "Content",
-    "parent": 3
+    "name": "ce-ont#Content",
+    "parent": 3,
+    "colour": 4
+  },
+  {
+    "id": 26,
+    "name": "user-centered#Region",
+    "parent": 4,
+    "colour": 1
   },
   {
     "id": 27,
-    "name": "uc#Transition",
-    "parent": 5
+    "name": "user-centered#Transition",
+    "parent": 5,
+    "colour": 2
   },
   {
     "id": 28,
-    "name": "uc#Scale",
-    "parent": 5
+    "name": "user-centered#Scale",
+    "parent": 5,
+    "colour": 3
   },
   {
     "id": 29,
-    "name": "uc#Resource",
-    "parent": 5
+    "name": "user-centered#Resource",
+    "parent": 5,
+    "colour": 4
   },
   {
     "id": 30,
-    "name": "uc#Project",
-    "parent": 5
+    "name": "user-centered#Project",
+    "parent": 5,
+    "colour": 1
   },
   {
     "id": 31,
-    "name": "uc#MaterialUse",
-    "parent": 5
+    "name": "user-centered#MaterialUse",
+    "parent": 5,
+    "colour": 2
   },
   {
     "id": 32,
-    "name": "uc#Impact",
-    "parent": 5
+    "name": "user-centered#Impact",
+    "parent": 5,
+    "colour": 3
   },
   {
     "id": 33,
-    "name": "uc#Economy",
-    "parent": 5
+    "name": "user-centered#Economy",
+    "parent": 5,
+    "colour": 4
   },
   {
     "id": 34,
-    "name": "uc#BuiltEnvironment",
-    "parent": 5
+    "name": "user-centered#BuiltEnvironment",
+    "parent": 5,
+    "colour": 1
   },
   {
     "id": 35,
-    "name": "uc#Barrier",
-    "parent": 5
+    "name": "user-centered#Barrier",
+    "parent": 5,
+    "colour": 2
   },
   {
     "id": 36,
-    "name": "tc#Stakeholder",
-    "parent": 5
+    "name": "tool-centered#Stakeholder",
+    "parent": 5,
+    "colour": 3
   },
   {
     "id": 37,
-    "name": "tc#SolutionCategory",
-    "parent": 5
+    "name": "tool-centered#SolutionCategory",
+    "parent": 5,
+    "colour": 4
   },
   {
     "id": 38,
-    "name": "tc#KeyFlow",
-    "parent": 5
+    "name": "tool-centered#KeyFlow",
+    "parent": 5,
+    "colour": 1
   },
   {
     "id": 39,
-    "name": "tc#FlowChange",
-    "parent": 5
+    "name": "tool-centered#FlowChange",
+    "parent": 5,
+    "colour": 2
   },
   {
     "id": 40,
-    "name": "tc#CaseStudyArea",
-    "parent": 5
+    "name": "tool-centered#CaseStudyArea",
+    "parent": 5,
+    "colour": 3
   },
   {
     "id": 41,
-    "name": "tc#CaseStudy",
-    "parent": 5
+    "name": "tool-centered#CaseStudy",
+    "parent": 5,
+    "colour": 4
   },
   {
     "id": 42,
-    "name": "tc#AdministrativeLevel",
-    "parent": 5
+    "name": "tool-centered#AdministrativeLevel",
+    "parent": 5,
+    "colour": 1
   },
   {
     "id": 43,
-    "name": "tc#ActivityGroup",
-    "parent": 5
+    "name": "tool-centered#ActivityGroup",
+    "parent": 5,
+    "colour": 2
   },
   {
     "id": 44,
-    "name": "tc/ImplementationQuestion",
-    "parent": 5
+    "name": "tool-centered/ImplementationQuestion",
+    "parent": 5,
+    "colour": 3
   },
   {
     "id": 45,
-    "name": "dc#Role",
-    "parent": 5
+    "name": "data-centered-waste#Role",
+    "parent": 5,
+    "colour": 4
   },
   {
     "id": 46,
-    "name": "Activity",
-    "parent": 5
+    "name": "ce-ont#Activity",
+    "parent": 5,
+    "colour": 1
   },
   {
     "id": 47,
-    "name": "tc#FlowOrigin",
-    "parent": 6
+    "name": "tool-centered#FlowOrigin",
+    "parent": 6,
+    "colour": 2
   },
   {
     "id": 48,
-    "name": "tc#FlowDestination",
-    "parent": 6
+    "name": "tool-centered#FlowDestination",
+    "parent": 6,
+    "colour": 3
   },
   {
     "id": 49,
-    "name": "tc#Actor",
-    "parent": 6
+    "name": "tool-centered#Actor",
+    "parent": 6,
+    "colour": 4
   },
   {
     "id": 50,
-    "name": "sem#Set",
-    "parent": 6
+    "name": "socioeconomicmetabolism#Set",
+    "parent": 6,
+    "colour": 1
   },
   {
     "id": 51,
-    "name": "sem#Service",
-    "parent": 6
+    "name": "socioeconomicmetabolism#Service",
+    "parent": 6,
+    "colour": 2
   },
   {
     "id": 52,
-    "name": "sem#Object",
-    "parent": 6
+    "name": "socioeconomicmetabolism#Object",
+    "parent": 6,
+    "colour": 3
   },
   {
     "id": 53,
-    "name": "ProcessOutput",
-    "parent": 6
+    "name": "ce-ont#ProcessOutput",
+    "parent": 6,
+    "colour": 4
   },
   {
     "id": 54,
-    "name": "ProcessInput",
-    "parent": 6
+    "name": "ce-ont#ProcessInput",
+    "parent": 6,
+    "colour": 1
   },
   {
     "id": 55,
-    "name": "uc#EconomicValue",
-    "parent": 8
+    "name": "user-centered#EconomicValue",
+    "parent": 8,
+    "colour": 2
   },
   {
     "id": 56,
-    "name": "uc#EcologicalValue",
-    "parent": 8
+    "name": "user-centered#EcologicalValue",
+    "parent": 8,
+    "colour": 3
   },
   {
     "id": 57,
-    "name": "uc#TransitionGoal",
-    "parent": 11
+    "name": "user-centered#TransitionGoal",
+    "parent": 11,
+    "colour": 4
   },
   {
     "id": 58,
-    "name": "uc#CircularityGoal",
-    "parent": 11
+    "name": "user-centered#CircularityGoal",
+    "parent": 11,
+    "colour": 1
   },
   {
     "id": 59,
-    "name": "tc/FlowTarget",
-    "parent": 13
+    "name": "tool-centered/FlowTarget",
+    "parent": 13,
+    "colour": 2
   },
   {
     "id": 60,
-    "name": "tc#Publication",
-    "parent": 22
+    "name": "tool-centered#Publication",
+    "parent": 22,
+    "colour": 3
   },
   {
     "id": 61,
-    "name": "tc/Strategy",
-    "parent": 22
+    "name": "tool-centered/Strategy",
+    "parent": 22,
+    "colour": 4
   },
   {
     "id": 62,
-    "name": "dc#Report",
-    "parent": 22
+    "name": "data-centered-waste#Report",
+    "parent": 22,
+    "colour": 1
   },
   {
     "id": 63,
-    "name": "dc#Declaration",
-    "parent": 22
+    "name": "data-centered-port#Declaration",
+    "parent": 22,
+    "colour": 2
   },
   {
     "id": 64,
-    "name": "uc#Emission",
-    "parent": 23
+    "name": "user-centered#Emission",
+    "parent": 23,
+    "colour": 3
   },
   {
     "id": 65,
-    "name": "uc#Year",
-    "parent": 24
+    "name": "user-centered#Year",
+    "parent": 24,
+    "colour": 4
   },
   {
     "id": 66,
-    "name": "uc#City",
-    "parent": 24
+    "name": "user-centered#City",
+    "parent": 24,
+    "colour": 1
   },
   {
     "id": 67,
-    "name": "tc#Location",
-    "parent": 24
+    "name": "tool-centered#Location",
+    "parent": 24,
+    "colour": 2
   },
   {
     "id": 68,
-    "name": "tc/AdministrativeArea",
-    "parent": 24
+    "name": "tool-centered/AdministrativeArea",
+    "parent": 24,
+    "colour": 3
   },
   {
     "id": 69,
-    "name": "dc#WasteProcessingMethodCode",
-    "parent": 24
+    "name": "data-centered-waste#WasteProcessingMethodCode",
+    "parent": 24,
+    "colour": 4
   },
   {
     "id": 70,
-    "name": "dc#WasteCollectionMethod",
-    "parent": 24
+    "name": "data-centered-waste#WasteCollectionMethod",
+    "parent": 24,
+    "colour": 1
   },
   {
     "id": 71,
-    "name": "dc#Address",
-    "parent": 24
+    "name": "data-centered-waste#Address",
+    "parent": 24,
+    "colour": 2
   },
   {
     "id": 72,
-    "name": "dc#VesselClass",
-    "parent": 24
+    "name": "data-centered-port#VesselClass",
+    "parent": 24,
+    "colour": 3
   },
   {
     "id": 73,
-    "name": "dc#Vessel",
-    "parent": 24
+    "name": "data-centered-port#Vessel",
+    "parent": 24,
+    "colour": 4
   },
   {
     "id": 74,
-    "name": "dc#HarbourCountry",
-    "parent": 24
+    "name": "data-centered-port#HarbourCountry",
+    "parent": 24,
+    "colour": 1
   },
   {
     "id": 75,
-    "name": "dc#HarbourActivity",
-    "parent": 24
+    "name": "data-centered-port#HarbourActivity",
+    "parent": 24,
+    "colour": 2
   },
   {
     "id": 76,
-    "name": "dc#Harbour",
-    "parent": 24
+    "name": "data-centered-port#Harbour",
+    "parent": 24,
+    "colour": 3
   },
   {
     "id": 77,
-    "name": "uc#ValueGain",
-    "parent": 25
+    "name": "user-centered#ValueGain",
+    "parent": 25,
+    "colour": 4
   },
   {
     "id": 78,
-    "name": "tc#MaterialFraction",
-    "parent": 25
+    "name": "tool-centered#MaterialFraction",
+    "parent": 25,
+    "colour": 1
   },
   {
     "id": 79,
-    "name": "tc#Composition",
-    "parent": 25
+    "name": "tool-centered#Composition",
+    "parent": 25,
+    "colour": 2
   },
   {
     "id": 80,
-    "name": "dc#ContentCode",
-    "parent": 25
+    "name": "data-centered-waste#ContentCode",
+    "parent": 25,
+    "colour": 3
   },
   {
     "id": 81,
-    "name": "dc#Transhipment",
-    "parent": 25
+    "name": "data-centered-port#Transhipment",
+    "parent": 25,
+    "colour": 4
   },
   {
     "id": 82,
-    "name": "dc#ContentDescription",
-    "parent": 25
+    "name": "data-centered-port#ContentDescription",
+    "parent": 25,
+    "colour": 1
   },
   {
     "id": 83,
-    "name": "Material",
-    "parent": 25
+    "name": "ce-ont#Material",
+    "parent": 25,
+    "colour": 2
   },
   {
     "id": 84,
-    "name": "uc#RegionScale",
-    "parent": 28
+    "name": "user-centered#RegionScale",
+    "parent": 28,
+    "colour": 3
   },
   {
     "id": 85,
-    "name": "uc#LocalScale",
-    "parent": 28
+    "name": "user-centered#LocalScale",
+    "parent": 28,
+    "colour": 4
   },
   {
     "id": 86,
-    "name": "uc#GlobalScale",
-    "parent": 28
+    "name": "user-centered#GlobalScale",
+    "parent": 28,
+    "colour": 1
   },
   {
     "id": 87,
-    "name": "uc#CityScale",
-    "parent": 28
+    "name": "user-centered#CityScale",
+    "parent": 28,
+    "colour": 2
   },
   {
     "id": 88,
-    "name": "uc#RawMaterialResource",
-    "parent": 29
+    "name": "user-centered#RawMaterialResource",
+    "parent": 29,
+    "colour": 3
   },
   {
     "id": 89,
-    "name": "uc#PrimaryResource",
-    "parent": 29
+    "name": "user-centered#PrimaryResource",
+    "parent": 29,
+    "colour": 4
   },
   {
     "id": 90,
-    "name": "uc#CircularProject",
-    "parent": 30
+    "name": "user-centered#CircularProject",
+    "parent": 30,
+    "colour": 1
   },
   {
     "id": 91,
-    "name": "uc#CurrentMaterialUse",
-    "parent": 31
+    "name": "user-centered#CurrentMaterialUse",
+    "parent": 31,
+    "colour": 2
   },
   {
     "id": 92,
-    "name": "uc#AlternativeMaterialUse",
-    "parent": 31
+    "name": "user-centered#AlternativeMaterialUse",
+    "parent": 31,
+    "colour": 3
   },
   {
     "id": 93,
-    "name": "uc#SocialImpact",
-    "parent": 32
+    "name": "user-centered#SocialImpact",
+    "parent": 32,
+    "colour": 4
   },
   {
     "id": 94,
-    "name": "uc#EnvironmentalImpact",
-    "parent": 32
+    "name": "user-centered#EnvironmentalImpact",
+    "parent": 32,
+    "colour": 1
   },
   {
     "id": 95,
-    "name": "uc#CircularEconomy",
-    "parent": 33
+    "name": "user-centered#CircularEconomy",
+    "parent": 33,
+    "colour": 2
   },
   {
     "id": 96,
-    "name": "dc#WasteShipmentEntity",
-    "parent": 45
+    "name": "data-centered-waste#WasteShipmentEntity",
+    "parent": 45,
+    "colour": 3
   },
   {
     "id": 97,
-    "name": "dc#WasteReceivingEntity",
-    "parent": 45
+    "name": "data-centered-waste#WasteReceivingEntity",
+    "parent": 45,
+    "colour": 4
   },
   {
     "id": 98,
-    "name": "dc#WasteProcessingEntity",
-    "parent": 45
+    "name": "data-centered-waste#WasteProcessingEntity",
+    "parent": 45,
+    "colour": 1
   },
   {
     "id": 99,
-    "name": "dc#WasteMediatingEntity",
-    "parent": 45
+    "name": "data-centered-waste#WasteMediatingEntity",
+    "parent": 45,
+    "colour": 2
   },
   {
     "id": 100,
-    "name": "dc#WasteDisposingEntity",
-    "parent": 45
+    "name": "data-centered-waste#WasteDisposingEntity",
+    "parent": 45,
+    "colour": 3
   },
   {
     "id": 101,
-    "name": "dc#WasteCollectingEntity",
-    "parent": 45
+    "name": "data-centered-waste#WasteCollectingEntity",
+    "parent": 45,
+    "colour": 4
   },
   {
     "id": 102,
-    "name": "dc#WasteBroker",
-    "parent": 45
+    "name": "data-centered-waste#WasteBroker",
+    "parent": 45,
+    "colour": 1
   },
   {
     "id": 103,
-    "name": "dc#FirstSecondaryBuyer",
-    "parent": 45
+    "name": "data-centered-waste#FirstSecondaryBuyer",
+    "parent": 45,
+    "colour": 2
   },
   {
     "id": 104,
-    "name": "dc#Stevedore",
-    "parent": 49
+    "name": "data-centered-port#Stevedore",
+    "parent": 49,
+    "colour": 3
   },
   {
     "id": 105,
-    "name": "dc#ShippingAgent",
-    "parent": 49
+    "name": "data-centered-port#ShippingAgent",
+    "parent": 49,
+    "colour": 4
   },
   {
     "id": 106,
-    "name": "dc#ProfitCenter",
-    "parent": 49
+    "name": "data-centered-port#ProfitCenter",
+    "parent": 49,
+    "colour": 1
   },
   {
     "id": 107,
-    "name": "sem#Stock",
-    "parent": 50
+    "name": "socioeconomicmetabolism#Stock",
+    "parent": 50,
+    "colour": 2
   },
   {
     "id": 108,
-    "name": "sem#Event",
-    "parent": 50
+    "name": "socioeconomicmetabolism#Event",
+    "parent": 50,
+    "colour": 3
   },
   {
     "id": 109,
-    "name": "dc#MaterialDisposalReport",
-    "parent": 62
+    "name": "data-centered-waste#MaterialDisposalReport",
+    "parent": 62,
+    "colour": 4
   },
   {
     "id": 110,
-    "name": "dc#MaterialDeliveryReport",
-    "parent": 62
+    "name": "data-centered-waste#MaterialDeliveryReport",
+    "parent": 62,
+    "colour": 1
   },
   {
     "id": 111,
-    "name": "dc#ImportDeclaration",
-    "parent": 63
+    "name": "data-centered-port#ImportDeclaration",
+    "parent": 63,
+    "colour": 2
   },
   {
     "id": 112,
-    "name": "dc#ExportDeclaration",
-    "parent": 63
+    "name": "data-centered-port#ExportDeclaration",
+    "parent": 63,
+    "colour": 3
   },
   {
     "id": 113,
-    "name": "uc#CO2emission",
-    "parent": 64
+    "name": "user-centered#CO2emission",
+    "parent": 64,
+    "colour": 4
   },
   {
     "id": 114,
-    "name": "tc#OperationalLocation",
-    "parent": 67
+    "name": "tool-centered#OperationalLocation",
+    "parent": 67,
+    "colour": 1
   },
   {
     "id": 115,
-    "name": "tc/AdministrativeLocation",
-    "parent": 67
+    "name": "tool-centered/AdministrativeLocation",
+    "parent": 67,
+    "colour": 2
+  },
+  {
+    "id": 116,
+    "name": "data-centered-port#VehiclesCarrier",
+    "parent": 72,
+    "colour": 3
+  },
+  {
+    "id": 117,
+    "name": "data-centered-port#SelfDischargingBulkCarrier",
+    "parent": 72,
+    "colour": 4
+  },
+  {
+    "id": 118,
+    "name": "data-centered-port#Ro-RoCargoShip",
+    "parent": 72,
+    "colour": 1
+  },
+  {
+    "id": 119,
+    "name": "data-centered-port#RefrigeratedCargoShip",
+    "parent": 72,
+    "colour": 2
+  },
+  {
+    "id": 120,
+    "name": "data-centered-port#MolassesTanker",
+    "parent": 72,
+    "colour": 3
+  },
+  {
+    "id": 121,
+    "name": "data-centered-port#LPGTanker",
+    "parent": 72,
+    "colour": 4
+  },
+  {
+    "id": 122,
+    "name": "data-centered-port#HopperDredger",
+    "parent": 72,
+    "colour": 1
+  },
+  {
+    "id": 123,
+    "name": "data-centered-port#HeavyLoadCarrier",
+    "parent": 72,
+    "colour": 2
+  },
+  {
+    "id": 124,
+    "name": "data-centered-port#FruitJuiceCarrier",
+    "parent": 72,
+    "colour": 3
+  },
+  {
+    "id": 125,
+    "name": "data-centered-port#FishingVessel",
+    "parent": 72,
+    "colour": 4
+  },
+  {
+    "id": 126,
+    "name": "data-centered-port#ContainerShip",
+    "parent": 72,
+    "colour": 1
+  },
+  {
+    "id": 127,
+    "name": "data-centered-port#ChemicalTanker",
+    "parent": 72,
+    "colour": 2
+  },
+  {
+    "id": 128,
+    "name": "data-centered-port#ChemicalOilProductsTanker",
+    "parent": 72,
+    "colour": 3
+  },
+  {
+    "id": 129,
+    "name": "data-centered-port#CableLayer",
+    "parent": 72,
+    "colour": 4
+  },
+  {
+    "id": 130,
+    "name": "data-centered-port#BulkCarrier",
+    "parent": 72,
+    "colour": 1
   },
   {
     "id": 131,
-    "name": "dc#Unloading",
-    "parent": 75
+    "name": "data-centered-port#Unloading",
+    "parent": 75,
+    "colour": 2
   },
   {
     "id": 132,
-    "name": "dc#Loading",
-    "parent": 75
+    "name": "data-centered-port#Loading",
+    "parent": 75,
+    "colour": 3
   },
   {
     "id": 133,
-    "name": "dc#OriginHarbour",
-    "parent": 76
+    "name": "data-centered-port#OriginHarbour",
+    "parent": 76,
+    "colour": 4
   },
   {
     "id": 134,
-    "name": "dc#DestinationHarbour",
-    "parent": 76
+    "name": "data-centered-port#DestinationHarbour",
+    "parent": 76,
+    "colour": 1
   },
   {
     "id": 135,
-    "name": "uc#PotentialValueGain",
-    "parent": 77
+    "name": "user-centered#PotentialValueGain",
+    "parent": 77,
+    "colour": 2
   },
   {
     "id": 136,
-    "name": "tc/Waste",
-    "parent": 79
+    "name": "tool-centered/Waste",
+    "parent": 79,
+    "colour": 3
   },
   {
     "id": 137,
-    "name": "tc/Product",
-    "parent": 79
+    "name": "tool-centered/Product",
+    "parent": 79,
+    "colour": 4
   },
   {
     "id": 138,
-    "name": "dc#GNcode",
-    "parent": 80
+    "name": "data-centered-waste#GNcode",
+    "parent": 80,
+    "colour": 1
   },
   {
     "id": 139,
-    "name": "dc#EWCcode",
-    "parent": 80
+    "name": "data-centered-waste#EWCcode",
+    "parent": 80,
+    "colour": 2
   },
   {
     "id": 140,
-    "name": "dc#NSTRTypeOfGoods",
-    "parent": 82
+    "name": "data-centered-port#NSTRTypeOfGoods",
+    "parent": 82,
+    "colour": 3
   },
   {
     "id": 141,
-    "name": "dc#NSTRCode",
-    "parent": 82
+    "name": "data-centered-port#NSTRCode",
+    "parent": 82,
+    "colour": 4
   },
   {
     "id": 142,
-    "name": "dc#HSCode",
-    "parent": 82
+    "name": "data-centered-port#HSCode",
+    "parent": 82,
+    "colour": 1
   },
   {
     "id": 143,
-    "name": "dc#GoodsClassificationRange",
-    "parent": 82
+    "name": "data-centered-port#GoodsClassificationRange",
+    "parent": 82,
+    "colour": 2
   },
   {
     "id": 144,
-    "name": "dc#ESP02TypeOfGoods",
-    "parent": 82
+    "name": "data-centered-port#ESP02TypeOfGoods",
+    "parent": 82,
+    "colour": 3
   },
   {
     "id": 145,
-    "name": "dc#ESP01TypeOfGoods",
-    "parent": 82
+    "name": "data-centered-port#ESP01TypeOfGoods",
+    "parent": 82,
+    "colour": 4
   },
   {
     "id": 146,
-    "name": "dc#AppearanceCode",
-    "parent": 82
+    "name": "data-centered-port#AppearanceCode",
+    "parent": 82,
+    "colour": 1
   },
   {
     "id": 147,
-    "name": "dc#ADNRCode",
-    "parent": 82
+    "name": "data-centered-port#ADNRCode",
+    "parent": 82,
+    "colour": 2
   },
   {
     "id": 148,
-    "name": "uc#SortedMaterial",
-    "parent": 83
+    "name": "user-centered#SortedMaterial",
+    "parent": 83,
+    "colour": 3
   },
   {
     "id": 149,
-    "name": "uc#RawMaterial",
-    "parent": 83
+    "name": "user-centered#RawMaterial",
+    "parent": 83,
+    "colour": 4
   },
   {
     "id": 150,
-    "name": "uc#FoodMaterial",
-    "parent": 83
+    "name": "user-centered#FoodMaterial",
+    "parent": 83,
+    "colour": 1
   },
   {
     "id": 151,
-    "name": "uc#EndOfLifeMaterial",
-    "parent": 83
+    "name": "user-centered#EndOfLifeMaterial",
+    "parent": 83,
+    "colour": 2
   },
   {
     "id": 152,
-    "name": "uc#DemolitionWaste",
-    "parent": 83
+    "name": "user-centered#DemolitionWaste",
+    "parent": 83,
+    "colour": 3
   },
   {
     "id": 153,
-    "name": "uc#BioBasedMaterial",
-    "parent": 83
+    "name": "user-centered#BioBasedMaterial",
+    "parent": 83,
+    "colour": 4
   },
   {
     "id": 154,
-    "name": "tc#IdleStock",
-    "parent": 107
+    "name": "tool-centered#IdleStock",
+    "parent": 107,
+    "colour": 1
   },
   {
     "id": 155,
-    "name": "Process",
-    "parent": 108
+    "name": "ce-ont#Process",
+    "parent": 108,
+    "colour": 2
   },
   {
     "id": 156,
-    "name": "Flow",
-    "parent": 108
+    "name": "ce-ont#Flow",
+    "parent": 108,
+    "colour": 3
   },
   {
     "id": 157,
-    "name": "dc#WasteDisposalLocation",
-    "parent": 114
+    "name": "data-centered-waste#WasteDisposalLocation",
+    "parent": 114,
+    "colour": 4
   },
   {
     "id": 158,
-    "name": "tc#MaterialStock",
-    "parent": 154
+    "name": "tool-centered#MaterialStock",
+    "parent": 154,
+    "colour": 1
   },
   {
     "id": 159,
-    "name": "uc#RawMaterialExtraction",
-    "parent": 155
+    "name": "user-centered#RawMaterialExtraction",
+    "parent": 155,
+    "colour": 2
   },
   {
     "id": 160,
-    "name": "uc#Production",
-    "parent": 155
+    "name": "user-centered#Production",
+    "parent": 155,
+    "colour": 3
   },
   {
     "id": 161,
-    "name": "uc#Consumption",
-    "parent": 155
+    "name": "user-centered#Consumption",
+    "parent": 155,
+    "colour": 4
   },
   {
     "id": 162,
-    "name": "uc#MaterialFlow",
-    "parent": 156
+    "name": "user-centered#MaterialFlow",
+    "parent": 156,
+    "colour": 1
   },
   {
     "id": 163,
-    "name": "tc#Actor2actorFlow",
-    "parent": 156
+    "name": "tool-centered#Actor2actorFlow",
+    "parent": 156,
+    "colour": 2
   },
   {
     "id": 164,
-    "name": "Process2ProcessFlow",
-    "parent": 156
+    "name": "ce-ont#Process2ProcessFlow",
+    "parent": 156,
+    "colour": 3
   },
   {
     "id": 165,
-    "name": "dc#SecondarWasteStream",
-    "parent": 167
+    "name": "data-centered-waste#SecondarWasteStream",
+    "parent": 167,
+    "colour": 4
   },
   {
     "id": 166,
-    "name": "dc#PrimaryWasteStream",
-    "parent": 167
+    "name": "data-centered-waste#PrimaryWasteStream",
+    "parent": 167,
+    "colour": 1
   },
   {
     "id": 167,
-    "name": "dc#WasteStream",
-    "parent": 162
+    "name": "data-centered-waste#WasteStream",
+    "parent": 162,
+    "colour": 2
   }
 ]
