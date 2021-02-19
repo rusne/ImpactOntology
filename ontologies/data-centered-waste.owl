@@ -225,6 +225,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#hasAddress"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Address"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Address -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Address">
@@ -290,7 +309,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#FirstSecondaryBuyer -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#FirstSecondaryBuyer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
         <rdfs:comment xml:lang="nl">Eerst Afnemer</rdfs:comment>
     </owl:Class>
     
@@ -371,28 +390,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondaryWasteStream -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#hasAddress"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Address"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#name"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondarWasteStream -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondarWasteStream">
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondaryWasteStream">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#includesRole"/>
@@ -420,7 +420,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteBroker -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteBroker">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
         <rdfs:comment xml:lang="nl">Handelaar</rdfs:comment>
     </owl:Class>
     
@@ -429,7 +429,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteCollectingEntity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteCollectingEntity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
         <rdfs:comment xml:lang="nl">Inzamelaar</rdfs:comment>
     </owl:Class>
     
@@ -477,7 +477,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteDisposingEntity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteDisposingEntity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
         <rdfs:comment xml:lang="nl">Ontdoener</rdfs:comment>
     </owl:Class>
     
@@ -486,7 +486,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteMediatingEntity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteMediatingEntity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
         <rdfs:comment xml:lang="nl">Bemiddelaar</rdfs:comment>
     </owl:Class>
     
@@ -495,7 +495,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteProcessingEntity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteProcessingEntity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
         <rdfs:comment xml:lang="nl">Verwerker</rdfs:comment>
     </owl:Class>
     
@@ -518,7 +518,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteReceivingEntity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteReceivingEntity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
         <rdfs:comment xml:lang="nl">Ontvanger</rdfs:comment>
     </owl:Class>
     
@@ -527,7 +527,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteShipmentEntity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteShipmentEntity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
         <rdfs:comment xml:lang="nl">Afzender</rdfs:comment>
     </owl:Class>
     

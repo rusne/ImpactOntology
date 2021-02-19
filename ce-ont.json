@@ -209,11 +209,6 @@
     "parent": 5
   },
   {
-    "id": 45,
-    "name": "dc#Role",
-    "parent": 5
-  },
-  {
     "id": 46,
     "name": "Activity",
     "parent": 5
@@ -466,42 +461,42 @@
   {
     "id": 96,
     "name": "dc#WasteShipmentEntity",
-    "parent": 45
+    "parent": 49
   },
   {
     "id": 97,
     "name": "dc#WasteReceivingEntity",
-    "parent": 45
+    "parent": 49
   },
   {
     "id": 98,
     "name": "dc#WasteProcessingEntity",
-    "parent": 45
+    "parent": 49
   },
   {
     "id": 99,
     "name": "dc#WasteMediatingEntity",
-    "parent": 45
+    "parent": 49
   },
   {
     "id": 100,
     "name": "dc#WasteDisposingEntity",
-    "parent": 45
+    "parent": 49
   },
   {
     "id": 101,
     "name": "dc#WasteCollectingEntity",
-    "parent": 45
+    "parent": 49
   },
   {
     "id": 102,
     "name": "dc#WasteBroker",
-    "parent": 45
+    "parent": 49
   },
   {
     "id": 103,
     "name": "dc#FirstSecondaryBuyer",
-    "parent": 45
+    "parent": 49
   },
   {
     "id": 104,

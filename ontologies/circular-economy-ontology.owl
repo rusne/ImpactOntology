@@ -188,9 +188,6 @@
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Report"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteCollectionMethod"/>
     </Declaration>
     <Declaration>
@@ -653,9 +650,6 @@
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#AppearanceCode"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondarWasteStream"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Ownership"/>
     </Declaration>
     <Declaration>
@@ -837,6 +831,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/AdministrativeArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondaryWasteStream"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_activity2activity#hasComposition"/>
@@ -1055,14 +1052,14 @@
         </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondarWasteStream"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondaryWasteStream"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#includesRole"/>
             <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#FirstSecondaryBuyer"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondarWasteStream"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondaryWasteStream"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#isReportedBy"/>
             <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#MaterialDeliveryReport"/>
@@ -1126,10 +1123,17 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/area_casestudy#hasName"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#hasAddress"/>
+            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Address"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#name"/>
             <Datatype abbreviatedIRI="xsd:string"/>
-        </DataExactCardinality>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor2actorFlow"/>
@@ -2446,7 +2450,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#FirstSecondaryBuyer"/>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#GNcode"/>
@@ -2483,29 +2487,11 @@
         <Class IRI="#Observation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
-        <Class IRI="#DebatableConcept"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#hasAddress"/>
-            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Address"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#name"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondarWasteStream"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondaryWasteStream"/>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteStream"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondarWasteStream"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondaryWasteStream"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#includesRole"/>
             <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteProcessingEntity"/>
@@ -2513,11 +2499,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteBroker"/>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteCollectingEntity"/>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteCollectionMethod"/>
@@ -2557,15 +2543,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteDisposingEntity"/>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteMediatingEntity"/>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteProcessingEntity"/>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteProcessingMethodCode"/>
@@ -2580,11 +2566,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteReceivingEntity"/>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteShipmentEntity"/>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Role"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteStream"/>
