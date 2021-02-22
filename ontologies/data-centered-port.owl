@@ -264,7 +264,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ADNRCode -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ADNRCode">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescriptionCode"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ADNRDescription"/>
@@ -278,7 +278,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#AppearanceCode -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#AppearanceCode">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescriptionCode"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#appearanceDescription"/>
@@ -329,9 +329,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription -->
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescriptionCode -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescriptionCode"/>
     
 
 
@@ -439,7 +439,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP01TypeOfGoods -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP01TypeOfGoods">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescriptionCode"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP01Description"/>
@@ -453,7 +453,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP02TypeOfGoods -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP02TypeOfGoods">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescriptionCode"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP02Description"/>
@@ -504,7 +504,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#GoodsClassificationRange -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#GoodsClassificationRange">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescriptionCode"/>
     </owl:Class>
     
 
@@ -512,7 +512,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HSCode -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HSCode">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescriptionCode"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HSDescription"/>
@@ -627,7 +627,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NSTRCode -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NSTRCode">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescriptionCode"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HSDescription"/>
@@ -641,7 +641,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NSTRTypeOfGoods -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NSTRTypeOfGoods">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescription"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescriptionCode"/>
     </owl:Class>
     
 

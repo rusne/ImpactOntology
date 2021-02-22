@@ -1,746 +1,802 @@
 [
   {
+    "name": "owl#Thing",
     "id": 1,
-    "name": "Thing"
+    "parent": ""
   },
   {
+    "name": "ce-ont#CoreConcept",
     "id": 2,
-    "name": "SpecificConcept",
     "parent": 1
   },
   {
+    "name": "ce-ont#DebatableProperty",
     "id": 3,
-    "name": "ObservationalConcept",
     "parent": 1
   },
   {
+    "name": "ce-ont#GeographicArea",
+    "id": 4,
+    "parent": 1
+  },
+  {
+    "name": "ce-ont#ObservationalProperty",
     "id": 5,
-    "name": "DebatableConcept",
     "parent": 1
   },
   {
+    "name": "ce-ont#SpecificProperty",
     "id": 6,
-    "name": "CoreConcept",
     "parent": 1
   },
   {
+    "name": "data#ADNRCode",
     "id": 7,
-    "name": "uc#ValueChainInnovation",
-    "parent": 2
+    "parent": 74
   },
   {
+    "name": "data#AppearanceCode",
     "id": 8,
-    "name": "uc#Value",
-    "parent": 2
+    "parent": 74
   },
   {
+    "name": "data#ESP01TypeOfGoods",
     "id": 9,
-    "name": "uc#SufficientProgress",
-    "parent": 2
+    "parent": 74
   },
   {
+    "name": "data#ESP02TypeOfGoods",
     "id": 10,
-    "name": "uc#Opportunity",
-    "parent": 2
+    "parent": 74
   },
   {
+    "name": "data#GoodsClassificationRange",
     "id": 11,
-    "name": "uc#Goal",
-    "parent": 2
+    "parent": 74
   },
   {
+    "name": "data#HSCode",
     "id": 12,
-    "name": "tc#User",
-    "parent": 2
+    "parent": 74
   },
   {
+    "name": "data#NSTRCode",
     "id": 13,
-    "name": "tc#Target",
-    "parent": 2
+    "parent": 74
   },
   {
+    "name": "data#NSTRTypeOfGoods",
     "id": 14,
-    "name": "tc#Solution",
-    "parent": 2
+    "parent": 74
   },
   {
+    "name": "data#EWCcode",
     "id": 15,
-    "name": "tc#ImplementationRatio",
-    "parent": 2
+    "parent": 75
   },
   {
+    "name": "data#GNcode",
     "id": 16,
-    "name": "tc#ImplementationArea",
-    "parent": 2
+    "parent": 75
   },
   {
+    "name": "tool#AdministrativeLocation",
     "id": 17,
-    "name": "tc#FocusArea",
-    "parent": 2
+    "parent": 79
   },
   {
+    "name": "tool#OperationalLocation",
     "id": 18,
-    "name": "tc#FlowIndicator",
-    "parent": 2
+    "parent": 79
   },
   {
+    "name": "data#DestinationHarbour",
     "id": 19,
-    "name": "tc#Challenge",
-    "parent": 2
+    "parent": 80
   },
   {
+    "name": "data#OriginHarbour",
     "id": 20,
-    "name": "tc#Aim",
-    "parent": 2
+    "parent": 80
   },
   {
+    "name": "data#Loading",
     "id": 21,
-    "name": "tc/SolutionPart",
+    "parent": 81
+  },
+  {
+    "name": "data#Unloading",
+    "id": 22,
+    "parent": 81
+  },
+  {
+    "name": "sem#Event",
+    "id": 23,
+    "parent": 116
+  },
+  {
+    "name": "sem#Stock",
+    "id": 24,
+    "parent": 116
+  },
+  {
+    "name": "data#ProfitCenter",
+    "id": 25,
+    "parent": 117
+  },
+  {
+    "name": "data#ShippingAgent",
+    "id": 26,
+    "parent": 117
+  },
+  {
+    "name": "data#Stevedore",
+    "id": 27,
+    "parent": 117
+  },
+  {
+    "name": "data#FirstSecondaryBuyer",
+    "id": 28,
+    "parent": 117
+  },
+  {
+    "name": "data#WasteBroker",
+    "id": 29,
+    "parent": 117
+  },
+  {
+    "name": "data#WasteCollectingEntity",
+    "id": 30,
+    "parent": 117
+  },
+  {
+    "name": "data#WasteDisposingEntity",
+    "id": 31,
+    "parent": 117
+  },
+  {
+    "name": "data#WasteMediatingEntity",
+    "id": 32,
+    "parent": 117
+  },
+  {
+    "name": "data#WasteProcessingEntity",
+    "id": 33,
+    "parent": 117
+  },
+  {
+    "name": "data#WasteReceivingEntity",
+    "id": 34,
+    "parent": 117
+  },
+  {
+    "name": "data#WasteShipmentEntity",
+    "id": 35,
+    "parent": 117
+  },
+  {
+    "name": "user#BuiltEnvironment",
+    "id": 36,
+    "parent": 122
+  },
+  {
+    "name": "user#BioBasedMaterial",
+    "id": 37,
+    "parent": 122
+  },
+  {
+    "name": "user#DemolitionWaste",
+    "id": 38,
+    "parent": 122
+  },
+  {
+    "name": "user#EndOfLifeMaterial",
+    "id": 39,
+    "parent": 122
+  },
+  {
+    "name": "user#FoodMaterial",
+    "id": 40,
+    "parent": 122
+  },
+  {
+    "name": "user#RawMaterial",
+    "id": 41,
+    "parent": 122
+  },
+  {
+    "name": "user#SortedMaterial",
+    "id": 42,
+    "parent": 122
+  },
+  {
+    "name": "tool#Composition",
+    "id": 43,
+    "parent": 122
+  },
+  {
+    "name": "tool#Stakeholder",
+    "id": 44,
+    "parent": 122
+  },
+  {
+    "name": "user#Barrier",
+    "id": 45,
+    "parent": 122
+  },
+  {
+    "name": "user#Economy",
+    "id": 46,
+    "parent": 122
+  },
+  {
+    "name": "user#Impact",
+    "id": 47,
+    "parent": 122
+  },
+  {
+    "name": "user#MaterialUse",
+    "id": 48,
+    "parent": 122
+  },
+  {
+    "name": "user#Scale",
+    "id": 49,
+    "parent": 122
+  },
+  {
+    "name": "user#Transition",
+    "id": 50,
+    "parent": 122
+  },
+  {
+    "name": "user#ValueGain",
+    "id": 51,
+    "parent": 122
+  },
+  {
+    "name": "tool#ActivityGroup",
+    "id": 52,
+    "parent": 123
+  },
+  {
+    "name": "tool#KeyFlow",
+    "id": 53,
+    "parent": 123
+  },
+  {
+    "name": "tool#SolutionCategory",
+    "id": 54,
+    "parent": 123
+  },
+  {
+    "name": "ce-ont#Activity",
+    "id": 55,
+    "parent": 123
+  },
+  {
+    "name": "ce-ont#Material",
+    "id": 56,
+    "parent": 123
+  },
+  {
+    "name": "user#Resource",
+    "id": 57,
+    "parent": 123
+  },
+  {
+    "name": "tool#Product",
+    "id": 58,
+    "parent": 43
+  },
+  {
+    "name": "tool#Waste",
+    "id": 59,
+    "parent": 43
+  },
+  {
+    "name": "user#CircularEconomy",
+    "id": 60,
+    "parent": 46
+  },
+  {
+    "name": "user#EnvironmentalImpact",
+    "id": 61,
+    "parent": 47
+  },
+  {
+    "name": "user#SocialImpact",
+    "id": 62,
+    "parent": 47
+  },
+  {
+    "name": "user#AlternativeMaterialUse",
+    "id": 63,
+    "parent": 48
+  },
+  {
+    "name": "user#CurrentMaterialUse",
+    "id": 64,
+    "parent": 48
+  },
+  {
+    "name": "user#CityScale",
+    "id": 65,
+    "parent": 49
+  },
+  {
+    "name": "user#GlobalScale",
+    "id": 66,
+    "parent": 49
+  },
+  {
+    "name": "user#LocalScale",
+    "id": 67,
+    "parent": 49
+  },
+  {
+    "name": "user#RegionScale",
+    "id": 68,
+    "parent": 49
+  },
+  {
+    "name": "user#PotentialValueGain",
+    "id": 69,
+    "parent": 51
+  },
+  {
+    "name": "user#CO2emission",
+    "id": 70,
+    "parent": 89
+  },
+  {
+    "name": "data#WasteStream",
+    "id": 71,
+    "parent": 149
+  },
+  {
+    "name": "tool#FlowChange",
+    "id": 72,
+    "parent": 124
+  },
+  {
+    "name": "tool#MaterialFraction",
+    "id": 73,
+    "parent": 124
+  },
+  {
+    "name": "data#ContentDescriptionCode",
+    "id": 74,
+    "parent": 124
+  },
+  {
+    "name": "data#SecondaryWasteContentCode",
+    "id": 75,
+    "parent": 124
+  },
+  {
+    "name": "tool#AdministrativeArea",
+    "id": 76,
+    "parent": 125
+  },
+  {
+    "name": "user#City",
+    "id": 77,
+    "parent": 125
+  },
+  {
+    "name": "tool#AdministrativeLevel",
+    "id": 78,
+    "parent": 125
+  },
+  {
+    "name": "tool#Location",
+    "id": 79,
+    "parent": 125
+  },
+  {
+    "name": "data#Harbour",
+    "id": 80,
+    "parent": 125
+  },
+  {
+    "name": "data#HarbourActivity",
+    "id": 81,
+    "parent": 125
+  },
+  {
+    "name": "data#HarbourCountry",
+    "id": 82,
+    "parent": 125
+  },
+  {
+    "name": "data#Vessel",
+    "id": 83,
+    "parent": 125
+  },
+  {
+    "name": "data#VesselClass",
+    "id": 84,
+    "parent": 125
+  },
+  {
+    "name": "data#Address",
+    "id": 85,
+    "parent": 125
+  },
+  {
+    "name": "data#WasteCollectionMethod",
+    "id": 86,
+    "parent": 125
+  },
+  {
+    "name": "data#WasteProcessingMethodCode",
+    "id": 87,
+    "parent": 125
+  },
+  {
+    "name": "user#Year",
+    "id": 88,
+    "parent": 125
+  },
+  {
+    "name": "user#Emission",
+    "id": 89,
+    "parent": 126
+  },
+  {
+    "name": "tool#ImplementationQuestion",
+    "id": 90,
+    "parent": 127
+  },
+  {
+    "name": "tool#Strategy",
+    "id": 91,
+    "parent": 127
+  },
+  {
+    "name": "tool#Publication",
+    "id": 92,
+    "parent": 127
+  },
+  {
+    "name": "ce-ont#Model",
+    "id": 93,
+    "parent": 127
+  },
+  {
+    "name": "data#Declaration",
+    "id": 94,
+    "parent": 127
+  },
+  {
+    "name": "data#Report",
+    "id": 95,
+    "parent": 127
+  },
+  {
+    "name": "data#ExportDeclaration",
+    "id": 96,
+    "parent": 94
+  },
+  {
+    "name": "data#ImportDeclaration",
+    "id": 97,
+    "parent": 94
+  },
+  {
+    "name": "data#MaterialDeliveryReport",
+    "id": 98,
+    "parent": 95
+  },
+  {
+    "name": "data#MaterialDisposalReport",
+    "id": 99,
+    "parent": 95
+  },
+  {
+    "name": "tool#FlowTarget",
+    "id": 100,
+    "parent": 138
+  },
+  {
+    "name": "user#CircularityGoal",
+    "id": 101,
+    "parent": 140
+  },
+  {
+    "name": "user#TransitionGoal",
+    "id": 102,
+    "parent": 140
+  },
+  {
+    "name": "user#CircularProject",
+    "id": 103,
+    "parent": 142
+  },
+  {
+    "name": "user#EcologicalValue",
+    "id": 104,
+    "parent": 144
+  },
+  {
+    "name": "user#EconomicValue",
+    "id": 105,
+    "parent": 144
+  },
+  {
+    "name": "user#BioBasedMaterial",
+    "id": 106,
+    "parent": 56
+  },
+  {
+    "name": "user#DemolitionWaste",
+    "id": 107,
+    "parent": 56
+  },
+  {
+    "name": "user#EndOfLifeMaterial",
+    "id": 108,
+    "parent": 56
+  },
+  {
+    "name": "user#FoodMaterial",
+    "id": 109,
+    "parent": 56
+  },
+  {
+    "name": "user#RawMaterial",
+    "id": 110,
+    "parent": 56
+  },
+  {
+    "name": "user#SortedMaterial",
+    "id": 111,
+    "parent": 56
+  },
+  {
+    "name": "user#PrimaryResource",
+    "id": 112,
+    "parent": 57
+  },
+  {
+    "name": "user#RawMaterialResource",
+    "id": 113,
+    "parent": 57
+  },
+  {
+    "name": "sem#Object",
+    "id": 114,
     "parent": 2
   },
   {
-    "id": 22,
-    "name": "Observation",
-    "parent": 3
-  },
-  {
-    "id": 23,
-    "name": "Effect",
-    "parent": 3
-  },
-  {
-    "id": 24,
-    "name": "Context",
-    "parent": 3
-  },
-  {
-    "id": 25,
-    "name": "Content",
-    "parent": 3
-  },
-  {
-    "id": 27,
-    "name": "uc#Transition",
-    "parent": 5
-  },
-  {
-    "id": 28,
-    "name": "uc#Scale",
-    "parent": 5
-  },
-  {
-    "id": 29,
-    "name": "uc#Resource",
-    "parent": 5
-  },
-  {
-    "id": 30,
-    "name": "uc#Project",
-    "parent": 5
-  },
-  {
-    "id": 31,
-    "name": "uc#MaterialUse",
-    "parent": 5
-  },
-  {
-    "id": 32,
-    "name": "uc#Impact",
-    "parent": 5
-  },
-  {
-    "id": 33,
-    "name": "uc#Economy",
-    "parent": 5
-  },
-  {
-    "id": 34,
-    "name": "uc#BuiltEnvironment",
-    "parent": 5
-  },
-  {
-    "id": 35,
-    "name": "uc#Barrier",
-    "parent": 5
-  },
-  {
-    "id": 36,
-    "name": "tc#Stakeholder",
-    "parent": 5
-  },
-  {
-    "id": 37,
-    "name": "tc#SolutionCategory",
-    "parent": 5
-  },
-  {
-    "id": 38,
-    "name": "tc#KeyFlow",
-    "parent": 5
-  },
-  {
-    "id": 39,
-    "name": "tc#FlowChange",
-    "parent": 5
-  },
-  {
-    "id": 40,
-    "name": "tc#CaseStudyArea",
-    "parent": 5
-  },
-  {
-    "id": 41,
-    "name": "tc#CaseStudy",
-    "parent": 5
-  },
-  {
-    "id": 42,
-    "name": "tc#AdministrativeLevel",
-    "parent": 5
-  },
-  {
-    "id": 43,
-    "name": "tc#ActivityGroup",
-    "parent": 5
-  },
-  {
-    "id": 44,
-    "name": "tc/ImplementationQuestion",
-    "parent": 5
-  },
-  {
-    "id": 46,
-    "name": "Activity",
-    "parent": 5
-  },
-  {
-    "id": 47,
-    "name": "tc#FlowOrigin",
-    "parent": 6
-  },
-  {
-    "id": 48,
-    "name": "tc#FlowDestination",
-    "parent": 6
-  },
-  {
-    "id": 49,
-    "name": "tc#Actor",
-    "parent": 6
-  },
-  {
-    "id": 50,
-    "name": "sem#Set",
-    "parent": 6
-  },
-  {
-    "id": 51,
     "name": "sem#Service",
-    "parent": 6
-  },
-  {
-    "id": 52,
-    "name": "sem#Object",
-    "parent": 6
-  },
-  {
-    "id": 53,
-    "name": "ProcessOutput",
-    "parent": 6
-  },
-  {
-    "id": 54,
-    "name": "ProcessInput",
-    "parent": 6
-  },
-  {
-    "id": 55,
-    "name": "uc#EconomicValue",
-    "parent": 8
-  },
-  {
-    "id": 56,
-    "name": "uc#EcologicalValue",
-    "parent": 8
-  },
-  {
-    "id": 57,
-    "name": "uc#TransitionGoal",
-    "parent": 11
-  },
-  {
-    "id": 58,
-    "name": "uc#CircularityGoal",
-    "parent": 11
-  },
-  {
-    "id": 59,
-    "name": "tc/FlowTarget",
-    "parent": 13
-  },
-  {
-    "id": 60,
-    "name": "tc#Publication",
-    "parent": 22
-  },
-  {
-    "id": 61,
-    "name": "tc/Strategy",
-    "parent": 22
-  },
-  {
-    "id": 62,
-    "name": "dc#Report",
-    "parent": 22
-  },
-  {
-    "id": 63,
-    "name": "dc#Declaration",
-    "parent": 22
-  },
-  {
-    "id": 64,
-    "name": "uc#Emission",
-    "parent": 23
-  },
-  {
-    "id": 65,
-    "name": "uc#Year",
-    "parent": 24
-  },
-  {
-    "id": 66,
-    "name": "uc#City",
-    "parent": 24
-  },
-  {
-    "id": 67,
-    "name": "tc#Location",
-    "parent": 24
-  },
-  {
-    "id": 68,
-    "name": "tc/AdministrativeArea",
-    "parent": 24
-  },
-  {
-    "id": 69,
-    "name": "dc#WasteProcessingMethodCode",
-    "parent": 24
-  },
-  {
-    "id": 70,
-    "name": "dc#WasteCollectionMethod",
-    "parent": 24
-  },
-  {
-    "id": 71,
-    "name": "dc#Address",
-    "parent": 24
-  },
-  {
-    "id": 72,
-    "name": "dc#VesselClass",
-    "parent": 24
-  },
-  {
-    "id": 73,
-    "name": "dc#Vessel",
-    "parent": 24
-  },
-  {
-    "id": 74,
-    "name": "dc#HarbourCountry",
-    "parent": 24
-  },
-  {
-    "id": 75,
-    "name": "dc#HarbourActivity",
-    "parent": 24
-  },
-  {
-    "id": 76,
-    "name": "dc#Harbour",
-    "parent": 24
-  },
-  {
-    "id": 77,
-    "name": "uc#ValueGain",
-    "parent": 25
-  },
-  {
-    "id": 78,
-    "name": "tc#MaterialFraction",
-    "parent": 25
-  },
-  {
-    "id": 79,
-    "name": "tc#Composition",
-    "parent": 25
-  },
-  {
-    "id": 80,
-    "name": "dc#ContentCode",
-    "parent": 25
-  },
-  {
-    "id": 81,
-    "name": "dc#Transhipment",
-    "parent": 25
-  },
-  {
-    "id": 82,
-    "name": "dc#ContentDescription",
-    "parent": 25
-  },
-  {
-    "id": 83,
-    "name": "Material",
-    "parent": 25
-  },
-  {
-    "id": 84,
-    "name": "uc#RegionScale",
-    "parent": 28
-  },
-  {
-    "id": 85,
-    "name": "uc#LocalScale",
-    "parent": 28
-  },
-  {
-    "id": 86,
-    "name": "uc#GlobalScale",
-    "parent": 28
-  },
-  {
-    "id": 87,
-    "name": "uc#CityScale",
-    "parent": 28
-  },
-  {
-    "id": 88,
-    "name": "uc#RawMaterialResource",
-    "parent": 29
-  },
-  {
-    "id": 89,
-    "name": "uc#PrimaryResource",
-    "parent": 29
-  },
-  {
-    "id": 90,
-    "name": "uc#CircularProject",
-    "parent": 30
-  },
-  {
-    "id": 91,
-    "name": "uc#CurrentMaterialUse",
-    "parent": 31
-  },
-  {
-    "id": 92,
-    "name": "uc#AlternativeMaterialUse",
-    "parent": 31
-  },
-  {
-    "id": 93,
-    "name": "uc#SocialImpact",
-    "parent": 32
-  },
-  {
-    "id": 94,
-    "name": "uc#EnvironmentalImpact",
-    "parent": 32
-  },
-  {
-    "id": 95,
-    "name": "uc#CircularEconomy",
-    "parent": 33
-  },
-  {
-    "id": 96,
-    "name": "dc#WasteShipmentEntity",
-    "parent": 49
-  },
-  {
-    "id": 97,
-    "name": "dc#WasteReceivingEntity",
-    "parent": 49
-  },
-  {
-    "id": 98,
-    "name": "dc#WasteProcessingEntity",
-    "parent": 49
-  },
-  {
-    "id": 99,
-    "name": "dc#WasteMediatingEntity",
-    "parent": 49
-  },
-  {
-    "id": 100,
-    "name": "dc#WasteDisposingEntity",
-    "parent": 49
-  },
-  {
-    "id": 101,
-    "name": "dc#WasteCollectingEntity",
-    "parent": 49
-  },
-  {
-    "id": 102,
-    "name": "dc#WasteBroker",
-    "parent": 49
-  },
-  {
-    "id": 103,
-    "name": "dc#FirstSecondaryBuyer",
-    "parent": 49
-  },
-  {
-    "id": 104,
-    "name": "dc#Stevedore",
-    "parent": 49
-  },
-  {
-    "id": 105,
-    "name": "dc#ShippingAgent",
-    "parent": 49
-  },
-  {
-    "id": 106,
-    "name": "dc#ProfitCenter",
-    "parent": 49
-  },
-  {
-    "id": 107,
-    "name": "sem#Stock",
-    "parent": 50
-  },
-  {
-    "id": 108,
-    "name": "sem#Event",
-    "parent": 50
-  },
-  {
-    "id": 109,
-    "name": "dc#MaterialDisposalReport",
-    "parent": 62
-  },
-  {
-    "id": 110,
-    "name": "dc#MaterialDeliveryReport",
-    "parent": 62
-  },
-  {
-    "id": 111,
-    "name": "dc#ImportDeclaration",
-    "parent": 63
-  },
-  {
-    "id": 112,
-    "name": "dc#ExportDeclaration",
-    "parent": 63
-  },
-  {
-    "id": 113,
-    "name": "uc#CO2emission",
-    "parent": 64
-  },
-  {
-    "id": 114,
-    "name": "tc#OperationalLocation",
-    "parent": 67
-  },
-  {
     "id": 115,
-    "name": "tc/AdministrativeLocation",
-    "parent": 67
+    "parent": 2
   },
   {
+    "name": "sem#Set",
+    "id": 116,
+    "parent": 2
+  },
+  {
+    "name": "tool#Actor",
+    "id": 117,
+    "parent": 2
+  },
+  {
+    "name": "tool#FlowDestination",
+    "id": 118,
+    "parent": 2
+  },
+  {
+    "name": "tool#FlowOrigin",
+    "id": 119,
+    "parent": 2
+  },
+  {
+    "name": "ce-ont#InputFlow",
+    "id": 120,
+    "parent": 2
+  },
+  {
+    "name": "ce-ont#OutputFlow",
+    "id": 121,
+    "parent": 2
+  },
+  {
+    "name": "ce-ont#Denotation",
+    "id": 122,
+    "parent": 3
+  },
+  {
+    "name": "ce-ont#Taxonomy",
+    "id": 123,
+    "parent": 3
+  },
+  {
+    "name": "ce-ont#ContentProperty",
+    "id": 124,
+    "parent": 5
+  },
+  {
+    "name": "ce-ont#ContextProperty",
+    "id": 125,
+    "parent": 5
+  },
+  {
+    "name": "ce-ont#EffectProperty",
+    "id": 126,
+    "parent": 5
+  },
+  {
+    "name": "ce-ont#ObservationSource",
+    "id": 127,
+    "parent": 5
+  },
+  {
+    "name": "tool#SolutionPart",
+    "id": 128,
+    "parent": 6
+  },
+  {
+    "name": "tool#CaseStudyArea",
+    "id": 129,
+    "parent": 6
+  },
+  {
+    "name": "tool#FocusArea",
+    "id": 130,
+    "parent": 6
+  },
+  {
+    "name": "tool#ImplementationArea",
     "id": 131,
-    "name": "dc#Unloading",
-    "parent": 75
+    "parent": 6
   },
   {
+    "name": "tool#Aim",
     "id": 132,
-    "name": "dc#Loading",
-    "parent": 75
+    "parent": 6
   },
   {
+    "name": "tool#CaseStudy",
     "id": 133,
-    "name": "dc#OriginHarbour",
-    "parent": 76
+    "parent": 6
   },
   {
+    "name": "tool#Challenge",
     "id": 134,
-    "name": "dc#DestinationHarbour",
-    "parent": 76
+    "parent": 6
   },
   {
+    "name": "tool#FlowIndicator",
     "id": 135,
-    "name": "uc#PotentialValueGain",
-    "parent": 77
+    "parent": 6
   },
   {
+    "name": "tool#ImplementationRatio",
     "id": 136,
-    "name": "tc/Waste",
-    "parent": 79
+    "parent": 6
   },
   {
+    "name": "tool#Solution",
     "id": 137,
-    "name": "tc/Product",
-    "parent": 79
+    "parent": 6
   },
   {
+    "name": "tool#Target",
     "id": 138,
-    "name": "dc#GNcode",
-    "parent": 80
+    "parent": 6
   },
   {
+    "name": "tool#User",
     "id": 139,
-    "name": "dc#EWCcode",
-    "parent": 80
+    "parent": 6
   },
   {
+    "name": "user#Goal",
     "id": 140,
-    "name": "dc#NSTRTypeOfGoods",
-    "parent": 82
+    "parent": 6
   },
   {
+    "name": "user#Opportunity",
     "id": 141,
-    "name": "dc#NSTRCode",
-    "parent": 82
+    "parent": 6
   },
   {
+    "name": "user#Project",
     "id": 142,
-    "name": "dc#HSCode",
-    "parent": 82
+    "parent": 6
   },
   {
+    "name": "user#SufficientProgress",
     "id": 143,
-    "name": "dc#GoodsClassificationRange",
-    "parent": 82
+    "parent": 6
   },
   {
+    "name": "user#Value",
     "id": 144,
-    "name": "dc#ESP02TypeOfGoods",
-    "parent": 82
+    "parent": 6
   },
   {
+    "name": "user#ValueChainInnovation",
     "id": 145,
-    "name": "dc#ESP01TypeOfGoods",
-    "parent": 82
+    "parent": 6
   },
   {
+    "name": "tool#Actor2actorFlow",
     "id": 146,
-    "name": "dc#AppearanceCode",
-    "parent": 82
-  },
-  {
-    "id": 147,
-    "name": "dc#ADNRCode",
-    "parent": 82
-  },
-  {
-    "id": 148,
-    "name": "uc#SortedMaterial",
-    "parent": 83
-  },
-  {
-    "id": 149,
-    "name": "uc#RawMaterial",
-    "parent": 83
-  },
-  {
-    "id": 150,
-    "name": "uc#FoodMaterial",
-    "parent": 83
-  },
-  {
-    "id": 151,
-    "name": "uc#EndOfLifeMaterial",
-    "parent": 83
-  },
-  {
-    "id": 152,
-    "name": "uc#DemolitionWaste",
-    "parent": 83
-  },
-  {
-    "id": 153,
-    "name": "uc#BioBasedMaterial",
-    "parent": 83
-  },
-  {
-    "id": 154,
-    "name": "tc#IdleStock",
-    "parent": 107
-  },
-  {
-    "id": 155,
-    "name": "Process",
-    "parent": 108
-  },
-  {
-    "id": 156,
-    "name": "Flow",
-    "parent": 108
-  },
-  {
-    "id": 157,
-    "name": "dc#WasteDisposalLocation",
-    "parent": 114
-  },
-  {
-    "id": 158,
-    "name": "tc#MaterialStock",
     "parent": 154
   },
   {
+    "name": "ce-ont#ImmaterialFlow",
+    "id": 147,
+    "parent": 154
+  },
+  {
+    "name": "ce-ont#Process2ProcessFlow",
+    "id": 148,
+    "parent": 154
+  },
+  {
+    "name": "user#MaterialFlow",
+    "id": 149,
+    "parent": 154
+  },
+  {
+    "name": "data#Transhipment",
+    "id": 150,
+    "parent": 155
+  },
+  {
+    "name": "user#Consumption",
+    "id": 151,
+    "parent": 155
+  },
+  {
+    "name": "user#Production",
+    "id": 152,
+    "parent": 155
+  },
+  {
+    "name": "user#RawMaterialExtraction",
+    "id": 153,
+    "parent": 155
+  },
+  {
+    "name": "ce-ont#Flow",
+    "id": 154,
+    "parent": 23
+  },
+  {
+    "name": "ce-ont#Process",
+    "id": 155,
+    "parent": 23
+  },
+  {
+    "name": "tool#IdleStock",
+    "id": 156,
+    "parent": 24
+  },
+  {
+    "name": "tool#MaterialStock",
+    "id": 157,
+    "parent": 156
+  },
+  {
+    "name": "data#WasteDisposalLocation",
+    "id": 158,
+    "parent": 18
+  },
+  {
+    "name": "data#PrimaryWasteStream",
     "id": 159,
-    "name": "uc#RawMaterialExtraction",
-    "parent": 155
+    "parent": 71
   },
   {
+    "name": "data#SecondaryWasteStream",
     "id": 160,
-    "name": "uc#Production",
-    "parent": 155
-  },
-  {
-    "id": 161,
-    "name": "uc#Consumption",
-    "parent": 155
-  },
-  {
-    "id": 162,
-    "name": "uc#MaterialFlow",
-    "parent": 156
-  },
-  {
-    "id": 163,
-    "name": "tc#Actor2actorFlow",
-    "parent": 156
-  },
-  {
-    "id": 164,
-    "name": "Process2ProcessFlow",
-    "parent": 156
-  },
-  {
-    "id": 165,
-    "name": "dc#SecondarWasteStream",
-    "parent": 167
-  },
-  {
-    "id": 166,
-    "name": "dc#PrimaryWasteStream",
-    "parent": 167
-  },
-  {
-    "id": 167,
-    "name": "dc#WasteStream",
-    "parent": 162
+    "parent": 71
   }
 ]

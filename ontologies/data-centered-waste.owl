@@ -33,7 +33,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#hasContentCode">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#ContentCode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondaryWasteContentCode"/>
     </owl:ObjectProperty>
     
 
@@ -275,25 +275,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#ContentCode -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#ContentCode">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#EWCcode"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#GNcode"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#EWCcode -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#EWCcode">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#ContentCode"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondaryWasteContentCode"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#EWCdescription"/>
@@ -318,7 +303,7 @@
     <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#GNcode -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#GNcode">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#ContentCode"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondaryWasteContentCode"/>
     </owl:Class>
     
 
@@ -383,6 +368,21 @@
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#MaterialDeliveryReport"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#MaterialDisposalReport"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondaryWasteContentCode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondaryWasteContentCode">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#EWCcode"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#GNcode"/>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -539,7 +539,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#hasContentCode"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#ContentCode"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondaryWasteContentCode"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>

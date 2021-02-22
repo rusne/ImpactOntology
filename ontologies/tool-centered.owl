@@ -27,7 +27,13 @@
         <Class IRI="#Actor2actorFlow"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#AdministrativeArea"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#AdministrativeLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdministrativeLocation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Aim"/>
@@ -63,6 +69,9 @@
         <Class IRI="#FlowOrigin"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#FlowTarget"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#FocusArea"/>
     </Declaration>
     <Declaration>
@@ -70,6 +79,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ImplementationArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImplementationQuestion"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ImplementationRatio"/>
@@ -93,6 +105,9 @@
         <Class IRI="#OperationalLocation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Product"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Province"/>
     </Declaration>
     <Declaration>
@@ -108,7 +123,13 @@
         <Class IRI="#SolutionCategory"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SolutionPart"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Stakeholder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strategy"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Target"/>
@@ -117,40 +138,19 @@
         <Class IRI="#User"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/AdministrativeArea"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/AdministrativeLocation"/>
+        <Class IRI="#Waste"/>
     </Declaration>
     <Declaration>
         <Class IRI="/FlowFraction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/FlowTarget"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/ImplementationArea"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/ImplementationQuestion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Product"/>
     </Declaration>
     <Declaration>
         <Class IRI="/ProductFraction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/SolutionPart"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Strategy"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/StrategyFlowFraction"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Waste"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Activity"/>
@@ -394,11 +394,33 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#AdministrativeArea"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdministrativeArea"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/studyarea_area#hasAdminLevel"/>
+            <Class IRI="#AdministrativeLevel"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdministrativeArea"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/area_casestudy#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#AdministrativeLevel"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
             <Class IRI="#CaseStudy"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdministrativeLocation"/>
+        <Class IRI="#Location"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Aim"/>
@@ -418,7 +440,7 @@
         <Class IRI="#CaseStudy"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
-            <Class IRI="/Strategy"/>
+            <Class IRI="#Strategy"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -462,7 +484,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Country"/>
-        <Class IRI="/AdministrativeArea"/>
+        <Class IRI="#AdministrativeArea"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Country"/>
@@ -473,7 +495,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#District"/>
-        <Class IRI="/AdministrativeArea"/>
+        <Class IRI="#AdministrativeArea"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FlowChange"/>
@@ -523,6 +545,17 @@
             <ObjectProperty IRI="/statusquo_flowindicator#hasFlowB"/>
             <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Flow"/>
         </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlowTarget"/>
+        <Class IRI="#Target"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlowTarget"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/statusquo_flowtarget#measuredByIndicator"/>
+            <Class IRI="#FlowIndicator"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FocusArea"/>
@@ -582,10 +615,24 @@
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#GeographicArea"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ImplementationQuestion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
+            <Class IRI="#ImplementationRatio"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImplementationQuestion"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/changes_implementationquestion#hasQuestion"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ImplementationRatio"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
-            <Class IRI="/ImplementationQuestion"/>
+            <Class IRI="#ImplementationQuestion"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -620,7 +667,7 @@
         <Class IRI="#Location"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#belongsTo"/>
-            <Class IRI="/AdministrativeArea"/>
+            <Class IRI="#AdministrativeArea"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -664,7 +711,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Municipality"/>
-        <Class IRI="/AdministrativeArea"/>
+        <Class IRI="#AdministrativeArea"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Municipality"/>
@@ -678,8 +725,19 @@
         <Class IRI="#Location"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Product"/>
+        <Class IRI="#Composition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Product"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
+            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Province"/>
-        <Class IRI="/AdministrativeArea"/>
+        <Class IRI="#AdministrativeArea"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Province"/>
@@ -725,7 +783,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Region"/>
-        <Class IRI="/AdministrativeArea"/>
+        <Class IRI="#AdministrativeArea"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Region"/>
@@ -752,7 +810,7 @@
         <Class IRI="#Solution"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="#hasSolutionPart"/>
-            <Class IRI="/SolutionPart"/>
+            <Class IRI="#SolutionPart"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -777,6 +835,41 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SolutionPart"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/changes_implementationquantity#hasImplementationQuestion"/>
+            <Class IRI="#ImplementationQuestion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolutionPart"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/changes_implementationarea#affectsImplementationArea"/>
+            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#GeographicArea"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolutionPart"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/changes_implementationquantity#hasImplementationRatio"/>
+            <Class IRI="#ImplementationRatio"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolutionPart"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/changes_solutionpart#causesFlowChange"/>
+            <Class IRI="#FlowChange"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolutionPart"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/area_casestudy#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Stakeholder"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
@@ -789,6 +882,34 @@
             <DataProperty IRI="/area_casestudy#hasName"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strategy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/changes_strategy#createdByUser"/>
+            <Class IRI="#User"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strategy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
+            <Class IRI="#CaseStudy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strategy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
+            <Class IRI="#Stakeholder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strategy"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasSolution"/>
+            <Class IRI="#Solution"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Target"/>
@@ -840,152 +961,31 @@
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AdministrativeArea"/>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#GeographicArea"/>
+        <Class IRI="#Waste"/>
+        <Class IRI="#Composition"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AdministrativeArea"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="/studyarea_area#hasAdminLevel"/>
-            <Class IRI="#AdministrativeLevel"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/AdministrativeArea"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="/area_casestudy#hasName"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/AdministrativeLocation"/>
-        <Class IRI="#Location"/>
+        <Class IRI="#Waste"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
+            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/FlowFraction"/>
         <Class IRI="#Actor2actorFlow"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/FlowTarget"/>
-        <Class IRI="#Target"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/FlowTarget"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/statusquo_flowtarget#measuredByIndicator"/>
-            <Class IRI="#FlowIndicator"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/ImplementationArea"/>
         <Class IRI="#ImplementationArea"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/ImplementationQuestion"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
-            <Class IRI="#ImplementationRatio"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/ImplementationQuestion"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="/changes_implementationquestion#hasQuestion"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Product"/>
-        <Class IRI="#Composition"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Product"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
-            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/ProductFraction"/>
         <Class IRI="/FlowFraction"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/SolutionPart"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/changes_implementationquantity#hasImplementationQuestion"/>
-            <Class IRI="/ImplementationQuestion"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/SolutionPart"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="/changes_implementationarea#affectsImplementationArea"/>
-            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#GeographicArea"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/SolutionPart"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="/changes_implementationquantity#hasImplementationRatio"/>
-            <Class IRI="#ImplementationRatio"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/SolutionPart"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="/changes_solutionpart#causesFlowChange"/>
-            <Class IRI="#FlowChange"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/SolutionPart"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="/area_casestudy#hasName"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Strategy"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/changes_strategy#createdByUser"/>
-            <Class IRI="#User"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Strategy"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
-            <Class IRI="#CaseStudy"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Strategy"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/statusquo_userobjective_target_areas#relatesTo"/>
-            <Class IRI="#Stakeholder"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Strategy"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#hasSolution"/>
-            <Class IRI="#Solution"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/StrategyFlowFraction"/>
         <Class IRI="/FlowFraction"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Waste"/>
-        <Class IRI="#Composition"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Waste"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#contains"/>
-            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Material"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont#Activity"/>
