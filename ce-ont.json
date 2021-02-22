@@ -15,11 +15,6 @@
     "parent": 1
   },
   {
-    "name": "ce-ont#GeographicArea",
-    "id": 4,
-    "parent": 1
-  },
-  {
     "name": "ce-ont#ObservationalProperty",
     "id": 5,
     "parent": 1
@@ -523,36 +518,6 @@
     "name": "user#EconomicValue",
     "id": 105,
     "parent": 144
-  },
-  {
-    "name": "user#BioBasedMaterial",
-    "id": 106,
-    "parent": 56
-  },
-  {
-    "name": "user#DemolitionWaste",
-    "id": 107,
-    "parent": 56
-  },
-  {
-    "name": "user#EndOfLifeMaterial",
-    "id": 108,
-    "parent": 56
-  },
-  {
-    "name": "user#FoodMaterial",
-    "id": 109,
-    "parent": 56
-  },
-  {
-    "name": "user#RawMaterial",
-    "id": 110,
-    "parent": 56
-  },
-  {
-    "name": "user#SortedMaterial",
-    "id": 111,
-    "parent": 56
   },
   {
     "name": "user#PrimaryResource",
