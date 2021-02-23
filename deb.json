@@ -2,7 +2,7 @@
   {
     "name": "owl#Thing",
     "id": 1,
-    "parent": 0
+    "parent": ""
   },
   {
     "name": "ce-ont#DebatableProperty",
