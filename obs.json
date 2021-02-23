@@ -1,0 +1,262 @@
+[
+  {
+    "name": "owl#Thing",
+    "id": 1,
+    "parent": 0
+  },
+  {
+    "name": "ce-ont#ObservationalProperty",
+    "id": 5,
+    "parent": 1
+  },
+  {
+    "name": "data#ADNRCode",
+    "id": 7,
+    "parent": 74
+  },
+  {
+    "name": "data#AppearanceCode",
+    "id": 8,
+    "parent": 74
+  },
+  {
+    "name": "data#ESP01TypeOfGoods",
+    "id": 9,
+    "parent": 74
+  },
+  {
+    "name": "data#ESP02TypeOfGoods",
+    "id": 10,
+    "parent": 74
+  },
+  {
+    "name": "data#GoodsClassificationRange",
+    "id": 11,
+    "parent": 74
+  },
+  {
+    "name": "data#HSCode",
+    "id": 12,
+    "parent": 74
+  },
+  {
+    "name": "data#NSTRCode",
+    "id": 13,
+    "parent": 74
+  },
+  {
+    "name": "data#NSTRTypeOfGoods",
+    "id": 14,
+    "parent": 74
+  },
+  {
+    "name": "data#EWCcode",
+    "id": 15,
+    "parent": 75
+  },
+  {
+    "name": "data#GNcode",
+    "id": 16,
+    "parent": 75
+  },
+  {
+    "name": "tool#AdministrativeLocation",
+    "id": 17,
+    "parent": 79
+  },
+  {
+    "name": "tool#OperationalLocation",
+    "id": 18,
+    "parent": 79
+  },
+  {
+    "name": "data#DestinationHarbour",
+    "id": 19,
+    "parent": 80
+  },
+  {
+    "name": "data#OriginHarbour",
+    "id": 20,
+    "parent": 80
+  },
+  {
+    "name": "data#Loading",
+    "id": 21,
+    "parent": 81
+  },
+  {
+    "name": "data#Unloading",
+    "id": 22,
+    "parent": 81
+  },
+  {
+    "name": "user#CO2emission",
+    "id": 70,
+    "parent": 89
+  },
+  {
+    "name": "tool#FlowChange",
+    "id": 72,
+    "parent": 124
+  },
+  {
+    "name": "tool#MaterialFraction",
+    "id": 73,
+    "parent": 124
+  },
+  {
+    "name": "data#ContentDescriptionCode",
+    "id": 74,
+    "parent": 124
+  },
+  {
+    "name": "data#SecondaryWasteContentCode",
+    "id": 75,
+    "parent": 124
+  },
+  {
+    "name": "tool#AdministrativeArea",
+    "id": 76,
+    "parent": 125
+  },
+  {
+    "name": "user#City",
+    "id": 77,
+    "parent": 125
+  },
+  {
+    "name": "tool#AdministrativeLevel",
+    "id": 78,
+    "parent": 125
+  },
+  {
+    "name": "tool#Location",
+    "id": 79,
+    "parent": 125
+  },
+  {
+    "name": "data#Harbour",
+    "id": 80,
+    "parent": 125
+  },
+  {
+    "name": "data#HarbourActivity",
+    "id": 81,
+    "parent": 125
+  },
+  {
+    "name": "data#HarbourCountry",
+    "id": 82,
+    "parent": 125
+  },
+  {
+    "name": "data#Vessel",
+    "id": 83,
+    "parent": 125
+  },
+  {
+    "name": "data#VesselClass",
+    "id": 84,
+    "parent": 125
+  },
+  {
+    "name": "data#Address",
+    "id": 85,
+    "parent": 125
+  },
+  {
+    "name": "data#WasteCollectionMethod",
+    "id": 86,
+    "parent": 125
+  },
+  {
+    "name": "data#WasteProcessingMethodCode",
+    "id": 87,
+    "parent": 125
+  },
+  {
+    "name": "user#Year",
+    "id": 88,
+    "parent": 125
+  },
+  {
+    "name": "user#Emission",
+    "id": 89,
+    "parent": 126
+  },
+  {
+    "name": "tool#ImplementationQuestion",
+    "id": 90,
+    "parent": 127
+  },
+  {
+    "name": "tool#Strategy",
+    "id": 91,
+    "parent": 127
+  },
+  {
+    "name": "tool#Publication",
+    "id": 92,
+    "parent": 127
+  },
+  {
+    "name": "ce-ont#Model",
+    "id": 93,
+    "parent": 127
+  },
+  {
+    "name": "data#Declaration",
+    "id": 94,
+    "parent": 127
+  },
+  {
+    "name": "data#Report",
+    "id": 95,
+    "parent": 127
+  },
+  {
+    "name": "data#ExportDeclaration",
+    "id": 96,
+    "parent": 94
+  },
+  {
+    "name": "data#ImportDeclaration",
+    "id": 97,
+    "parent": 94
+  },
+  {
+    "name": "data#MaterialDeliveryReport",
+    "id": 98,
+    "parent": 95
+  },
+  {
+    "name": "data#MaterialDisposalReport",
+    "id": 99,
+    "parent": 95
+  },
+  {
+    "name": "ce-ont#ContentProperty",
+    "id": 124,
+    "parent": 5
+  },
+  {
+    "name": "ce-ont#ContextProperty",
+    "id": 125,
+    "parent": 5
+  },
+  {
+    "name": "ce-ont#EffectProperty",
+    "id": 126,
+    "parent": 5
+  },
+  {
+    "name": "ce-ont#ObservationSource",
+    "id": 127,
+    "parent": 5
+  },
+  {
+    "name": "data#WasteDisposalLocation",
+    "id": 158,
+    "parent": 18
+  }
+]

@@ -1,0 +1,232 @@
+[
+  {
+    "name": "owl#Thing",
+    "id": 1,
+    "parent": 0
+  },
+  {
+    "name": "ce-ont#DebatableProperty",
+    "id": 3,
+    "parent": 1
+  },
+  {
+    "name": "user#BuiltEnvironment",
+    "id": 36,
+    "parent": 122
+  },
+  {
+    "name": "user#BioBasedMaterial",
+    "id": 37,
+    "parent": 122
+  },
+  {
+    "name": "user#DemolitionWaste",
+    "id": 38,
+    "parent": 122
+  },
+  {
+    "name": "user#EndOfLifeMaterial",
+    "id": 39,
+    "parent": 122
+  },
+  {
+    "name": "user#FoodMaterial",
+    "id": 40,
+    "parent": 122
+  },
+  {
+    "name": "user#RawMaterial",
+    "id": 41,
+    "parent": 122
+  },
+  {
+    "name": "user#SortedMaterial",
+    "id": 42,
+    "parent": 122
+  },
+  {
+    "name": "tool#Composition",
+    "id": 43,
+    "parent": 122
+  },
+  {
+    "name": "tool#Stakeholder",
+    "id": 44,
+    "parent": 122
+  },
+  {
+    "name": "user#Barrier",
+    "id": 45,
+    "parent": 122
+  },
+  {
+    "name": "user#Economy",
+    "id": 46,
+    "parent": 122
+  },
+  {
+    "name": "user#Impact",
+    "id": 47,
+    "parent": 122
+  },
+  {
+    "name": "user#MaterialUse",
+    "id": 48,
+    "parent": 122
+  },
+  {
+    "name": "user#Scale",
+    "id": 49,
+    "parent": 122
+  },
+  {
+    "name": "user#Transition",
+    "id": 50,
+    "parent": 122
+  },
+  {
+    "name": "user#ValueGain",
+    "id": 51,
+    "parent": 122
+  },
+  {
+    "name": "tool#ActivityGroup",
+    "id": 52,
+    "parent": 123
+  },
+  {
+    "name": "tool#KeyFlow",
+    "id": 53,
+    "parent": 123
+  },
+  {
+    "name": "tool#SolutionCategory",
+    "id": 54,
+    "parent": 123
+  },
+  {
+    "name": "ce-ont#Activity",
+    "id": 55,
+    "parent": 123
+  },
+  {
+    "name": "ce-ont#Material",
+    "id": 56,
+    "parent": 123
+  },
+  {
+    "name": "user#Resource",
+    "id": 57,
+    "parent": 123
+  },
+  {
+    "name": "tool#Product",
+    "id": 58,
+    "parent": 43
+  },
+  {
+    "name": "tool#Waste",
+    "id": 59,
+    "parent": 43
+  },
+  {
+    "name": "user#CircularEconomy",
+    "id": 60,
+    "parent": 46
+  },
+  {
+    "name": "user#EnvironmentalImpact",
+    "id": 61,
+    "parent": 47
+  },
+  {
+    "name": "user#SocialImpact",
+    "id": 62,
+    "parent": 47
+  },
+  {
+    "name": "user#AlternativeMaterialUse",
+    "id": 63,
+    "parent": 48
+  },
+  {
+    "name": "user#CurrentMaterialUse",
+    "id": 64,
+    "parent": 48
+  },
+  {
+    "name": "user#CityScale",
+    "id": 65,
+    "parent": 49
+  },
+  {
+    "name": "user#GlobalScale",
+    "id": 66,
+    "parent": 49
+  },
+  {
+    "name": "user#LocalScale",
+    "id": 67,
+    "parent": 49
+  },
+  {
+    "name": "user#RegionScale",
+    "id": 68,
+    "parent": 49
+  },
+  {
+    "name": "user#PotentialValueGain",
+    "id": 69,
+    "parent": 51
+  },
+  {
+    "name": "user#BioBasedMaterial",
+    "id": 106,
+    "parent": 56
+  },
+  {
+    "name": "user#DemolitionWaste",
+    "id": 107,
+    "parent": 56
+  },
+  {
+    "name": "user#EndOfLifeMaterial",
+    "id": 108,
+    "parent": 56
+  },
+  {
+    "name": "user#FoodMaterial",
+    "id": 109,
+    "parent": 56
+  },
+  {
+    "name": "user#RawMaterial",
+    "id": 110,
+    "parent": 56
+  },
+  {
+    "name": "user#SortedMaterial",
+    "id": 111,
+    "parent": 56
+  },
+  {
+    "name": "user#PrimaryResource",
+    "id": 112,
+    "parent": 57
+  },
+  {
+    "name": "user#RawMaterialResource",
+    "id": 113,
+    "parent": 57
+  },
+  {
+    "name": "ce-ont#Denotation",
+    "id": 122,
+    "parent": 3
+  },
+  {
+    "name": "ce-ont#Taxonomy",
+    "id": 123,
+    "parent": 3
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "name": "owl#Thing",
+    "id": 1,
+    "parent": 0
+  },
+  {
+    "name": "ce-ont#SpecificProperty",
+    "id": 6,
+    "parent": 1
+  },
+  {
+    "name": "tool#FlowTarget",
+    "id": 100,
+    "parent": 138
+  },
+  {
+    "name": "user#CircularityGoal",
+    "id": 101,
+    "parent": 140
+  },
+  {
+    "name": "user#TransitionGoal",
+    "id": 102,
+    "parent": 140
+  },
+  {
+    "name": "user#CircularProject",
+    "id": 103,
+    "parent": 142
+  },
+  {
+    "name": "user#EcologicalValue",
+    "id": 104,
+    "parent": 144
+  },
+  {
+    "name": "user#EconomicValue",
+    "id": 105,
+    "parent": 144
+  },
+  {
+    "name": "tool#SolutionPart",
+    "id": 128,
+    "parent": 6
+  },
+  {
+    "name": "tool#CaseStudyArea",
+    "id": 129,
+    "parent": 6
+  },
+  {
+    "name": "tool#FocusArea",
+    "id": 130,
+    "parent": 6
+  },
+  {
+    "name": "tool#ImplementationArea",
+    "id": 131,
+    "parent": 6
+  },
+  {
+    "name": "tool#Aim",
+    "id": 132,
+    "parent": 6
+  },
+  {
+    "name": "tool#CaseStudy",
+    "id": 133,
+    "parent": 6
+  },
+  {
+    "name": "tool#Challenge",
+    "id": 134,
+    "parent": 6
+  },
+  {
+    "name": "tool#FlowIndicator",
+    "id": 135,
+    "parent": 6
+  },
+  {
+    "name": "tool#ImplementationRatio",
+    "id": 136,
+    "parent": 6
+  },
+  {
+    "name": "tool#Solution",
+    "id": 137,
+    "parent": 6
+  },
+  {
+    "name": "tool#Target",
+    "id": 138,
+    "parent": 6
+  },
+  {
+    "name": "tool#User",
+    "id": 139,
+    "parent": 6
+  },
+  {
+    "name": "user#Goal",
+    "id": 140,
+    "parent": 6
+  },
+  {
+    "name": "user#Opportunity",
+    "id": 141,
+    "parent": 6
+  },
+  {
+    "name": "user#Project",
+    "id": 142,
+    "parent": 6
+  },
+  {
+    "name": "user#SufficientProgress",
+    "id": 143,
+    "parent": 6
+  },
+  {
+    "name": "user#Value",
+    "id": 144,
+    "parent": 6
+  },
+  {
+    "name": "user#ValueChainInnovation",
+    "id": 145,
+    "parent": 6
+  }
+]
