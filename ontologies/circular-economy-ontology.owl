@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont">
-    <Prefix name="" IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/circular-economy-ontology#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/ce-ont"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -17,6 +17,9 @@
         <Literal xml:lang="en">A combined ontology for monitoring the transition towards a Circular Economy. The ontology is used for creating a baseline data structure for integrating monitoring data from the different data sources. The ontology-supported baseline data structure is then used for creating transition monitoring frameworks and decision support environments at different spatial administrative scales and in different social, environmental and geographic contexts. Moreover, the baseline structure allows constructing circularity metrics and indicators according to the different (emerging) definitions of circularity.</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Event"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Object"/>
     </Declaration>
     <Declaration>
@@ -26,19 +29,34 @@
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Set"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Stock"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#ActivityGroup"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor2actorFlow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#AdministrativeArea"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#AdministrativeLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#AdministrativeLocation"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Aim"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#CaseStudy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#CaseStudyArea"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Challenge"/>
@@ -59,7 +77,19 @@
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#FlowOrigin"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#FlowTarget"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#FocusArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#IdleMaterialStock"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#IdleStock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#ImplementationArea"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#ImplementationQuestion"/>
@@ -77,6 +107,12 @@
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#MaterialFraction"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#OperationalLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Product"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Publication"/>
     </Declaration>
     <Declaration>
@@ -92,10 +128,16 @@
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Stakeholder"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Strategy"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Target"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Waste"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Activity"/>
@@ -158,10 +200,55 @@
         <Class IRI="#Taxonomy"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ADNRCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#AppearanceCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#BulkCarrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#CableLayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ChemicalOilProductsTanker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ChemicalTanker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContainerShip"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContentDescriptionCode"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Declaration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#DestinationHarbour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP01TypeOfGoods"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP02TypeOfGoods"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ExportDeclaration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#FishingVessel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#FruitJuiceCarrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#GoodsClassificationRange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HSCode"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Harbour"/>
@@ -173,7 +260,43 @@
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HarbourCountry"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HeavyLoadCarrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HopperDredger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ImportDeclaration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#LPGTanker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Loading"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#MolassesTanker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NSTRCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NSTRTypeOfGoods"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#OriginHarbour"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ProfitCenter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#RefrigeratedCargoShip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Ro-RoCargoShip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#SelfDischargingBulkCarrier"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ShippingAgent"/>
@@ -182,7 +305,13 @@
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Stevedore"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transhipment"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transshipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Unloading"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VehiclesCarrier"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Vessel"/>
@@ -194,10 +323,37 @@
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Address"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#EWCcode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#FirstSecondaryBuyer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#GNcode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#MaterialDeliveryReport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#MaterialDisposalReport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#PrimaryWasteStream"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#Report"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondaryWasteContentCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondaryWasteStream"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteBroker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteCollectingEntity"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteCollectionMethod"/>
@@ -206,13 +362,70 @@
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteDisposalLocation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteDisposingEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteMediatingEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteProcessingEntity"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteProcessingMethodCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteReceivingEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteShipmentEntity"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteStream"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#AlternativeMaterialUse"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Barrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#BioBasedMaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#BuiltEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#CO2emission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#CircularEconomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#CircularProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#CircularityGoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#CityScale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Consumption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#CurrentMaterialUse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#DemolitionWaste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#EcologicalValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#EconomicValue"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Economy"/>
@@ -221,10 +434,28 @@
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Emission"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#EndOfLifeMaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#EnvironmentalImpact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#FoodMaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#GlobalScale"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Goal"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Impact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#LocalScale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#MaterialFlow"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#MaterialUse"/>
@@ -233,7 +464,31 @@
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Opportunity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#PotentialValueGain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#PrimaryResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Production"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#RawMaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#RawMaterialExtraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#RawMaterialResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#RegionScale"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Resource"/>
@@ -242,10 +497,19 @@
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Scale"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#SocialImpact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#SortedMaterial"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#SufficientProgress"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Transition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#TransitionGoal"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Value"/>
@@ -273,6 +537,84 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#providesServiceTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#affectsFlow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#hasMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#hasMaterialFraction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#hasSolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#hasSolutionPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#isDestinationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#isOriginOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_activity2activity#hasComposition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_activity2activity#hasProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_activity2activity#publishedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_strategyfractionflow#affectsMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_affectedflow#hasDestination"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_flowreference#hasOrigin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_implementationarea#affectsImplementationArea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_implementationquantity#hasImplementationQuestion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_implementationquantity#hasImplementationRatio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_solutionpart#causesFlowChange"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_strategy#createdByUser"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/statusquo_aim#hasAim"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/statusquo_flowindicator#hasFlowA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/statusquo_flowindicator#hasFlowB"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/statusquo_flowtarget#measuredByIndicator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/statusquo_indicatorflow_materials#includesMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/statusquo_userobjective_target_areas#includesArea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/statusquo_userobjective_target_areas#relatesTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/studyarea_area#hasAdminLevel"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#belongsTo"/>
@@ -377,10 +719,25 @@
         <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#CharacterizationFactor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ChemicalStructure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#EcosystemImpact"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ElementalComposition"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtensiveProperty"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtrinsicProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#HeatCapacity"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntensiveProperty"/>
@@ -389,7 +746,91 @@
         <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntrinsicProperty"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#KineticEnergy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Mass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#MolarHeatCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#MolarMass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Ownership"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Price"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SocialEconomicProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SpecificWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Speed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Temperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Utility"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Weight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/actor_complete#hasAddress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/area_casestudy#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_activity2activity#hasAmount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_activity2activity#hasYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_fractionflow#isAvoidable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_fractionflow#isHazardous"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_productfraction#hasFraction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_implementationquantity#hasRatio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_implementationquestion#hasQuestion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/login_casestudy#hasTargetYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/publications#hasCitekey"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/publications_bootstrap_publication#hasAuthors"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/publications_bootstrap_publication#hasDOI"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/publications_bootstrap_publication#hasTargetValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/publications_bootstrap_publication#hasTitle"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ADNRDescription"/>
@@ -485,16 +926,25 @@
         <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#addressStreetName"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#mixedEnRouteCollection"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#name"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#numberOfLoads"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#permittedEnRouteCollection"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#reportPeriodMonth"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#reportPeriodYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#separatedEnRouteCollection"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#wasteCollectionMethod"/>
@@ -522,456 +972,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#valuegain"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ContainerShip"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Consumption"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/publications_bootstrap_publication#hasAuthors"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Weight"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_implementationquantity#hasImplementationRatio"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#EnvironmentalImpact"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#FlowTarget"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#affectsFlow"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#SocialImpact"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Strategy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteShipmentEntity"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_implementationquantity#hasImplementationQuestion"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#permittedEnRouteCollection"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#FocusArea"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/statusquo_userobjective_target_areas#relatesTo"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#EcologicalValue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HeavyLoadCarrier"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#PrimaryWasteStream"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_strategyfractionflow#affectsMaterial"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/publications#hasCitekey"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#GNcode"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#isOriginOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/statusquo_flowtarget#measuredByIndicator"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#OriginHarbour"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteCollectingEntity"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#isDestinationOf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#FirstSecondaryBuyer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#RawMaterialExtraction"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_activity2activity#hasAmount"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#RawMaterial"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/publications_bootstrap_publication#hasTitle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#GlobalScale"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#hasMaterialFraction"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Price"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#CircularEconomy"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#HeatCapacity"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#hasSolutionPart"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/actor_complete#hasAddress"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#PrimaryResource"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Unloading"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteProcessingEntity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP02TypeOfGoods"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/studyarea_area#hasAdminLevel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#LPGTanker"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_flowreference#hasOrigin"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#AppearanceCode"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Ownership"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HopperDredger"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/publications_bootstrap_publication#hasTargetValue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#DestinationHarbour"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Temperature"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#mixedEnRouteCollection"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/statusquo_userobjective_target_areas#includesArea"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_fractionflow#isHazardous"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#GoodsClassificationRange"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#MolassesTanker"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#CharacterizationFactor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#OperationalLocation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#HSCode"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteDisposingEntity"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/statusquo_indicatorflow_materials#includesMaterial"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#EndOfLifeMaterial"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#MolarMass"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#RawMaterialResource"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteReceivingEntity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Stock"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#CaseStudyArea"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SpecificWeight"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_activity2activity#hasProcess"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_implementationarea#affectsImplementationArea"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/statusquo_flowindicator#hasFlowB"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/statusquo_flowindicator#hasFlowA"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ChemicalTanker"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor2actorFlow"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#FishingVessel"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/login_casestudy#hasTargetYear"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#hasSolution"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_activity2activity#publishedIn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#RefrigeratedCargoShip"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Value"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Product"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ExportDeclaration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#SelfDischargingBulkCarrier"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#separatedEnRouteCollection"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ImportDeclaration"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Speed"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Waste"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#DemolitionWaste"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ElementalComposition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NSTRCode"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#CityScale"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_strategy#createdByUser"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_implementationquestion#hasQuestion"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#hasMaterial"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#City"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#MaterialDisposalReport"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_activity2activity#hasYear"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Production"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#BulkCarrier"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#Region"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#TransitionGoal"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ADNRCode"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#BuiltEnvironment"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#MaterialFlow"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#FoodMaterial"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#PotentialValueGain"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#SecondaryWasteStream"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_activity2activity#hasComposition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#SortedMaterial"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#AdministrativeArea"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_productfraction#hasFraction"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#BioBasedMaterial"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#EconomicValue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#AlternativeMaterialUse"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/area_casestudy#hasName"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#MolarHeatCapacity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Loading"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Utility"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/publications_bootstrap_publication#hasDOI"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#MaterialStock"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#RegionScale"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteMediatingEntity"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_affectedflow#hasDestination"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#KineticEnergy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#FruitJuiceCarrier"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#EcosystemImpact"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/statusquo_aim#hasAim"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Location"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Event"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Ro-RoCargoShip"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_implementationquantity#hasRatio"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#VehiclesCarrier"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#ImplementationArea"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#LocalScale"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#CircularityGoal"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ChemicalOilProductsTanker"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#WasteBroker"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#CurrentMaterialUse"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#CO2emission"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/changes_solutionpart#causesFlowChange"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/user-centered#CircularProject"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#ESP01TypeOfGoods"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_fractionflow#isAvoidable"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#NSTRTypeOfGoods"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#CableLayer"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Mass"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#AdministrativeLocation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#EWCcode"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#MaterialDeliveryReport"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ChemicalStructure"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Object"/>
@@ -1032,6 +1032,13 @@
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#ObservationalProperty"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-waste#isReportedBy"/>
+            <Class IRI="#ObservationSource"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#OutputFlow"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isOutputOf"/>
@@ -1039,6 +1046,13 @@
                 <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#Actor"/>
                 <Class IRI="#Process"/>
             </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SpecificProperty"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/statusquo_userobjective_target_areas#relatesTo"/>
+            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#User"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -1380,6 +1394,10 @@
         <Class IRI="#SpecificProperty"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#IdleMaterialStock"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#IdleStock"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#IdleStock"/>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Stock"/>
     </SubClassOf>
@@ -1550,10 +1568,6 @@
             <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered/asmfa_productfraction#hasFraction"/>
             <Datatype abbreviatedIRI="xsd:float"/>
         </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#MaterialStock"/>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#IdleStock"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/tool-centered#OperationalLocation"/>
@@ -2105,7 +2119,7 @@
         <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Declaration"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#hasTranshipment"/>
-            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transhipment"/>
+            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transshipment"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2367,32 +2381,32 @@
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transhipment"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transshipment"/>
         <Class IRI="#Process"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transhipment"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transshipment"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#transhipmentAmount"/>
             <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transhipment"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transshipment"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#transhipmentGrossHarbourCharges"/>
             <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transhipment"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transshipment"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#transhipmentNetHarbourCharges"/>
             <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transhipment"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#Transshipment"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/data-centered-port#transhipmentUnit"/>
             <Datatype abbreviatedIRI="xsd:string"/>
