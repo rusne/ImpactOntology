@@ -1,0 +1,684 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#"
+     xml:base="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial">
+        <python_module>ontology_spatial</python_module>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#python_module -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#python_module"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#causesChange -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#causesChange">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasAnchor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasAnchor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isAnchorOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasFunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasFunction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasIdentity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasIdentity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasLocation">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasRelation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#relatesTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasSample -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasSample"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isAnchorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isAnchorOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isAnywhereInBoundary -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isAnywhereInBoundary">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isInBoundary"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isAtPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isAtPoint">
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isInBoundary"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isEverywhereInBoundary -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isEverywhereInBoundary">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isInBoundary"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isInBoundary -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isInBoundary"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isSomewhereInBoundary -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isSomewhereInBoundary">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isInBoundary"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#relates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#relates"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#relatesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#relatesTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#representedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#representedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#represents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#represents -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#represents"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#attribute -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#attribute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#distance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#distance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#endDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#temporalValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#geometry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#geometry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#identity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#identity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#attribute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#interval -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#interval">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#temporalValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#line -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#line">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#geometry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#nominalValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#nominalValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#attribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#numericValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#numericValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#attribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#point -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#point">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#geometry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#polygon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#polygon">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#geometry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#startDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#temporalValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#temporalValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#temporalValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#attribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#unit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#unit"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Accuracy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Accuracy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#QualityConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Anchor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Anchor">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#isAnchorOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Appearance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Appearance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#RelationChange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Attribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Attribute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Boundary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Boundary"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#BoundaryChange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#BoundaryChange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Change"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Change -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Change"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#CoreConcept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#CoreConcept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Disappearance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Disappearance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#RelationChange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Entity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#EntityChange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#EntityChange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Change"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#CoreConcept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#causesChange"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Change"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#temporalValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Field -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Field">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Set"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasEntity"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Sample"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasFunction"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Function"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#CoreConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Function"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Geometry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Geometry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Granularity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Granularity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#QualityConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#IdentityChange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#IdentityChange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#EntityChange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Line -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Line">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Location">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasAnchor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Anchor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasRelation"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#SpatialRelation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#CoreConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Network">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Set"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#hasEntity"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#NetworkRelation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#CoreConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#NetworkRelation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#NetworkRelation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#relates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Entity"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Object">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#identity"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#CoreConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Point -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Point">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Polygon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Polygon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#QualityConcept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#QualityConcept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Relation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Relation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#RelationChange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#RelationChange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Change"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Sample -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Sample">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#nominalValue"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#numericValue"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#SampleArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#SampleArea">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#polygon"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Sample"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#SamplePoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#SamplePoint">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#point"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Sample"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Set -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Set"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#SpatialBoundary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#SpatialBoundary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Boundary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#SpatialRelation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#SpatialRelation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#TemporalBoundary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#TemporalBoundary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#Boundary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#ValueChange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#ValueChange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#EntityChange"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#BoundaryChange"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#IdentityChange"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#RelationChange"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/spatial#ValueChange"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

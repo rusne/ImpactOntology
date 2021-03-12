@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#"
+     xml:base="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#composes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#composes">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#consistsOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#consistsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#consistsOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#flowsFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#flowsFrom">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#flowsTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#flowsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#flowsTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#hasContent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#hasContent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#hasDestination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#hasDestination">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#hasOrigin"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#hasFraction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#hasFraction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#hasMaterial -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#hasMaterial"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#hasOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#hasOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#isAtLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#isAtLocation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#geometry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#geometry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#ActivityGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#ActivityGroup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#ActivityGroupLevelFlow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#ActivityGroupLevelFlow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Flow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#ActivityLevelFlow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#ActivityLevelFlow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Flow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#ActorLevelFlow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#ActorLevelFlow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Flow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Area -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Area">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Content -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Content"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#ContentFraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#ContentFraction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Flow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Flow"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Geometry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Geometry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Material"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Node -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Node"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Point -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Point">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Product">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Content"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Waste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Stock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Stock"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Waste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Waste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Content"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#ActivityGroupLevelFlow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#ActivityLevelFlow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#ActorLevelFlow"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Content"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#ContentFraction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Flow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Geometry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Material"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Node"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#Stock"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

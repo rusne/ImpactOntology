@@ -1,0 +1,19 @@
+[PrefixDeclaration]
+:		http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/as-mfa#
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xml:		http://www.w3.org/XML/1998/namespace
+xsd:		http://www.w3.org/2001/XMLSchema#
+obda:		https://w3id.org/obda/vocabulary#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+
+[MappingDeclaration] @collection [[
+mappingId	MAPID-07a50682893f44cfb3f683ebbddb5056
+target		<http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/untitled-ontology-24#material{id}> a :Material ; :name {name} . 
+source		select id, name, parent_id from asmfa_material where (keyflow_id = 1 or keyflow_id is null);
+
+mappingId	MAPID-0e47dff4a7c94d8fa38af4cf208bd177
+target		<http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/untitled-ontology-24#material{id}> :composes <http://www.semanticweb.org/rusnesileryte/ontologies/2018/3/untitled-ontology-24#material{parent_id}> . 
+source		select id, name, parent_id from asmfa_material where (keyflow_id = 1 or keyflow_id is null);
+]]
+

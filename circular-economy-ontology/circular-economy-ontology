@@ -1,0 +1,522 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/circular-economy-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/1/circular-economy-ontology">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">A socio-economic metabolism ontology as described in ﻿
+Pauliuk S, Majeau-Bettez G, Müller DB, Hertwich EG (2016) 
+Toward a Practical Ontology for Socioeconomic Metabolism. 
+J Ind Ecol 20:1260–1272 . 
+doi: 10.1111/jiec.12386</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Flow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Set"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Stock"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#changesProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#hasProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#involvedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#involves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#providesServiceTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#CharacterizationFactor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ChemicalStructure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#EcosystemImpact"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ElementalComposition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtensiveProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtrinsicProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#HeatCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntensiveProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntrinsicProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#KineticEnergy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Mass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#MolarHeatCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#MolarMass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Ownership"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SocialEconomicProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SpatialLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SpecificWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Speed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Temperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#TemporalLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Utility"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Weight"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Object"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#belongsTo"/>
+                <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Stock"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#involvedIn"/>
+                <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Event"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#providesServiceTo"/>
+            <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Process"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Event"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Set"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Flow"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Process"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Stock"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Set"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Event"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Stock"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Flow"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Process"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Flow"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Process"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Service"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#belongsTo"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#contains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#involvedIn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#involves"/>
+    </InverseObjectProperties>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#belongsTo"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#changesProperty"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#contains"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#hasProperty"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#involvedIn"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#involves"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#belongsTo"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#changesProperty"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#involvedIn"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#involves"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#providesServiceTo"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#contains"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#involvedIn"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#involves"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#providesServiceTo"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Process"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#CharacterizationFactor"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#CharacterizationFactor"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#CharacterizationFactor"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ChemicalStructure"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ChemicalStructure"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ChemicalStructure"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#EcosystemImpact"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#EcosystemImpact"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#EcosystemImpact"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ElementalComposition"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ElementalComposition"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ElementalComposition"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#HeatCapacity"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#HeatCapacity"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#HeatCapacity"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#KineticEnergy"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#KineticEnergy"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#KineticEnergy"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Location"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Location"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Location"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Mass"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Mass"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Mass"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#MolarHeatCapacity"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#MolarHeatCapacity"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#MolarHeatCapacity"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#MolarMass"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#MolarMass"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#MolarMass"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Ownership"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Ownership"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Ownership"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SocialEconomicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Price"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Price"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Price"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SocialEconomicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SpatialLocation"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Location"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SpecificWeight"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SpecificWeight"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SpecificWeight"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Speed"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Speed"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Speed"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Temperature"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Temperature"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Temperature"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#TemporalLocation"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Location"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Utility"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Utility"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Utility"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SocialEconomicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Value"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Value"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Value"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SocialEconomicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Weight"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Weight"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtensiveProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Weight"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtrinsicProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtensiveProperty"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtrinsicProperty"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntensiveProperty"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntrinsicProperty"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SocialEconomicProperty"/>
+        <Class IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#Object"/>
+    </DataPropertyDomain>
+    <DisjointDataProperties>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#BiophysicalProperty"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SocialEconomicProperty"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtensiveProperty"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntensiveProperty"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#ExtrinsicProperty"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntrinsicProperty"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#IntrinsicProperty"/>
+        <DataProperty IRI="http://www.semanticweb.org/rusnesileryte/ontologies/2021/0/socioeconomicmetabolism#SocialEconomicProperty"/>
+    </DisjointDataProperties>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
